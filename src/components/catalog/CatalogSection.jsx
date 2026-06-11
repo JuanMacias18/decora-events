@@ -3,6 +3,7 @@ import { Search, X } from 'lucide-react'
 import CATEGORIAS from '../../data/categorias.json'
 import DECORACIONES from '../../data/productos.json'
 import ProductCard from './ProductCard'
+import SectionHeading from '../shared/SectionHeading'
 
 const PAGE_SIZE = 12
 
@@ -58,22 +59,12 @@ export default function CatalogSection({ initialCategory }) {
   return (
     <section id="catalogo" className="py-20 bg-crema">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
-        <div className="text-center mb-12">
-          <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="h-px w-12 bg-arena" />
-            <span className="font-inter text-xs tracking-[0.3em] uppercase text-dorado">
-              Explora y elige
-            </span>
-            <div className="h-px w-12 bg-arena" />
-          </div>
-          <h2 className="font-cinzel text-3xl md:text-4xl text-bronce tracking-wider">
-            Catálogo de Decoraciones
-          </h2>
-          <p className="font-editorial text-xl text-dorado mt-3">
-            Encuentra la decoración perfecta para tu celebración
-          </p>
-        </div>
+        <SectionHeading
+          eyebrow="Explora y elige"
+          title="Catálogo de Decoraciones"
+          subtitle="Encuentra la decoración perfecta para tu celebración"
+          className="mb-12"
+        />
 
         {/* Category Tabs */}
         <div

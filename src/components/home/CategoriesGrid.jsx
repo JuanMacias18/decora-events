@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import CATEGORIAS from '../../data/categorias.json'
+import SectionHeading from '../shared/SectionHeading'
 
 const CATEGORY_COLORS = {
   infantiles: 'from-[#F6D2B8] to-[#D9755B]',
@@ -13,22 +14,11 @@ export default function CategoriesGrid({ onCategorySelect }) {
   return (
     <section id="categorias" className="py-20 bg-crema">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
-        <div className="text-center mb-14">
-          <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="h-px w-12 bg-arena" />
-            <span className="font-inter text-xs tracking-[0.3em] uppercase text-dorado">
-              Lo que hacemos
-            </span>
-            <div className="h-px w-12 bg-arena" />
-          </div>
-          <h2 className="font-cinzel text-3xl md:text-4xl text-bronce tracking-wider">
-            Nuestras Categorías
-          </h2>
-          <p className="font-editorial text-xl text-dorado mt-3">
-            Cada celebración merece su propio mundo
-          </p>
-        </div>
+        <SectionHeading
+          eyebrow="Lo que hacemos"
+          title="Nuestras Categorías"
+          subtitle="Cada celebración merece su propio mundo"
+        />
 
         {/* Grid — 5 cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">

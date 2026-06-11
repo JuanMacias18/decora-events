@@ -1,6 +1,12 @@
 import { SITE_CONFIG } from '../config/site'
 import { formatPrice } from './formatPrice'
 
+// Enlace base a WhatsApp; con `message` abre el chat con texto prellenado
+export function buildWhatsAppHref(message) {
+  const base = `https://wa.me/${SITE_CONFIG.whatsapp}`
+  return message ? `${base}?text=${encodeURIComponent(message)}` : base
+}
+
 export function buildWhatsAppUrl({ items, clientName, eventDate, note }) {
   const lines = items.map(
     (item) =>
@@ -22,6 +28,5 @@ export function buildWhatsAppUrl({ items, clientName, eventDate, note }) {
     if (note) message += `Nota: ${note}\n`
   }
 
-  const encoded = encodeURIComponent(message)
-  return `https://wa.me/${SITE_CONFIG.whatsapp}?text=${encoded}`
+  return buildWhatsAppHref(message)
 }

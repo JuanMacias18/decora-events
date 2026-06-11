@@ -1,3 +1,5 @@
+import SectionHeading from '../shared/SectionHeading'
+
 const PORTFOLIO_ITEMS = [
   { id: 1, label: 'Montaje Safari', url: 'https://placehold.co/600x400/95744E/FBF6F0?text=Montaje+1' },
   { id: 2, label: 'Baby Shower Celeste', url: 'https://placehold.co/600x800/D9755B/FBF6F0?text=Montaje+2' },
@@ -11,22 +13,12 @@ export default function Portfolio() {
   return (
     <section id="montajes" className="py-20 bg-arena/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
-        <div className="text-center mb-14">
-          <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="h-px w-12 bg-dorado/40" />
-            <span className="font-inter text-xs tracking-[0.3em] uppercase text-dorado">
-              Nuestro trabajo
-            </span>
-            <div className="h-px w-12 bg-dorado/40" />
-          </div>
-          <h2 className="font-cinzel text-3xl md:text-4xl text-bronce tracking-wider">
-            Nuestros Montajes
-          </h2>
-          <p className="font-editorial text-xl text-dorado mt-3">
-            Cada foto cuenta una historia de alegría
-          </p>
-        </div>
+        <SectionHeading
+          eyebrow="Nuestro trabajo"
+          title="Nuestros Montajes"
+          subtitle="Cada foto cuenta una historia de alegría"
+          lineClass="bg-dorado/40"
+        />
 
         {/* Masonry-style grid */}
         <div className="columns-2 md:columns-3 gap-4 space-y-4">

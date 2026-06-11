@@ -1,4 +1,5 @@
 import { Star } from 'lucide-react'
+import SectionHeading from '../shared/SectionHeading'
 
 const TESTIMONIALS = [
   {
@@ -43,22 +44,11 @@ export default function Testimonials() {
   return (
     <section id="testimonios" className="py-20 bg-crema">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
-        <div className="text-center mb-14">
-          <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="h-px w-12 bg-arena" />
-            <span className="font-inter text-xs tracking-[0.3em] uppercase text-dorado">
-              Qué dicen de nosotros
-            </span>
-            <div className="h-px w-12 bg-arena" />
-          </div>
-          <h2 className="font-cinzel text-3xl md:text-4xl text-bronce tracking-wider">
-            Testimonios
-          </h2>
-          <p className="font-editorial text-xl text-dorado mt-3">
-            Momentos reales de familias felices
-          </p>
-        </div>
+        <SectionHeading
+          eyebrow="Qué dicen de nosotros"
+          title="Testimonios"
+          subtitle="Momentos reales de familias felices"
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {TESTIMONIALS.map((t) => (

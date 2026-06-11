@@ -1,5 +1,6 @@
 import { ChevronDown } from 'lucide-react'
 import { SITE_CONFIG } from '../../config/site'
+import WhatsAppButton from '../shared/WhatsAppButton'
 
 // Reemplaza HERO_IMAGE_URL con la URL de tu foto real o ponla en src/assets/hero.jpg
 // y cambia el import: import heroImg from '../../assets/hero.jpg'
@@ -64,14 +65,9 @@ export default function Hero() {
             Ver Catálogo
             <ChevronDown size={15} className="group-hover:translate-y-0.5 transition-transform" />
           </a>
-          <a
-            href={`https://wa.me/${SITE_CONFIG.whatsapp}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-champan/50 text-champan hover:bg-champan/10 font-inter text-sm tracking-wider uppercase px-8 py-4 rounded-full transition-all duration-300 backdrop-blur-sm"
-          >
+          <WhatsAppButton className="border border-champan/50 text-champan hover:bg-champan/10 font-inter text-sm tracking-wider uppercase px-8 py-4 rounded-full transition-all duration-300 backdrop-blur-sm">
             Cotizar Ahora
-          </a>
+          </WhatsAppButton>
         </div>
       </div>
 
