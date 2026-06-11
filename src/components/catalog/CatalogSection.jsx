@@ -1,6 +1,7 @@
 import { useState, useMemo, useRef, useEffect } from 'react'
 import { Search, X } from 'lucide-react'
-import { CATEGORIAS, DECORACIONES } from '../../data/catalogo'
+import CATEGORIAS from '../../data/categorias.json'
+import DECORACIONES from '../../data/productos.json'
 import ProductCard from './ProductCard'
 
 const PAGE_SIZE = 12
@@ -8,7 +9,7 @@ const PAGE_SIZE = 12
 // Attach label to each item for display in cards
 const ITEMS_WITH_LABELS = DECORACIONES.map((d) => ({
   ...d,
-  categoriaLabel: CATEGORIAS.find((c) => c.id === d.categoria)?.label ?? d.categoria,
+  categoriaLabel: CATEGORIAS.find((c) => c.id === d.categoria)?.nombre ?? d.categoria,
 }))
 
 export default function CatalogSection({ initialCategory }) {
@@ -91,8 +92,8 @@ export default function CatalogSection({ initialCategory }) {
               }`}
             >
               <span>{cat.emoji}</span>
-              <span className="hidden sm:inline">{cat.label}</span>
-              <span className="sm:hidden">{cat.label.split(' ')[0]}</span>
+              <span className="hidden sm:inline">{cat.nombre}</span>
+              <span className="sm:hidden">{cat.nombre.split(' ')[0]}</span>
             </button>
           ))}
         </div>

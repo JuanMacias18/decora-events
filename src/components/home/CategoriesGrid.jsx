@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react'
-import { CATEGORIAS } from '../../data/catalogo'
+import CATEGORIAS from '../../data/categorias.json'
 
 const CATEGORY_COLORS = {
   infantiles: 'from-[#F6D2B8] to-[#D9755B]',
@@ -61,7 +61,7 @@ export default function CategoriesGrid({ onCategorySelect }) {
                   {cat.emoji}
                 </span>
                 <h3 className="font-cinzel text-sm sm:text-base text-crema tracking-wide text-center leading-snug mb-3 drop-shadow-md">
-                  {cat.label}
+                  {cat.nombre}
                 </h3>
                 <span className="flex items-center gap-1.5 bg-white/20 group-hover:bg-coral text-crema text-xs font-inter tracking-wider uppercase px-4 py-1.5 rounded-full transition-all duration-300 backdrop-blur-sm">
                   Ver <ArrowRight size={12} />

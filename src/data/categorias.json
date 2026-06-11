@@ -1,0 +1,42 @@
+[
+  {
+    "id": "infantiles",
+    "nombre": "Decoraciones Infantiles",
+    "slug": "infantiles",
+    "emoji": "🎪",
+    "descripcion": "TODO: descripción real de la categoría",
+    "imagenPortada": "TODO: imagen de portada real"
+  },
+  {
+    "id": "cumpleanos",
+    "nombre": "Decoraciones de Cumpleaños",
+    "slug": "cumpleanos",
+    "emoji": "🎂",
+    "descripcion": "TODO: descripción real de la categoría",
+    "imagenPortada": "TODO: imagen de portada real"
+  },
+  {
+    "id": "babyshower",
+    "nombre": "Baby Shower y Revelación de Género",
+    "slug": "baby-shower",
+    "emoji": "🍼",
+    "descripcion": "TODO: descripción real de la categoría",
+    "imagenPortada": "TODO: imagen de portada real"
+  },
+  {
+    "id": "quince",
+    "nombre": "Decoraciones de 15 Años",
+    "slug": "quince-anos",
+    "emoji": "👑",
+    "descripcion": "TODO: descripción real de la categoría",
+    "imagenPortada": "TODO: imagen de portada real"
+  },
+  {
+    "id": "grado",
+    "nombre": "Decoraciones de Grado",
+    "slug": "grado",
+    "emoji": "🎓",
+    "descripcion": "TODO: descripción real de la categoría",
+    "imagenPortada": "TODO: imagen de portada real"
+  }
+]
