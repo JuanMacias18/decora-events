@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "PowerShell($p = Get-Content src/data/productos.json | ConvertFrom-Json; \"Total: $\\($p.Count\\)\"; $p | Group-Object categoria | ForEach-Object { \"$\\($_.Name\\): $\\($_.Count\\)\" }; \"Sin slug: $\\(\\($p | Where-Object { -not $_.slug }\\).Count\\)\"; \"Ids únicos: $\\(\\($p.id | Select-Object -Unique\\).Count\\)\"; \"Slugs únicos: $\\(\\($p.slug | Select-Object -Unique\\).Count\\)\"; \"Con personalización: $\\(\\($p | Where-Object { $_.personalizacion }\\).Count\\)\")"
-    ]
-  }
-}

@@ -26,4 +26,4 @@ dist-ssr
 .vercel
 
 # Configuración local de Claude Code
-.claude/launch.json
+.claude/
