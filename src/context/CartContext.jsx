@@ -1,4 +1,4 @@
-import { useReducer, useEffect, useState } from 'react'
+import { useReducer, useEffect, useRef } from 'react'
 import PRODUCTOS from '../data/productos.json'
 import { CartContext } from '../hooks/useCart'
 
@@ -73,25 +73,27 @@ export function CartProvider({ children }) {
   // cliente coincida con el HTML prerenderizado (sin hydration mismatch).
   // El carrito guardado se carga en un efecto, ya montado en el navegador.
   const [items, dispatch] = useReducer(cartReducer, [])
-  const [loaded, setLoaded] = useState(false)
+  const hydratedRef = useRef(false)
 
   useEffect(() => {
-    const saved = loadInitialCart()
-    if (saved.length > 0) dispatch({ type: 'LOAD', items: saved })
-    setLoaded(true)
-  }, [])
-
-  useEffect(() => {
-    // No escribir hasta haber cargado: evita pisar el carrito guardado
-    // con el estado vacío del primer render
-    if (!loaded) return
+    // Primera ejecución: cargar el carrito guardado. Si hay items, NO
+    // escribir todavía (evita pisar lo guardado con el estado vacío);
+    // el re-render con los items cargados volverá a entrar y escribirá.
+    if (!hydratedRef.current) {
+      hydratedRef.current = true
+      const saved = loadInitialCart()
+      if (saved.length > 0) {
+        dispatch({ type: 'LOAD', items: saved })
+        return
+      }
+    }
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(items))
     } catch {
       // localStorage lleno o bloqueado (modo privado): el carrito sigue
       // funcionando en memoria, solo no persiste entre visitas
     }
-  }, [items, loaded])
+  }, [items])
 
   const total = items.reduce((sum, i) => sum + i.precio * i.cantidad, 0)
   const count = items.reduce((sum, i) => sum + i.cantidad, 0)
