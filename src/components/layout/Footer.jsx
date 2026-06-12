@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start gap-4">
-            <Logo className="h-16 w-auto" invertOnDark />
+            <Logo className="h-16 w-auto" invertOnDark lazy />
             <p className="font-editorial text-2xl text-champan leading-snug">
               "{SITE_CONFIG.slogan}"
             </p>

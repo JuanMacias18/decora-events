@@ -1,12 +1,12 @@
 import SectionHeading from '../shared/SectionHeading'
 
 const PORTFOLIO_ITEMS = [
-  { id: 1, label: 'Montaje Safari', url: 'https://placehold.co/600x400/95744E/FBF6F0?text=Montaje+1' },
-  { id: 2, label: 'Baby Shower Celeste', url: 'https://placehold.co/600x800/D9755B/FBF6F0?text=Montaje+2' },
-  { id: 3, label: 'Quinceañera Rosa', url: 'https://placehold.co/600x400/C98A7D/FBF6F0?text=Montaje+3' },
-  { id: 4, label: 'Grado Premium', url: 'https://placehold.co/600x600/BA9972/FBF6F0?text=Montaje+4' },
-  { id: 5, label: 'Cumpleaños Boho', url: 'https://placehold.co/600x400/7A5934/FBF6F0?text=Montaje+5' },
-  { id: 6, label: 'Revelación Género', url: 'https://placehold.co/600x800/E3D6C7/7A5934?text=Montaje+6' },
+  { id: 1, label: 'Montaje Safari', url: 'https://placehold.co/600x400/95744E/FBF6F0/webp?text=Montaje+1' },
+  { id: 2, label: 'Baby Shower Celeste', url: 'https://placehold.co/600x800/D9755B/FBF6F0/webp?text=Montaje+2' },
+  { id: 3, label: 'Quinceañera Rosa', url: 'https://placehold.co/600x400/C98A7D/FBF6F0/webp?text=Montaje+3' },
+  { id: 4, label: 'Grado Premium', url: 'https://placehold.co/600x600/BA9972/FBF6F0/webp?text=Montaje+4' },
+  { id: 5, label: 'Cumpleaños Boho', url: 'https://placehold.co/600x400/7A5934/FBF6F0/webp?text=Montaje+5' },
+  { id: 6, label: 'Revelación Género', url: 'https://placehold.co/600x800/E3D6C7/7A5934/webp?text=Montaje+6' },
 ]
 
 export default function Portfolio() {
@@ -29,7 +29,7 @@ export default function Portfolio() {
             >
               <img
                 src={item.url}
-                alt={item.label}
+                alt={`${item.label} — montaje real de Decora Events`}
                 loading="lazy"
                 className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />

@@ -37,7 +37,7 @@ export default function ProductCard({ item }) {
       <div className="relative overflow-hidden aspect-[4/3]">
         <img
           src={item.imagen}
-          alt={item.nombre}
+          alt={`${item.nombre} — ${item.categoriaLabel} por Decora Events`}
           loading="lazy"
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />

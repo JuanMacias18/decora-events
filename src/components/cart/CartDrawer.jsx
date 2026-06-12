@@ -103,7 +103,8 @@ export default function CartDrawer({ open, onClose }) {
                 >
                   <img
                     src={item.imagen}
-                    alt={item.nombre}
+                    alt={`Decoración ${item.nombre}`}
+                    loading="lazy"
                     className="w-16 h-16 rounded-lg object-cover shrink-0"
                   />
                   <div className="flex-1 min-w-0">
