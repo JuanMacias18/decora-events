@@ -8,24 +8,25 @@ export function buildWhatsAppHref(message) {
 }
 
 export function buildWhatsAppUrl({ items, clientName, eventDate, note }) {
-  const lines = items.map(
-    (item) =>
-      `- ${item.cantidad}x ${item.nombre} (${item.categoria}) - ${formatPrice(item.precio)}${
-        item.personalizacion ? `\n  Personalización: ${item.personalizacion}` : ''
-      }`
-  )
+  const lines = items.map((item) => {
+    let line = `• ${item.nombre} x${item.cantidad} — ${formatPrice(item.precio * item.cantidad)}`
+    if (item.personalizacion) line += `\n   (${item.personalizacion})`
+    return line
+  })
 
   const total = items.reduce((sum, i) => sum + i.precio * i.cantidad, 0)
 
-  let message = `Hola, quiero cotizar las siguientes decoraciones:\n\n`
+  let message = `🎉 *Nueva solicitud — Decora Events*\n\n`
+  message += `*Productos:*\n`
   message += lines.join('\n')
-  message += `\n\n*Total estimado: ${formatPrice(total)}*`
+  message += `\n\n*Total estimado:* ${formatPrice(total)}\n\n`
+  message += `Quiero confirmar disponibilidad y agendar mi evento.`
 
   if (clientName || eventDate || note) {
-    message += '\n\n'
-    if (clientName) message += `Nombre: ${clientName}\n`
-    if (eventDate) message += `Fecha del evento: ${eventDate}\n`
-    if (note) message += `Nota: ${note}\n`
+    message += '\n'
+    if (clientName) message += `\nNombre: ${clientName}`
+    if (eventDate) message += `\nFecha del evento: ${eventDate}`
+    if (note) message += `\nNota: ${note}`
   }
 
   return buildWhatsAppHref(message)
