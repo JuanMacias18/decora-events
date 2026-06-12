@@ -1,7 +1,6 @@
-import { createContext, useContext, useReducer, useEffect } from 'react'
+import { useReducer, useEffect } from 'react'
 import PRODUCTOS from '../data/productos.json'
-
-const CartContext = createContext(null)
+import { CartContext } from '../hooks/useCart'
 
 const STORAGE_KEY = 'decora-events-cart'
 
@@ -87,8 +86,4 @@ export function CartProvider({ children }) {
       {children}
     </CartContext.Provider>
   )
-}
-
-export function useCart() {
-  return useContext(CartContext)
 }

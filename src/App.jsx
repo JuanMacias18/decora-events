@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route, Outlet, Navigate } from 'react-router-dom'
-import { CartProvider, useCart } from './context/CartContext'
+import { CartProvider } from './context/CartContext'
+import { useCart } from './hooks/useCart'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 import CartDrawer from './components/cart/CartDrawer'

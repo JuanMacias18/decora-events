@@ -3,7 +3,7 @@ import { useParams, Navigate, Link } from 'react-router-dom'
 import { ShoppingBag, Check, ArrowLeft } from 'lucide-react'
 import CATEGORIAS from '../data/categorias.json'
 import PRODUCTOS from '../data/productos.json'
-import { useCart } from '../context/CartContext'
+import { useCart } from '../hooks/useCart'
 import { formatPrice } from '../utils/formatPrice'
 
 export default function ProductPage() {

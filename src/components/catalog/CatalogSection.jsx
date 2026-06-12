@@ -1,4 +1,4 @@
-import { useState, useMemo, useRef, useEffect } from 'react'
+import { useState, useMemo, useRef } from 'react'
 import { Search, X } from 'lucide-react'
 import CATEGORIAS from '../../data/categorias.json'
 import DECORACIONES from '../../data/productos.json'
@@ -17,15 +17,19 @@ export default function CatalogSection({ initialCategory }) {
   const [activeTab, setActiveTab] = useState(initialCategory || CATEGORIAS[0].id)
   const [search, setSearch] = useState('')
   const [page, setPage] = useState(1)
+  const [prevInitialCategory, setPrevInitialCategory] = useState(initialCategory)
   const tabsRef = useRef(null)
 
-  // Reset page when tab or search changes
-  useEffect(() => { setPage(1) }, [activeTab, search])
-
-  // Sync active tab when parent changes initialCategory
-  useEffect(() => {
-    if (initialCategory) setActiveTab(initialCategory)
-  }, [initialCategory])
+  // Sincroniza la pestaña cuando el padre cambia initialCategory.
+  // Ajuste de estado durante el render (en vez de un efecto) para
+  // evitar renders en cascada: https://react.dev/learn/you-might-not-need-an-effect
+  if (initialCategory !== prevInitialCategory) {
+    setPrevInitialCategory(initialCategory)
+    if (initialCategory) {
+      setActiveTab(initialCategory)
+      setPage(1)
+    }
+  }
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase()
@@ -44,6 +48,7 @@ export default function CatalogSection({ initialCategory }) {
   function selectTab(id) {
     setActiveTab(id)
     setSearch('')
+    setPage(1)
   }
 
   function scrollTabIntoView(id) {
@@ -95,13 +100,19 @@ export default function CatalogSection({ initialCategory }) {
           <input
             type="text"
             value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            onChange={(e) => {
+              setSearch(e.target.value)
+              setPage(1)
+            }}
             placeholder="Buscar decoración…"
             className="w-full bg-white border border-arena rounded-full pl-10 pr-10 py-2.5 font-inter text-sm text-bronce placeholder:text-dorado/40 focus:outline-none focus:border-dorado transition-colors"
           />
           {search && (
             <button
-              onClick={() => setSearch('')}
+              onClick={() => {
+                setSearch('')
+                setPage(1)
+              }}
               className="absolute right-4 top-1/2 -translate-y-1/2 text-dorado/50 hover:text-coral transition-colors"
             >
               <X size={14} />

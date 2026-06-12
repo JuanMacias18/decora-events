@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { X, ShoppingBag, Trash2, Plus, Minus, MessageCircle } from 'lucide-react'
-import { useCart } from '../../context/CartContext'
+import { useCart } from '../../hooks/useCart'
 import { formatPrice } from '../../utils/formatPrice'
 import { buildWhatsAppUrl } from '../../utils/buildWhatsAppMessage'
 

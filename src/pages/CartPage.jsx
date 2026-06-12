@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ShoppingBag, Trash2, Plus, Minus, MessageCircle } from 'lucide-react'
-import { useCart } from '../context/CartContext'
+import { useCart } from '../hooks/useCart'
 import { formatPrice } from '../utils/formatPrice'
 import { buildWhatsAppUrl } from '../utils/buildWhatsAppMessage'
 import SectionHeading from '../components/shared/SectionHeading'

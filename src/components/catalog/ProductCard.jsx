@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { ShoppingBag, Check, ChevronDown } from 'lucide-react'
-import { useCart } from '../../context/CartContext'
+import { useCart } from '../../hooks/useCart'
 import { formatPrice } from '../../utils/formatPrice'
 
 export default function ProductCard({ item }) {

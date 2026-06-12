@@ -1,5 +1,5 @@
 import { ShoppingBag, MessageCircle } from 'lucide-react'
-import { useCart } from '../../context/CartContext'
+import { useCart } from '../../hooks/useCart'
 import { formatPrice } from '../../utils/formatPrice'
 
 // Floating cart button — visible on mobile at bottom, on desktop as FAB

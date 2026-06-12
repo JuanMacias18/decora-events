@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ShoppingBag, Menu, X } from 'lucide-react'
-import { useCart } from '../../context/CartContext'
+import { useCart } from '../../hooks/useCart'
 import Logo from './Logo'
 
 const NAV_LINKS = [
