@@ -5,10 +5,15 @@ import CATEGORIAS from '../data/categorias.json'
 import PRODUCTOS from '../data/productos.json'
 import { useCart } from '../hooks/useCart'
 import { formatPrice } from '../utils/formatPrice'
+import { usePageMeta } from '../hooks/usePageMeta'
+import { seoProducto, seoHome } from '../config/seo'
 
 export default function ProductPage() {
   const { slug } = useParams()
   const producto = PRODUCTOS.find((p) => p.slug === slug)
+  const categoria = producto
+    ? CATEGORIAS.find((c) => c.id === producto.categoria)
+    : null
 
   const { dispatch, items } = useCart()
   const [added, setAdded] = useState(false)
@@ -16,9 +21,10 @@ export default function ProductPage() {
     producto?.personalizacion ? producto.personalizacion[0] : null
   )
 
-  if (!producto) return <Navigate to="/" replace />
+  // El hook debe llamarse siempre (antes del return condicional)
+  usePageMeta(producto ? seoProducto(producto, categoria) : seoHome())
 
-  const categoria = CATEGORIAS.find((c) => c.id === producto.categoria)
+  if (!producto) return <Navigate to="/" replace />
   const inCart = items.some(
     (i) => i.id === producto.id && i.personalizacion === selectedOption
   )

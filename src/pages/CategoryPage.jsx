@@ -3,10 +3,15 @@ import CATEGORIAS from '../data/categorias.json'
 import PRODUCTOS from '../data/productos.json'
 import ProductCard from '../components/catalog/ProductCard'
 import SectionHeading from '../components/shared/SectionHeading'
+import { usePageMeta } from '../hooks/usePageMeta'
+import { seoCategoria, seoHome } from '../config/seo'
 
 export default function CategoryPage() {
   const { slug } = useParams()
   const categoria = CATEGORIAS.find((c) => c.slug === slug)
+
+  // El hook debe llamarse siempre (antes del return condicional)
+  usePageMeta(categoria ? seoCategoria(categoria) : seoHome())
 
   if (!categoria) return <Navigate to="/" replace />
 

@@ -5,8 +5,11 @@ import { useCart } from '../hooks/useCart'
 import { formatPrice } from '../utils/formatPrice'
 import { buildWhatsAppUrl } from '../utils/buildWhatsAppMessage'
 import SectionHeading from '../components/shared/SectionHeading'
+import { usePageMeta } from '../hooks/usePageMeta'
+import { seoCarrito } from '../config/seo'
 
 export default function CartPage() {
+  usePageMeta(seoCarrito())
   const { items, dispatch, total } = useCart()
   const [name, setName] = useState('')
   const [date, setDate] = useState('')
