@@ -21,13 +21,25 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- Google Fonts: Cinzel + Cormorant Garamond + Inter -->
+    <!-- Google Fonts: Cinzel + Cormorant Garamond + Inter.
+         Carga asíncrona para no bloquear el primer pintado (display=swap evita texto invisible) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Dominios de imágenes (hero y catálogo) -->
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://placehold.co" />
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap"
+      />
+    </noscript>
 
     <title>Decora Events — Decoración de Eventos en Colombia</title>
   </head>

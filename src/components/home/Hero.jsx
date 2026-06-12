@@ -20,9 +20,14 @@ export default function Hero() {
       <div className="absolute inset-0" aria-hidden="true">
         <img
           src={HERO_IMAGE_URL}
+          srcSet={[480, 800, 1200, 1600]
+            .map((w) => `${HERO_IMAGE_URL.replace('w=1600', `w=${w}`)} ${w}w`)
+            .join(', ')}
+          sizes="100vw"
           alt="Decoración de eventos Decora Events"
           className="w-full h-full object-cover"
           loading="eager"
+          fetchPriority="high"
         />
         {/* Multi-layer overlay for legibility */}
         <div className="absolute inset-0 bg-gradient-to-t from-bronce/85 via-bronce/40 to-bronce/20" />

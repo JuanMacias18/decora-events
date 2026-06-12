@@ -33,7 +33,15 @@ const { render, seoPorRuta } = await import(
   new URL('../dist-ssr/entry-server.js', import.meta.url).href
 )
 
-const plantilla = fs.readFileSync(path.join(raiz, 'dist', 'index.html'), 'utf8')
+let plantilla = fs.readFileSync(path.join(raiz, 'dist', 'index.html'), 'utf8')
+
+// Inlinear el CSS del build en el <head>: elimina el único request
+// bloqueante del primer pintado (FCP) en las páginas estáticas.
+const matchCss = plantilla.match(/<link rel="stylesheet"[^>]*href="\/(assets\/[^"]+\.css)"[^>]*>/)
+if (matchCss) {
+  const css = fs.readFileSync(path.join(raiz, 'dist', matchCss[1]), 'utf8')
+  plantilla = plantilla.replace(matchCss[0], `<style>${css}</style>`)
+}
 
 const escaparHtml = (s) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')

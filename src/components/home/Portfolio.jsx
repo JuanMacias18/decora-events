@@ -11,7 +11,7 @@ const PORTFOLIO_ITEMS = [
 
 export default function Portfolio() {
   return (
-    <section id="montajes" className="py-20 bg-arena/30">
+    <section id="montajes" className="[content-visibility:auto] [contain-intrinsic-size:auto_900px] py-20 bg-arena/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Nuestro trabajo"

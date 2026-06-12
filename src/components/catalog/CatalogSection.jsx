@@ -62,7 +62,7 @@ export default function CatalogSection({ initialCategory }) {
   }
 
   return (
-    <section id="catalogo" className="py-20 bg-crema">
+    <section id="catalogo" className="[content-visibility:auto] [contain-intrinsic-size:auto_900px] py-20 bg-crema">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Explora y elige"
