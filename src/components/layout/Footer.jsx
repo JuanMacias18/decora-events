@@ -1,4 +1,5 @@
 import { MessageCircle, Heart } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import { SITE_CONFIG } from '../../config/site'
 import { InstagramIcon, FacebookIcon } from '../shared/SocialIcons'
 import WhatsAppButton from '../shared/WhatsAppButton'
@@ -26,18 +27,18 @@ export default function Footer() {
               Navegación
             </h4>
             {[
-              { label: 'Catálogo', href: '#catalogo' },
-              { label: 'Nuestros Montajes', href: '#montajes' },
-              { label: 'Sobre Nosotros', href: '#nosotros' },
-              { label: 'Testimonios', href: '#testimonios' },
+              { label: 'Catálogo', href: '/#catalogo' },
+              { label: 'Nuestros Montajes', href: '/#montajes' },
+              { label: 'Sobre Nosotros', href: '/#nosotros' },
+              { label: 'Testimonios', href: '/#testimonios' },
             ].map((l) => (
-              <a
+              <Link
                 key={l.href}
-                href={l.href}
+                to={l.href}
                 className="font-inter text-sm text-crema/70 hover:text-crema transition-colors"
               >
                 {l.label}
-              </a>
+              </Link>
             ))}
           </div>
 

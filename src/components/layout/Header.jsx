@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { ShoppingBag, Menu, X } from 'lucide-react'
 import { useCart } from '../../context/CartContext'
-import { SITE_CONFIG } from '../../config/site'
 import Logo from './Logo'
 
 const NAV_LINKS = [
-  { label: 'Catálogo', href: '#catalogo' },
-  { label: 'Montajes', href: '#montajes' },
-  { label: 'Nosotros', href: '#nosotros' },
-  { label: 'Contacto', href: '#footer' },
+  { label: 'Catálogo', href: '/#catalogo' },
+  { label: 'Montajes', href: '/#montajes' },
+  { label: 'Nosotros', href: '/#nosotros' },
+  { label: 'Contacto', href: '/#footer' },
 ]
 
 export default function Header({ onCartOpen }) {
@@ -33,20 +33,20 @@ export default function Header({ onCartOpen }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 shrink-0">
+          <Link to="/" className="flex items-center gap-2 shrink-0">
             <Logo className="h-10 md:h-12 w-auto" />
-          </a>
+          </Link>
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-8">
             {NAV_LINKS.map((l) => (
-              <a
+              <Link
                 key={l.href}
-                href={l.href}
+                to={l.href}
                 className="font-inter text-sm tracking-widest uppercase text-bronce hover:text-coral transition-colors duration-200"
               >
                 {l.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -81,14 +81,14 @@ export default function Header({ onCartOpen }) {
         <div className="md:hidden bg-crema border-t border-arena shadow-lg">
           <nav className="flex flex-col px-6 py-4 gap-4">
             {NAV_LINKS.map((l) => (
-              <a
+              <Link
                 key={l.href}
-                href={l.href}
+                to={l.href}
                 onClick={() => setMenuOpen(false)}
                 className="font-inter text-sm tracking-widest uppercase text-bronce hover:text-coral transition-colors py-1"
               >
                 {l.label}
-              </a>
+              </Link>
             ))}
           </nav>
         </div>
