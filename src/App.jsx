@@ -39,21 +39,29 @@ function Layout() {
   )
 }
 
-export default function App() {
+// Árbol de la app sin router: lo comparten el cliente (BrowserRouter)
+// y el prerendering del build (StaticRouter en src/entry-server.jsx)
+export function AppShell() {
   return (
     <CartProvider>
-      <BrowserRouter>
-        <ScrollManager />
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/categoria/:slug" element={<CategoryPage />} />
-            <Route path="/producto/:slug" element={<ProductPage />} />
-            <Route path="/carrito" element={<CartPage />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <ScrollManager />
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/categoria/:slug" element={<CategoryPage />} />
+          <Route path="/producto/:slug" element={<ProductPage />} />
+          <Route path="/carrito" element={<CartPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Route>
+      </Routes>
     </CartProvider>
+  )
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppShell />
+    </BrowserRouter>
   )
 }

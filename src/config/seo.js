@@ -2,6 +2,9 @@
 // Títulos y descripciones por ruta. Lo usan el hook usePageMeta
 // (en el navegador) y el prerendering del build (HTML estático).
 
+import CATEGORIAS from '../data/categorias.json'
+import PRODUCTOS from '../data/productos.json'
+
 export const SEO_BASE = {
   dominio: 'https://decora-events.vercel.app',
   imagen: 'https://decora-events.vercel.app/og-image.jpg',
@@ -71,4 +74,27 @@ export function seoCarrito() {
       'Revisa tu selección de decoraciones y cotiza tu evento por WhatsApp con Decora Events, decoración de eventos en Colombia.',
     url: `${SEO_BASE.dominio}/carrito`,
   }
+}
+
+// Resuelve el SEO de cualquier ruta (lo usa el prerendering del build)
+export function seoPorRuta(pathname) {
+  if (pathname === '/') return seoHome()
+  if (pathname === '/carrito') return seoCarrito()
+
+  const matchCategoria = pathname.match(/^\/categoria\/([^/]+)$/)
+  if (matchCategoria) {
+    const cat = CATEGORIAS.find((c) => c.slug === matchCategoria[1])
+    if (cat) return seoCategoria(cat)
+  }
+
+  const matchProducto = pathname.match(/^\/producto\/([^/]+)$/)
+  if (matchProducto) {
+    const prod = PRODUCTOS.find((p) => p.slug === matchProducto[1])
+    if (prod) {
+      const cat = CATEGORIAS.find((c) => c.id === prod.categoria)
+      return seoProducto(prod, cat)
+    }
+  }
+
+  return seoHome()
 }

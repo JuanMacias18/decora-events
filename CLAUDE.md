@@ -26,3 +26,9 @@ eventos (cumpleaños, quince años, baby shower, bautizos, grados).
    probar en local (npm run dev).
 7. Todo texto visible para usuarios en español de Colombia.
 8. Mobile-first: diseñar y probar primero en viewport móvil.
+
+## Prerendering (SEO)
+El build genera HTML estático por ruta (scripts/prerender.mjs):
+las rutas de categorías y productos salen de los JSON de src/data
+automáticamente, pero toda RUTA NUEVA en el router debe agregarse
+también en ese script y recibir SEO en src/config/seo.js.

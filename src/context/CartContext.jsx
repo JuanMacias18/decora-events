@@ -1,4 +1,4 @@
-import { useReducer, useEffect } from 'react'
+import { useReducer, useEffect, useState } from 'react'
 import PRODUCTOS from '../data/productos.json'
 import { CartContext } from '../hooks/useCart'
 
@@ -26,6 +26,8 @@ function isValidItem(i) {
 // Carga el carrito guardado; ante datos corruptos, vacíos o de productos
 // eliminados del catálogo, inicia vacío sin romper la página.
 function loadInitialCart() {
+  // En el prerendering (Node) no existe localStorage: estado vacío/neutro
+  if (typeof localStorage === 'undefined') return []
   try {
     const saved = localStorage.getItem(STORAGE_KEY)
     if (!saved) return []
@@ -67,16 +69,29 @@ function cartReducer(state, action) {
 }
 
 export function CartProvider({ children }) {
-  const [items, dispatch] = useReducer(cartReducer, [], loadInitialCart)
+  // El estado inicial es SIEMPRE vacío para que el primer render del
+  // cliente coincida con el HTML prerenderizado (sin hydration mismatch).
+  // El carrito guardado se carga en un efecto, ya montado en el navegador.
+  const [items, dispatch] = useReducer(cartReducer, [])
+  const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
+    const saved = loadInitialCart()
+    if (saved.length > 0) dispatch({ type: 'LOAD', items: saved })
+    setLoaded(true)
+  }, [])
+
+  useEffect(() => {
+    // No escribir hasta haber cargado: evita pisar el carrito guardado
+    // con el estado vacío del primer render
+    if (!loaded) return
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(items))
     } catch {
       // localStorage lleno o bloqueado (modo privado): el carrito sigue
       // funcionando en memoria, solo no persiste entre visitas
     }
-  }, [items])
+  }, [items, loaded])
 
   const total = items.reduce((sum, i) => sum + i.precio * i.cantidad, 0)
   const count = items.reduce((sum, i) => sum + i.cantidad, 0)
