@@ -30,7 +30,7 @@ export default function CartButton({ onClick }) {
         <div className="flex items-center gap-3">
           <ShoppingBag size={20} />
           <span className="font-inter text-sm">
-            {count} decoración{count !== 1 ? 'es' : ''}
+            {count} {count === 1 ? 'decoración' : 'decoraciones'}
           </span>
         </div>
         <div className="flex items-center gap-3">

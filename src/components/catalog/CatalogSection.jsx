@@ -122,7 +122,7 @@ export default function CatalogSection({ initialCategory }) {
 
         {/* Results count */}
         <p className="font-inter text-xs text-dorado/60 text-center mb-6">
-          {filtered.length} decoración{filtered.length !== 1 ? 'es' : ''} encontrada{filtered.length !== 1 ? 's' : ''}
+          {filtered.length} {filtered.length === 1 ? 'decoración encontrada' : 'decoraciones encontradas'}
           {search && ` para "${search}"`}
         </p>
 
