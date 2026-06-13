@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { ShoppingBag, Menu, X } from 'lucide-react'
+import { ShoppingBag, Menu, X, Sparkles } from 'lucide-react'
 import { useCart } from '../../hooks/useCart'
 import Logo from './Logo'
 
@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { label: 'Catálogo', href: '/#catalogo' },
   { label: 'Montajes', href: '/#montajes' },
   { label: 'Nosotros', href: '/#nosotros' },
+  { label: 'Eventos Premium', href: '/eventos-premium' },
   { label: 'Contacto', href: '/#footer' },
 ]
 
@@ -38,7 +39,7 @@ export default function Header({ onCartOpen }) {
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6">
             {NAV_LINKS.map((l) => (
               <Link
                 key={l.href}
@@ -52,6 +53,15 @@ export default function Header({ onCartOpen }) {
 
           {/* Right actions */}
           <div className="flex items-center gap-3">
+            {/* CTA destacado: la funcionalidad estrella */}
+            <Link
+              to="/disena-tu-evento"
+              className="hidden md:inline-flex items-center gap-1.5 bg-coral text-white font-inter text-xs tracking-widest uppercase px-4 py-2 rounded-full hover:bg-[#c4614a] transition-colors"
+            >
+              <Sparkles size={14} />
+              Diseña Tu Evento
+            </Link>
+
             <button
               onClick={onCartOpen}
               className="relative p-2 text-bronce hover:text-coral transition-colors"
@@ -80,6 +90,14 @@ export default function Header({ onCartOpen }) {
       {menuOpen && (
         <div className="md:hidden bg-crema border-t border-arena shadow-lg">
           <nav className="flex flex-col px-6 py-4 gap-4">
+            <Link
+              to="/disena-tu-evento"
+              onClick={() => setMenuOpen(false)}
+              className="flex items-center justify-center gap-2 bg-coral text-white font-inter text-sm tracking-widest uppercase py-3 rounded-full hover:bg-[#c4614a] transition-colors"
+            >
+              <Sparkles size={16} />
+              Diseña Tu Evento
+            </Link>
             {NAV_LINKS.map((l) => (
               <Link
                 key={l.href}

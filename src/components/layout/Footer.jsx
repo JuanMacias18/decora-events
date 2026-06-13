@@ -28,6 +28,8 @@ export default function Footer() {
             </h4>
             {[
               { label: 'Catálogo', href: '/#catalogo' },
+              { label: 'Diseña Tu Evento', href: '/disena-tu-evento' },
+              { label: 'Eventos Premium', href: '/eventos-premium' },
               { label: 'Nuestros Montajes', href: '/#montajes' },
               { label: 'Sobre Nosotros', href: '/#nosotros' },
               { label: 'Testimonios', href: '/#testimonios' },

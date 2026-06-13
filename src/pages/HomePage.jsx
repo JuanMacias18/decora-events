@@ -3,6 +3,7 @@ import { usePageMeta } from '../hooks/usePageMeta'
 import { seoHome } from '../config/seo'
 import Hero from '../components/home/Hero'
 import CategoriesGrid from '../components/home/CategoriesGrid'
+import DisenaEventoBanner from '../components/home/DisenaEventoBanner'
 import CatalogSection from '../components/catalog/CatalogSection'
 import Portfolio from '../components/home/Portfolio'
 import Testimonials from '../components/home/Testimonials'
@@ -23,6 +24,7 @@ export default function HomePage() {
     <>
       <Hero />
       <CategoriesGrid onCategorySelect={handleCategorySelect} />
+      <DisenaEventoBanner />
       <CatalogSection initialCategory={activeCategory} />
       <Portfolio />
       <Testimonials />
