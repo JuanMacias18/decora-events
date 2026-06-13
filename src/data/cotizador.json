@@ -1,0 +1,278 @@
+{
+  "pasos": [
+    {
+      "id": "tipo",
+      "numero": 1,
+      "eyebrow": "Tu celebración",
+      "titulo": "¿Qué vamos a celebrar?",
+      "subtitulo": "Cuéntanos el tipo de evento y la fecha soñada",
+      "seleccion": "unica",
+      "requerido": true,
+      "incluyeFecha": true,
+      "minDiasAnticipacion": 3,
+      "opciones": [
+        {
+          "id": "cumpleanos",
+          "nombre": "Cumpleaños",
+          "descripcion": "Una fiesta a la medida de quien cumple, a cualquier edad.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cumplea%C3%B1os"
+        },
+        {
+          "id": "quince",
+          "nombre": "Quince años",
+          "descripcion": "El montaje de ensueño para una noche inolvidable.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Quince+a%C3%B1os"
+        },
+        {
+          "id": "baby-shower",
+          "nombre": "Baby Shower",
+          "descripcion": "Detalles tiernos para dar la bienvenida al bebé.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Baby+Shower"
+        },
+        {
+          "id": "bautizo",
+          "nombre": "Bautizo",
+          "descripcion": "Decoración delicada para un día lleno de fe y familia.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Bautizo"
+        },
+        {
+          "id": "matrimonio",
+          "nombre": "Matrimonio",
+          "descripcion": "Ambientación elegante para el gran día de los novios.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Matrimonio"
+        },
+        {
+          "id": "aniversario",
+          "nombre": "Aniversario",
+          "descripcion": "Celebra el amor y los años compartidos con estilo.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Aniversario"
+        },
+        {
+          "id": "graduacion",
+          "nombre": "Graduación",
+          "descripcion": "Honra el logro con un montaje sobrio y festivo.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Graduaci%C3%B3n"
+        },
+        {
+          "id": "empresarial",
+          "nombre": "Evento empresarial",
+          "descripcion": "Branding, lanzamientos y celebraciones corporativas.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Empresarial"
+        },
+        {
+          "id": "otro",
+          "nombre": "Otro",
+          "descripcion": "¿Algo diferente? Lo diseñamos contigo desde cero.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Otro"
+        }
+      ]
+    },
+    {
+      "id": "fondo",
+      "numero": 2,
+      "eyebrow": "El escenario",
+      "titulo": "Fondo y estructura",
+      "subtitulo": "La pieza central que enmarca tu celebración",
+      "seleccion": "unica",
+      "requerido": true,
+      "opciones": [
+        {
+          "id": "arco",
+          "nombre": "Arco",
+          "descripcion": "Arco de globos clásico, versátil para cualquier temática.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Arco"
+        },
+        {
+          "id": "marco-circular",
+          "nombre": "Marco circular",
+          "descripcion": "Aro decorativo de impacto, ideal para photocall.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Marco+circular"
+        },
+        {
+          "id": "paneles",
+          "nombre": "Paneles",
+          "descripcion": "Paneles modulares para un fondo limpio y moderno.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Paneles"
+        },
+        {
+          "id": "shimmer",
+          "nombre": "Fondo shimmer",
+          "descripcion": "Cortina de lentejuelas con brillo elegante.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Fondo+shimmer"
+        },
+        {
+          "id": "cortinas",
+          "nombre": "Cortinas",
+          "descripcion": "Telas fluidas que aportan altura y suavidad.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cortinas"
+        },
+        {
+          "id": "telon-personalizado",
+          "nombre": "Telón personalizado",
+          "descripcion": "Impresión a la medida con nombre, foto o marca.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Tel%C3%B3n"
+        },
+        {
+          "id": "escenario-tematico",
+          "nombre": "Escenario temático",
+          "descripcion": "Ambientación completa según el tema que elijas.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Escenario"
+        }
+      ]
+    },
+    {
+      "id": "globos",
+      "numero": 3,
+      "eyebrow": "El estilo",
+      "titulo": "Estilo de globos",
+      "subtitulo": "Define el nivel y el carácter de tu montaje",
+      "seleccion": "unica",
+      "requerido": true,
+      "opciones": [
+        {
+          "id": "minimalista",
+          "nombre": "Minimalista",
+          "descripcion": "Pocos elementos, mucho estilo. Limpio y moderno.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Minimalista"
+        },
+        {
+          "id": "organico",
+          "nombre": "Orgánico",
+          "descripcion": "Globos de tamaños variados en composición libre.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Org%C3%A1nico"
+        },
+        {
+          "id": "clasico",
+          "nombre": "Clásico",
+          "descripcion": "Guirnaldas y columnas tradicionales, siempre vigentes.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cl%C3%A1sico"
+        },
+        {
+          "id": "premium",
+          "nombre": "Premium",
+          "descripcion": "Mezcla de texturas, follaje y detalles cuidados.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Premium"
+        },
+        {
+          "id": "lujo",
+          "nombre": "Lujo",
+          "descripcion": "Gran formato, materiales finos y acabados de alta gama.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Lujo"
+        }
+      ]
+    },
+    {
+      "id": "mobiliario",
+      "numero": 4,
+      "eyebrow": "Los detalles",
+      "titulo": "Mobiliario y detalles",
+      "subtitulo": "Suma todo lo que quieras para tu montaje",
+      "seleccion": "multiple",
+      "requerido": false,
+      "opciones": [
+        {
+          "id": "mesas",
+          "nombre": "Mesas",
+          "descripcion": "Mesas principales y auxiliares para tu evento.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Mesas"
+        },
+        {
+          "id": "sillas",
+          "nombre": "Sillas",
+          "descripcion": "Sillas a juego con el estilo de la decoración.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Sillas"
+        },
+        {
+          "id": "trono",
+          "nombre": "Trono",
+          "descripcion": "Silla protagonista para el o la festejada.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Trono"
+        },
+        {
+          "id": "lounge",
+          "nombre": "Muebles lounge",
+          "descripcion": "Sala lounge para una zona cómoda y elegante.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Lounge"
+        },
+        {
+          "id": "tapetes",
+          "nombre": "Tapetes",
+          "descripcion": "Tapetes que delimitan y embellecen el espacio.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Tapetes"
+        },
+        {
+          "id": "pedestales",
+          "nombre": "Pedestales",
+          "descripcion": "Bases decorativas para resaltar piezas clave.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Pedestales"
+        },
+        {
+          "id": "letras-gigantes",
+          "nombre": "Letras gigantes",
+          "descripcion": "Nombre, edad o iniciales en gran formato.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Letras+gigantes"
+        },
+        {
+          "id": "iluminacion-led",
+          "nombre": "Iluminación LED",
+          "descripcion": "Luces y efectos para ambientar el espacio.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Iluminaci%C3%B3n+LED"
+        },
+        {
+          "id": "centros-de-mesa",
+          "nombre": "Centros de mesa",
+          "descripcion": "Arreglos que completan cada mesa del evento.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Centros+de+mesa"
+        }
+      ]
+    },
+    {
+      "id": "pasteleria",
+      "numero": 5,
+      "eyebrow": "El dulce final",
+      "titulo": "Pastelería y regalos",
+      "subtitulo": "Opcional — agrega los detalles dulces que quieras",
+      "seleccion": "multiple",
+      "requerido": false,
+      "opcional": true,
+      "opciones": [
+        {
+          "id": "torta",
+          "nombre": "Torta",
+          "descripcion": "Torta temática a la medida de tu celebración.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Torta"
+        },
+        {
+          "id": "cupcakes",
+          "nombre": "Cupcakes",
+          "descripcion": "Porciones individuales decoradas a juego.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cupcakes"
+        },
+        {
+          "id": "postres",
+          "nombre": "Postres",
+          "descripcion": "Mesa de dulces y postres surtidos.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Postres"
+        },
+        {
+          "id": "recordatorios",
+          "nombre": "Recordatorios",
+          "descripcion": "Souvenirs para que tus invitados se lleven el momento.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Recordatorios"
+        },
+        {
+          "id": "detalles-personalizados",
+          "nombre": "Detalles personalizados",
+          "descripcion": "Piezas únicas diseñadas especialmente para ti.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Detalles"
+        },
+        {
+          "id": "cajas-de-regalo",
+          "nombre": "Cajas de regalo",
+          "descripcion": "Empaques especiales para obsequios y sorpresas.",
+          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cajas+de+regalo"
+        }
+      ]
+    }
+  ]
+}
