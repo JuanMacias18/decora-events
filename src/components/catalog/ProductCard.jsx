@@ -3,7 +3,7 @@ import { ShoppingBag, Check, ChevronDown } from 'lucide-react'
 import { useCart } from '../../hooks/useCart'
 import { formatPrice } from '../../utils/formatPrice'
 
-export default function ProductCard({ item }) {
+export default function ProductCard({ item, priority = false }) {
   const { dispatch, items } = useCart()
   const [added, setAdded] = useState(false)
   const [selectedOption, setSelectedOption] = useState(
@@ -38,7 +38,8 @@ export default function ProductCard({ item }) {
         <img
           src={item.imagen}
           alt={`${item.nombre} — ${item.categoriaLabel} por Decora Events`}
-          loading="lazy"
+          loading={priority ? 'eager' : 'lazy'}
+          fetchPriority={priority ? 'high' : undefined}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         {/* Category badge */}

@@ -6,6 +6,13 @@ import SectionHeading from '../components/shared/SectionHeading'
 import { usePageMeta } from '../hooks/usePageMeta'
 import { seoCategoria, seoHome } from '../config/seo'
 
+// Cuántas tarjetas cargan eager (con prioridad alta) por estar en el
+// primer viewport. Se define como el número máximo de columnas del grid
+// (xl:grid-cols-4), de modo que la primera fila completa carga eager en
+// cualquier breakpoint y la imagen candidata a LCP nunca queda diferida.
+// El resto del listado mantiene loading="lazy".
+const EAGER_CARDS = 4
+
 export default function CategoryPage() {
   const { slug } = useParams()
   const categoria = CATEGORIAS.find((c) => c.slug === slug)
@@ -29,8 +36,8 @@ export default function CategoryPage() {
           subtitle="Encuentra la decoración perfecta para tu celebración"
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {items.map((item) => (
-            <ProductCard key={item.id} item={item} />
+          {items.map((item, index) => (
+            <ProductCard key={item.id} item={item} priority={index < EAGER_CARDS} />
           ))}
         </div>
       </div>
