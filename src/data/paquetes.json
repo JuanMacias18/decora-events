@@ -1,0 +1,53 @@
+{
+  "_nota": "PRECIOS PLACEHOLDER. Reemplazar 'desde' y 'hasta' de cada paquete, y los incrementos por extra, con los valores que confirme Juan David. El cotizador NUNCA muestra precios por item individual: solo un RANGO total estimado por evento.",
+  "incrementoMinPorExtra": 60000,
+  "incrementoMaxPorExtra": 110000,
+  "mapaGlobos": {
+    "minimalista": "clasico",
+    "organico": "clasico",
+    "clasico": "premium",
+    "premium": "premium",
+    "lujo": "lujo"
+  },
+  "paquetes": [
+    {
+      "id": "clasico",
+      "nombre": "Clásico",
+      "desde": 350000,
+      "hasta": 600000,
+      "descripcion": "El montaje esencial, cálido y bien logrado para una celebración bonita y sin complicaciones.",
+      "incluye": [
+        "Fondo y estructura a elección",
+        "Globos en estilo minimalista u orgánico",
+        "Montaje y desmontaje incluidos"
+      ]
+    },
+    {
+      "id": "premium",
+      "nombre": "Premium",
+      "desde": 650000,
+      "hasta": 1100000,
+      "descripcion": "Más volumen, texturas y detalles cuidados para un evento que se siente especial de principio a fin.",
+      "incluye": [
+        "Fondo y estructura a elección",
+        "Globos en estilo clásico o premium",
+        "Detalles decorativos y composición elaborada",
+        "Montaje y desmontaje incluidos"
+      ]
+    },
+    {
+      "id": "lujo",
+      "nombre": "Lujo",
+      "desde": 1300000,
+      "hasta": 2400000,
+      "descripcion": "Gran formato, materiales finos y acabados de alta gama para una celebración inolvidable.",
+      "incluye": [
+        "Fondo y estructura premium a elección",
+        "Globos en estilo lujo, gran formato",
+        "Ambientación integral y detalles a la medida",
+        "Asesoría de diseño personalizada",
+        "Montaje y desmontaje incluidos"
+      ]
+    }
+  ]
+}
