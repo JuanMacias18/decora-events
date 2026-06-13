@@ -12,6 +12,7 @@ import HomePage from './pages/HomePage'
 import CategoryPage from './pages/CategoryPage'
 import ProductPage from './pages/ProductPage'
 import CartPage from './pages/CartPage'
+import DisenaEventoPage from './pages/DisenaEventoPage'
 
 // Layout común: header, footer, carrito y botones flotantes en todas las rutas
 function Layout() {
@@ -51,6 +52,7 @@ export function AppShell() {
           <Route path="/categoria/:slug" element={<CategoryPage />} />
           <Route path="/producto/:slug" element={<ProductPage />} />
           <Route path="/carrito" element={<CartPage />} />
+          <Route path="/disena-tu-evento" element={<DisenaEventoPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

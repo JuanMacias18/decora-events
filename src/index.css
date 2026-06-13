@@ -52,4 +52,24 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
+
+  /* Transición sutil entre pasos del cotizador */
+  @keyframes paso-aparece {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-paso {
+    animation: paso-aparece 0.35s ease-out;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .animate-paso {
+      animation: none;
+    }
+  }
 }

@@ -22,7 +22,10 @@ const leerJson = (p) => JSON.parse(fs.readFileSync(path.join(raiz, p), 'utf8'))
 const categorias = leerJson('src/data/categorias.json')
 const productos = leerJson('src/data/productos.json')
 
-const RUTAS_FIJAS = ['/', '/carrito']
+// /disena-tu-evento se prerenderiza como SHELL: su contenido es
+// interactivo (estado inicial vacío = HTML estático), pero su title y
+// sus tags OG sí quedan estáticos para compartir bien por WhatsApp.
+const RUTAS_FIJAS = ['/', '/carrito', '/disena-tu-evento']
 const rutas = [
   ...RUTAS_FIJAS,
   ...categorias.map((c) => `/categoria/${c.slug}`),

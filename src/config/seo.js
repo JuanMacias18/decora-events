@@ -67,6 +67,15 @@ export function seoProducto(producto, categoria) {
   }
 }
 
+export function seoCotizador() {
+  return {
+    title: 'Diseña Tu Evento — Cotizador Online | Decora Events',
+    description:
+      'Diseña tu evento paso a paso —cumpleaños, quince años, baby shower, matrimonio y más— y recibe una cotización estimada al instante por WhatsApp. Decoración de eventos en Colombia.',
+    url: `${SEO_BASE.dominio}/disena-tu-evento`,
+  }
+}
+
 export function seoCarrito() {
   return {
     title: 'Tu Carrito de Decoraciones | Decora Events',
@@ -80,6 +89,7 @@ export function seoCarrito() {
 export function seoPorRuta(pathname) {
   if (pathname === '/') return seoHome()
   if (pathname === '/carrito') return seoCarrito()
+  if (pathname === '/disena-tu-evento') return seoCotizador()
 
   const matchCategoria = pathname.match(/^\/categoria\/([^/]+)$/)
   if (matchCategoria) {
