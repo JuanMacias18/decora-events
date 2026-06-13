@@ -25,6 +25,19 @@
          Carga asíncrona para no bloquear el primer pintado (display=swap evita texto invisible) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preload de la fuente del titular (Cinzel, subset latin). Estabiliza
+         la LCP de la home: el <h1> del hero usa Cinzel y, sin esto, su pintado
+         queda a la espera del swap de la fuente cargada de forma asíncrona.
+         La URL está fijada a la versión v26 de Google Fonts; si Google la
+         actualiza, el preload degrada a no-op y la fuente sigue cargando por
+         el CSS asíncrono (refrescar la URL desde el CSS de Google si pasa). -->
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin
+      href="https://fonts.gstatic.com/s/cinzel/v26/8vIJ7ww63mVu7gt79mT7.woff2"
+    />
     <!-- Dominios de imágenes (hero y catálogo) -->
     <link rel="preconnect" href="https://images.unsplash.com" />
     <link rel="preconnect" href="https://placehold.co" />
