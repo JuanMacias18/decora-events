@@ -1,6 +1,9 @@
-import { Pencil } from 'lucide-react'
+import { Pencil, MessageCircle } from 'lucide-react'
 import SectionHeading from '../shared/SectionHeading'
 import { nombreOpcion, nombresOpciones, formatFechaLarga } from '../../utils/cotizadorLabels'
+import { estimarPaquete } from '../../utils/estimarPaquete'
+import { formatPrice } from '../../utils/formatPrice'
+import { buildCotizadorWhatsAppUrl } from '../../utils/buildCotizadorMessage'
 
 // Fila del resumen: etiqueta + valor (texto o lista de chips).
 function Fila({ etiqueta, valor, chips }) {
@@ -32,6 +35,9 @@ function Fila({ etiqueta, valor, chips }) {
 }
 
 export default function ResumenCotizacion({ estado, onModificar }) {
+  const estimado = estimarPaquete(estado)
+  const whatsappUrl = buildCotizadorWhatsAppUrl(estado, estimado)
+
   return (
     <div className="animate-paso">
       <SectionHeading
@@ -59,7 +65,32 @@ export default function ResumenCotizacion({ estado, onModificar }) {
         />
       </div>
 
+      {/* Rango estimado */}
+      {estimado && (
+        <div className="mt-6 bg-gradient-to-br from-durazno/50 to-arena/40 rounded-2xl border border-arena p-6 md:p-8 text-center">
+          <p className="font-inter text-xs tracking-[0.2em] uppercase text-dorado mb-2">
+            Tu evento estimado
+          </p>
+          <p className="font-cinzel text-2xl md:text-3xl text-bronce tracking-wide">
+            entre {formatPrice(estimado.min)} y {formatPrice(estimado.max)}
+          </p>
+          <p className="font-inter text-xs text-dorado/70 mt-4 leading-relaxed max-w-md mx-auto">
+            Cotización final sujeta a confirmación según fecha, lugar y disponibilidad.
+          </p>
+        </div>
+      )}
+
+      {/* Acciones */}
       <div className="mt-8 flex flex-col gap-3">
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-cinzel text-sm tracking-widest uppercase py-4 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#25D366]/30"
+        >
+          <MessageCircle size={18} />
+          Recibir cotización por WhatsApp
+        </a>
         <button
           type="button"
           onClick={onModificar}
