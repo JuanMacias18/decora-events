@@ -6,6 +6,10 @@ export const SITE_CONFIG = {
   dueno: 'Juan David Villalobos',
   // Número con indicativo, sin espacios ni signos (Colombia: 57 + celular)
   whatsapp: '573103112856',
+  // URL de Calendly para agendar asesorías (sección Eventos Premium).
+  // Reemplazar PLACEHOLDER por la URL real; mientras tanto la página
+  // muestra un aviso y el CTA de WhatsApp en lugar del calendario.
+  calendly: 'https://calendly.com/PLACEHOLDER',
   instagram: 'https://www.instagram.com/finomontaje',
   instagramHandle: '@finomontaje',
   facebook: 'https://www.facebook.com/share/1B7eTf2eMu/',

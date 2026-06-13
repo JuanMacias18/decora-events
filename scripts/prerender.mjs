@@ -25,7 +25,7 @@ const productos = leerJson('src/data/productos.json')
 // /disena-tu-evento se prerenderiza como SHELL: su contenido es
 // interactivo (estado inicial vacío = HTML estático), pero su title y
 // sus tags OG sí quedan estáticos para compartir bien por WhatsApp.
-const RUTAS_FIJAS = ['/', '/carrito', '/disena-tu-evento']
+const RUTAS_FIJAS = ['/', '/carrito', '/disena-tu-evento', '/eventos-premium']
 const rutas = [
   ...RUTAS_FIJAS,
   ...categorias.map((c) => `/categoria/${c.slug}`),

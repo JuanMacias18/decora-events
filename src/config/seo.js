@@ -76,6 +76,15 @@ export function seoCotizador() {
   }
 }
 
+export function seoEventosPremium() {
+  return {
+    title: 'Eventos Premium en Colombia — Asesoría y Diseño | Decora Events',
+    description:
+      'Servicio integral de eventos premium en Colombia: quince años, matrimonios, eventos empresariales, graduaciones y lanzamientos de marca. Asesoría personalizada y diseño profesional. Agenda tu cita.',
+    url: `${SEO_BASE.dominio}/eventos-premium`,
+  }
+}
+
 export function seoCarrito() {
   return {
     title: 'Tu Carrito de Decoraciones | Decora Events',
@@ -90,6 +99,7 @@ export function seoPorRuta(pathname) {
   if (pathname === '/') return seoHome()
   if (pathname === '/carrito') return seoCarrito()
   if (pathname === '/disena-tu-evento') return seoCotizador()
+  if (pathname === '/eventos-premium') return seoEventosPremium()
 
   const matchCategoria = pathname.match(/^\/categoria\/([^/]+)$/)
   if (matchCategoria) {
