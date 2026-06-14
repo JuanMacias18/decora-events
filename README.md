@@ -64,45 +64,36 @@ Cada decoración tiene esta estructura:
 
 | `id`         | Nombre visible                               |
 |--------------|----------------------------------------------|
-| `infantiles` | Decoraciones Infantiles                      |
 | `cumpleanos` | Decoraciones de Cumpleaños                   |
-| `babyshower` | Baby Shower y Revelación de Género           |
 | `quince`     | Decoraciones de 15 Años                      |
+| `babyshower` | Baby Shower y Revelación de Género           |
+| `bautizo`    | Decoraciones de Bautizo                      |
 | `grado`      | Decoraciones de Grado                        |
 
 ---
 
 ## Cómo agregar imágenes reales
 
-1. Copia tus fotos a `src/assets/catalogo/<categoria>/`
-   Ejemplo: `src/assets/catalogo/infantiles/safari.jpg`
+1. Optimiza las fotos con el script (las convierte a WebP 800×600 < 200 KB):
 
-2. En `catalogo.js`, cambia el campo `imagen` de cada decoración:
-
-```js
-// Antes (placeholder de Unsplash/placehold):
-imagen: 'https://placehold.co/800x600/...',
-
-// Después (imagen local — importa al inicio del archivo):
-import safariImg from '../assets/catalogo/infantiles/safari.jpg'
-// ...
-imagen: safariImg,
+```
+node scripts/optimizar-imagenes.mjs --src "<carpeta_origen>" --dest "public/img/catalogo/<categoria>"
 ```
 
-3. **Formato recomendado:** WebP o JPEG, proporción 4:3 (ej. 800×600 px), máximo 200 KB por imagen.
+2. En `src/data/productos.json`, apunta el campo `imagen` a la ruta local. Las
+   imágenes viven en `public/`, así que se sirven como ruta absoluta `/img/...`:
 
-### Logo real
-
-1. Copia `logodecoraevents.png` a `src/assets/`
-2. Abre `src/components/layout/Logo.jsx` y cambia la línea del import:
-
-```js
-// Línea actual (placeholder SVG):
-import logoUrl from '../../assets/logo-placeholder.svg'
-
-// Cámbiala por:
-import logoUrl from '../../assets/logodecoraevents.png'
+```json
+"imagen": "/img/catalogo/cumpleanos/mi-foto.webp"
 ```
+
+3. **Formato:** el script ya entrega WebP 4:3 (800×600) por debajo de 200 KB.
+
+### Logo
+
+El logo real está en `src/assets/logo-decora-events.svg` (vectorial, lo usa
+`Logo.jsx`). El `.png` (`logo-decora-events.png`) queda como respaldo para usos
+donde el SVG no sirva (redes, og-image, email).
 
 ### Foto del hero
 
@@ -124,13 +115,9 @@ import heroImg from '../../assets/hero.jpg'
 ```
 src/
 ├── assets/
-│   ├── logo-placeholder.svg       ← reemplazar con logodecoraevents.png
-│   └── catalogo/                  ← imágenes reales por categoría
-│       ├── infantiles/
-│       ├── cumpleanos/
-│       ├── babyshower/
-│       ├── quince/
-│       └── grado/
+│   ├── logo-decora-events.svg     ← logo real (lo usa Logo.jsx)
+│   └── logo-decora-events.png     ← respaldo en PNG
+│   (las fotos del catálogo viven en public/img/catalogo/<categoria>/)
 ├── components/
 │   ├── layout/   Header, Footer, Logo
 │   ├── home/     Hero, CategoriesGrid, Portfolio, Testimonials, AboutUs
