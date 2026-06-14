@@ -1,0 +1,209 @@
+# .pages.yml — Configuración de Pages CMS (https://pagescms.org)
+#
+# SOLO es metadata para el panel del CMS: describe la forma de los JSON de
+# datos del repo y dónde viven las imágenes públicas. La app NO lee este
+# archivo, Vite no lo importa y no afecta el build ni el prerender.
+#
+# Regla de oro: los `name` de cada campo son las keys EXACTAS de los JSON.
+# Pages CMS reescribe el archivo completo al guardar, así que todas las keys
+# existentes están modeladas para no perderlas.
+
+media:
+  # Carpeta física de imágenes en el repo (input) y el prefijo de URL con que
+  # la app las referencia en runtime (output). Las imágenes del sitio se
+  # sirven como rutas absolutas /img/... desde public/img/...
+  input: public/img
+  output: /img
+
+content:
+  # ─── Categorías — array de objetos en un solo JSON ──────────────────
+  - name: categorias
+    label: Categorías
+    type: file
+    path: src/data/categorias.json
+    list: true
+    fields:
+      - name: id
+        label: ID (técnico — no cambiar)
+        type: string
+      - name: nombre
+        label: Nombre
+        type: string
+      - name: slug
+        label: Slug (técnico — define la URL, no cambiar)
+        type: string
+      - name: emoji
+        label: Emoji
+        type: string
+      - name: descripcion
+        label: Descripción
+        type: text
+      - name: imagenPortada
+        label: Imagen de portada (apaisada, 800×600)
+        type: image
+      - name: imagenTarjeta
+        label: Imagen de tarjeta del home (retrato, 600×800)
+        type: image
+
+  # ─── Catálogo de productos — array de objetos en un solo JSON ───────
+  - name: productos
+    label: Catálogo de productos
+    type: file
+    path: src/data/productos.json
+    list: true
+    fields:
+      - name: id
+        label: ID (técnico — no cambiar)
+        type: string
+      - name: nombre
+        label: Nombre
+        type: string
+      - name: slug
+        label: Slug (técnico — define la URL, no cambiar)
+        type: string
+      - name: categoria
+        label: Categoría
+        type: select
+        options:
+          values:
+            - value: cumpleanos
+              label: Cumpleaños
+            - value: quince
+              label: 15 Años
+            - value: babyshower
+              label: Baby Shower
+            - value: bautizo
+              label: Bautizo
+            - value: grado
+              label: Grado
+      - name: descripcion
+        label: Descripción
+        type: text
+      - name: precio
+        label: Precio (COP) — placeholder, editable
+        type: number
+      - name: imagen
+        label: Foto
+        type: image
+      - name: destacado
+        label: Destacado
+        type: boolean
+      - name: personalizacion
+        label: Opciones de personalización
+        type: string
+        list: true
+
+  # ─── Cotizador — objeto con la lista "pasos" (cada paso con opciones) ─
+  - name: cotizador
+    label: Cotizador — pasos y opciones
+    type: file
+    path: src/data/cotizador.json
+    fields:
+      - name: pasos
+        label: Pasos
+        type: object
+        list: true
+        fields:
+          - name: id
+            label: ID
+            type: string
+          - name: numero
+            label: Número
+            type: number
+          - name: eyebrow
+            label: Eyebrow
+            type: string
+          - name: titulo
+            label: Título
+            type: string
+          - name: subtitulo
+            label: Subtítulo
+            type: text
+          - name: seleccion
+            label: Tipo de selección
+            type: select
+            options:
+              values: [unica, multiple]
+          - name: requerido
+            label: Requerido
+            type: boolean
+          - name: incluyeFecha
+            label: Incluye fecha
+            type: boolean
+          - name: minDiasAnticipacion
+            label: Mín. días de anticipación
+            type: number
+          - name: opcional
+            label: Opcional
+            type: boolean
+          - name: opciones
+            label: Opciones
+            type: object
+            list: true
+            fields:
+              - name: id
+                label: ID
+                type: string
+              - name: nombre
+                label: Nombre
+                type: string
+              - name: descripcion
+                label: Descripción
+                type: text
+              - name: imagen
+                label: Imagen
+                type: image
+
+  # ─── Paquetes y precios — objeto (precios placeholder, solo editables) ─
+  - name: paquetes
+    label: Paquetes y precios (placeholder)
+    type: file
+    path: src/data/paquetes.json
+    fields:
+      - name: _nota
+        label: Nota interna
+        type: text
+      - name: incrementoMinPorExtra
+        label: Incremento mín. por extra (COP)
+        type: number
+      - name: incrementoMaxPorExtra
+        label: Incremento máx. por extra (COP)
+        type: number
+      - name: mapaGlobos
+        label: Mapa estilo de globos → paquete
+        type: object
+        fields:
+          - name: minimalista
+            type: string
+          - name: organico
+            type: string
+          - name: clasico
+            type: string
+          - name: premium
+            type: string
+          - name: lujo
+            type: string
+      - name: paquetes
+        label: Paquetes
+        type: object
+        list: true
+        fields:
+          - name: id
+            label: ID
+            type: string
+          - name: nombre
+            label: Nombre
+            type: string
+          - name: desde
+            label: Desde (COP) — placeholder, editable
+            type: number
+          - name: hasta
+            label: Hasta (COP) — placeholder, editable
+            type: number
+          - name: descripcion
+            label: Descripción
+            type: text
+          - name: incluye
+            label: Incluye
+            type: string
+            list: true
