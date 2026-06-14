@@ -57,8 +57,8 @@ export default function Hero() {
 
         {/* Sub-copy */}
         <p className="font-inter text-sm sm:text-base text-crema/75 mb-10 max-w-md leading-relaxed">
-          Decoraciones únicas para infantiles, cumpleaños, baby shower,
-          quinceañeras y grados. Cotiza por WhatsApp en segundos.
+          Decoraciones únicas para cumpleaños, quinceañeras, baby shower,
+          bautizos y grados. Cotiza por WhatsApp en segundos.
         </p>
 
         {/* CTAs */}

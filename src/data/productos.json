@@ -1,892 +1,780 @@
 [
   {
-    "id": "inf-01",
-    "nombre": "Montaje temático Safari",
-    "slug": "montaje-tematico-safari",
-    "categoria": "infantiles",
-    "descripcion": "Arco de globos orgánico en verde y café, mesa de postres con animales y letrero personalizado.",
-    "precio": 450000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Infantil%201",
+    "id": "cum-01",
+    "nombre": "Cumpleaños Boho Café y Crema",
+    "slug": "cumpleanos-boho-cafe-y-crema",
+    "categoria": "cumpleanos",
+    "descripcion": "Arco orgánico de globos en café, crema y dorado con cajas rústicas de madera. Estética boho cálida y elegante.",
+    "precio": 380000,
+    "imagen": "/img/catalogo/cumpleanos/cumpleanos-arco-cafe-crema-globos-01.webp",
     "destacado": false,
     "personalizacion": [
-      "Colores estándar (verde/café)",
-      "Colores pastel",
-      "Colores vibrantes"
+      "Café y crema (estándar)",
+      "Nude y terracota",
+      "Blanco y verde sage"
     ]
   },
   {
-    "id": "inf-02",
-    "nombre": "Decoración Unicornio",
-    "slug": "decoracion-unicornio",
-    "categoria": "infantiles",
-    "descripcion": "Arco de globos en morado, rosa y dorado, backdrop de nubes y mesa de dulces con unicornio central.",
+    "id": "cum-02",
+    "nombre": "Cumpleaños 30 Negro y Plata",
+    "slug": "cumpleanos-30-negro-y-plata",
+    "categoria": "cumpleanos",
+    "descripcion": "Arco de globos en negro y plata con números gigantes y detalles metálicos. Ideal para celebrar los 30 con elegancia.",
     "precio": 420000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Infantil%202",
+    "imagen": "/img/catalogo/cumpleanos/cumpleanos-arco-negro-30-03.webp",
     "destacado": false,
     "personalizacion": [
-      "Rosa y morado clásico",
-      "Pasteles arcoíris",
+      "Negro y plata",
+      "Negro y dorado",
+      "Negro y rojo"
+    ]
+  },
+  {
+    "id": "cum-03",
+    "nombre": "Cumpleaños Neón Rosa y Morado",
+    "slug": "cumpleanos-neon-rosa-y-morado",
+    "categoria": "cumpleanos",
+    "descripcion": "Backdrop con globos en rosa y morado y letrero de neón. Ambiente moderno y vibrante para una fiesta nocturna.",
+    "precio": 450000,
+    "imagen": "/img/catalogo/cumpleanos/cumpleanos-arco-rosa-morado-neon-10.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Rosa y morado",
+      "Azul y verde",
+      "Mix arcoíris"
+    ]
+  },
+  {
+    "id": "cum-04",
+    "nombre": "Cumpleaños Vinotinto y Crema",
+    "slug": "cumpleanos-vinotinto-y-crema",
+    "categoria": "cumpleanos",
+    "descripcion": "Arco de globos en vinotinto y crema con follaje verde. Paleta sobria y sofisticada para adultos.",
+    "precio": 400000,
+    "imagen": "/img/catalogo/cumpleanos/cumpleanos-arco-vinotinto-crema-14.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Vinotinto y crema",
+      "Burdeos y dorado",
+      "Verde y crema"
+    ]
+  },
+  {
+    "id": "cum-05",
+    "nombre": "Cumpleaños Festivo con Banderines",
+    "slug": "cumpleanos-festivo-con-banderines",
+    "categoria": "cumpleanos",
+    "descripcion": "Montaje alegre con arco de globos y banderines de colores. Perfecto para una fiesta llena de energía.",
+    "precio": 360000,
+    "imagen": "/img/catalogo/cumpleanos/cumpleanos-banderines-festivo-16.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Colores vibrantes",
+      "Pasteles",
+      "Personalizado"
+    ]
+  },
+  {
+    "id": "cum-06",
+    "nombre": "Cumpleaños Boss Baby Azul",
+    "slug": "cumpleanos-boss-baby-azul",
+    "categoria": "cumpleanos",
+    "descripcion": "Montaje temático Boss Baby en azul, blanco y dorado con mesa de postres. Ideal para el primer añito.",
+    "precio": 390000,
+    "imagen": "/img/catalogo/cumpleanos/cumpleanos-boss-baby-azul-17.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Azul y dorado",
+      "Azul y blanco",
       "Azul y plateado"
     ]
   },
   {
-    "id": "inf-03",
-    "nombre": "Montaje Cars / Hot Wheels",
-    "slug": "montaje-cars-hot-wheels",
-    "categoria": "infantiles",
-    "descripcion": "Decoración con carros de carreras, podio de campeón, globos rojos y negros, banderines de checkered.",
-    "precio": 380000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Infantil%203",
-    "destacado": false,
-    "personalizacion": [
-      "Rojo y negro",
-      "Azul y rojo",
-      "Amarillo y negro"
-    ]
-  },
-  {
-    "id": "inf-04",
-    "nombre": "Princesas Disney",
-    "slug": "princesas-disney",
-    "categoria": "infantiles",
-    "descripcion": "Arco floral en rosa y dorado, trono de princesa, centro de mesa con corona y varitas mágicas.",
-    "precio": 460000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Infantil%204",
-    "destacado": false,
-    "personalizacion": [
-      "Rosa y dorado",
-      "Lila y plateado",
-      "Azul cielo y blanco"
-    ]
-  },
-  {
-    "id": "inf-05",
-    "nombre": "Dinosaurios Jurásicos",
-    "slug": "dinosaurios-jurasicos",
-    "categoria": "infantiles",
-    "descripcion": "Arco en verde selva y terracota, dinosaurios 3D, huevos decorativos y follaje tropical.",
-    "precio": 400000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Infantil%205",
-    "destacado": false,
-    "personalizacion": [
-      "Verde y terracota",
-      "Verde y azul",
-      "Verde neón y negro"
-    ]
-  },
-  {
-    "id": "inf-06",
-    "nombre": "Under the Sea / Sirenita",
-    "slug": "under-the-sea-sirenita",
-    "categoria": "infantiles",
-    "descripcion": "Decoración marina con globos azules y turquesa, conchas, estrellas de mar y tablero personalizado.",
+    "id": "cum-07",
+    "nombre": "Cumpleaños Fucsia y Dorado",
+    "slug": "cumpleanos-fucsia-y-dorado",
+    "categoria": "cumpleanos",
+    "descripcion": "Arco de globos en fucsia y dorado con letrero de neón. Glamour y color para una celebración vibrante.",
     "precio": 430000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Infantil%206",
+    "imagen": "/img/catalogo/cumpleanos/cumpleanos-globos-fucsia-dorado-12.webp",
     "destacado": false,
     "personalizacion": [
-      "Azul y turquesa",
-      "Rosa coral y turquesa",
-      "Morado y azul"
+      "Fucsia y dorado",
+      "Rosa y plateado",
+      "Morado y dorado"
     ]
   },
   {
-    "id": "inf-07",
-    "nombre": "Montaje Minnie Mouse",
-    "slug": "montaje-minnie-mouse",
-    "categoria": "infantiles",
-    "descripcion": "Arco en rosa, negro y blanco con lunares, orejas de Minnie, mesa de postres y guirnaldas.",
-    "precio": 390000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Infantil%207",
+    "id": "cum-08",
+    "nombre": "Cumpleaños Montaje con Pista",
+    "slug": "cumpleanos-montaje-con-pista",
+    "categoria": "cumpleanos",
+    "descripcion": "Montaje completo con arco de globos y pista de baile iluminada para una celebración a lo grande.",
+    "precio": 520000,
+    "imagen": "/img/catalogo/cumpleanos/cumpleanos-globos-lejano-20.webp",
+    "destacado": false,
+    "personalizacion": null
+  },
+  {
+    "id": "cum-09",
+    "nombre": "Cumpleaños Rojo con Osito",
+    "slug": "cumpleanos-rojo-con-osito",
+    "categoria": "cumpleanos",
+    "descripcion": "Arco de globos en rojo y blanco con osito y número. Tierno montaje para el cumpleaños del bebé.",
+    "precio": 380000,
+    "imagen": "/img/catalogo/cumpleanos/cumpleanos-globos-rojos-oso-11.webp",
     "destacado": false,
     "personalizacion": [
-      "Rosa y negro clásico",
+      "Rojo y blanco",
+      "Azul y blanco",
+      "Amarillo y blanco"
+    ]
+  },
+  {
+    "id": "cum-10",
+    "nombre": "Cumpleaños Infantil (montaje completo)",
+    "slug": "cumpleanos-infantil-montaje-completo",
+    "categoria": "cumpleanos",
+    "descripcion": "Montaje infantil completo con arco de globos, backdrop y mesa decorada en un salón amplio.",
+    "precio": 460000,
+    "imagen": "/img/catalogo/cumpleanos/cumpleanos-infantil-lejano-21.webp",
+    "destacado": false,
+    "personalizacion": null
+  },
+  {
+    "id": "cum-11",
+    "nombre": "Cumpleaños Infantil Rosa",
+    "slug": "cumpleanos-infantil-rosa",
+    "categoria": "cumpleanos",
+    "descripcion": "Montaje infantil en tonos rosa con personajes y mesa de dulces. Dulce y colorido para las pequeñas.",
+    "precio": 400000,
+    "imagen": "/img/catalogo/cumpleanos/cumpleanos-infantil-rosa-22.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Rosa y blanco",
+      "Rosa y dorado",
+      "Rosa y lila"
+    ]
+  },
+  {
+    "id": "cum-12",
+    "nombre": "Cumpleaños con Pista y Letras Gigantes",
+    "slug": "cumpleanos-pista-y-letras-gigantes",
+    "categoria": "cumpleanos",
+    "descripcion": "Pista de baile iluminada con letras gigantes personalizadas con el nombre del cumpleañero.",
+    "precio": 540000,
+    "imagen": "/img/catalogo/cumpleanos/cumpleanos-juanfer-pista-letras-06.webp",
+    "destacado": false,
+    "personalizacion": null
+  },
+  {
+    "id": "cum-13",
+    "nombre": "Cumpleaños Mesa de Postres Café",
+    "slug": "cumpleanos-mesa-de-postres-cafe",
+    "categoria": "cumpleanos",
+    "descripcion": "Mesa de postres decorada con globos en tonos café, crema y dorado. Complemento perfecto para cualquier montaje.",
+    "precio": 350000,
+    "imagen": "/img/catalogo/cumpleanos/cumpleanos-mesa-globos-cafe-09.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Café y crema",
+      "Rosa y dorado",
+      "Azul y plateado"
+    ]
+  },
+  {
+    "id": "cum-14",
+    "nombre": "Cumpleaños Minnie Rosa",
+    "slug": "cumpleanos-minnie-rosa",
+    "categoria": "cumpleanos",
+    "descripcion": "Montaje temático Minnie en rosa, negro y blanco con globos y orejas. Clásico infantil favorito.",
+    "precio": 390000,
+    "imagen": "/img/catalogo/cumpleanos/cumpleanos-minnie-rosa-18.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Rosa y negro",
       "Rojo y negro",
       "Dorado y negro"
     ]
   },
   {
-    "id": "inf-08",
-    "nombre": "Superhéroes",
-    "slug": "superheroes",
-    "categoria": "infantiles",
-    "descripcion": "Decoración con escudo y capa de héroe favorito, globos en colores del personaje, backdrop épico.",
-    "precio": 410000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Infantil%208",
-    "destacado": false,
-    "personalizacion": [
-      "Spider-Man (rojo/azul)",
-      "Batman (negro/amarillo)",
-      "Avengers mix"
-    ]
-  },
-  {
-    "id": "inf-09",
-    "nombre": "Circo y Payasos",
-    "slug": "circo-y-payasos",
-    "categoria": "infantiles",
-    "descripcion": "Carpa circular de tela, globos en colores primarios, letrero de bienvenida retro y mesa de dulces.",
-    "precio": 440000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Infantil%209",
-    "destacado": false,
-    "personalizacion": [
-      "Colores primarios",
-      "Pasteles",
-      "Negro y dorado vintage"
-    ]
-  },
-  {
-    "id": "inf-10",
-    "nombre": "Espacio y Planetas",
-    "slug": "espacio-y-planetas",
-    "categoria": "infantiles",
-    "descripcion": "Arco en azul oscuro y dorado, planetas colgantes, estrellas holográficas y cohete de papel.",
-    "precio": 420000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Infantil%2010",
-    "destacado": false,
-    "personalizacion": [
-      "Azul oscuro y dorado",
-      "Morado y plateado",
-      "Negro y neón"
-    ]
-  },
-  {
-    "id": "inf-11",
-    "nombre": "Granja y Animalitos",
-    "slug": "granja-y-animalitos",
-    "categoria": "infantiles",
-    "descripcion": "Decoración rústica con girasoles, vaca, pollitos y cerdo. Arco en amarillo y verde. Ideal 1 año.",
-    "precio": 370000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Infantil%2011",
-    "destacado": false,
-    "personalizacion": [
-      "Amarillo y verde",
-      "Naranja y verde",
-      "Pastel y natural"
-    ]
-  },
-  {
-    "id": "inf-12",
-    "nombre": "Encanto / Disney",
-    "slug": "encanto-disney",
-    "categoria": "infantiles",
-    "descripcion": "Flores colombianas, mariposas moradas, marco de casita y arco orgánico en morado, verde y amarillo.",
-    "precio": 470000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Infantil%2012",
-    "destacado": false,
-    "personalizacion": [
-      "Colores originales",
-      "Pasteles tropicales",
-      "Vibrantes"
-    ]
-  },
-  {
-    "id": "inf-13",
-    "nombre": "Paw Patrol",
-    "slug": "paw-patrol",
-    "categoria": "infantiles",
-    "descripcion": "Arco de globos en rojo, azul y amarillo, figuras de Chase y Skye, letrero de la misión.",
-    "precio": 395000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Infantil%2013",
-    "destacado": false,
-    "personalizacion": [
-      "Mix de colores oficial",
-      "Rosa (Skye edition)",
-      "Azul (Chase edition)"
-    ]
-  },
-  {
-    "id": "inf-14",
-    "nombre": "Bosque Encantado",
-    "slug": "bosque-encantado",
-    "categoria": "infantiles",
-    "descripcion": "Follaje natural, hongos decorativos, luciérnagas LED, duendes y flores silvestres. Mágico.",
-    "precio": 480000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Infantil%2014",
-    "destacado": false,
-    "personalizacion": [
-      "Verde natural",
-      "Verde y lila",
-      "Verde y dorado"
-    ]
-  },
-  {
-    "id": "inf-15",
-    "nombre": "Globos orgánicos básico",
-    "slug": "globos-organicos-basico",
-    "categoria": "infantiles",
-    "descripcion": "Arco de globos orgánico de 2 metros + mesa de postres decorada. Base personalizable.",
-    "precio": 280000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Infantil%2015",
-    "destacado": false,
-    "personalizacion": null
-  },
-  {
-    "id": "cum-01",
-    "nombre": "Elegant Gold Birthday",
-    "slug": "elegant-gold-birthday",
-    "categoria": "cumpleanos",
-    "descripcion": "Arco en negro y dorado, globos metálicos, letrero de neón, mesa de postres lujosa.",
-    "precio": 520000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cumplea%C3%B1os%201",
-    "destacado": false,
-    "personalizacion": [
-      "Negro y dorado",
-      "Burdeos y dorado",
-      "Verde esmeralda y dorado"
-    ]
-  },
-  {
-    "id": "cum-02",
-    "nombre": "Boho Birthday",
-    "slug": "boho-birthday",
-    "categoria": "cumpleanos",
-    "descripcion": "Arco orgánico en tonos tierra, pampas, flores secas, letrero de madera y luces cálidas.",
-    "precio": 490000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cumplea%C3%B1os%202",
-    "destacado": false,
-    "personalizacion": [
-      "Nude y terracota",
-      "Blanco y verde sage",
-      "Durazno y marrón"
-    ]
-  },
-  {
-    "id": "cum-03",
-    "nombre": "Tropical Fiesta",
-    "slug": "tropical-fiesta",
-    "categoria": "cumpleanos",
-    "descripcion": "Palmas, flamencos, piñas, arco en coral y turquesa. ¡Ambiente de playa en tu fiesta!",
-    "precio": 450000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cumplea%C3%B1os%203",
-    "destacado": false,
-    "personalizacion": [
-      "Coral y turquesa",
-      "Rosa y verde",
-      "Naranja y azul"
-    ]
-  },
-  {
-    "id": "cum-04",
-    "nombre": "Neon Party",
-    "slug": "neon-party",
-    "categoria": "cumpleanos",
-    "descripcion": "Globos de neón, luces UV, letrero brillante, estreamer y decoración fosforescente.",
-    "precio": 500000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cumplea%C3%B1os%204",
-    "destacado": false,
-    "personalizacion": [
-      "Rosa y morado",
-      "Verde y azul",
-      "Mix arcoíris"
-    ]
-  },
-  {
-    "id": "cum-05",
-    "nombre": "Vintage Floral",
-    "slug": "vintage-floral",
-    "categoria": "cumpleanos",
-    "descripcion": "Flores de papel, globos crema y burdeos, letrero de madera, velas y detalles rústicos.",
-    "precio": 460000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cumplea%C3%B1os%205",
-    "destacado": false,
-    "personalizacion": [
-      "Burdeos y crema",
-      "Rosa empolvado y verde",
-      "Azul cielo y blanco"
-    ]
-  },
-  {
-    "id": "cum-06",
-    "nombre": "Candy Bar completo",
-    "slug": "candy-bar-completo",
-    "categoria": "cumpleanos",
-    "descripcion": "Mesa de dulces completa con arco, jarrones, letrero, bandejas y cobertura de postres.",
-    "precio": 550000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cumplea%C3%B1os%206",
-    "destacado": false,
-    "personalizacion": [
-      "Rosa y blanco",
-      "Azul y plateado",
-      "Morado y dorado"
-    ]
-  },
-  {
-    "id": "cum-07",
-    "nombre": "Mármol y Dorado",
-    "slug": "marmol-y-dorado",
-    "categoria": "cumpleanos",
-    "descripcion": "Backdrop de mármol, globos dorados, letras de globo con la edad, flores blancas y champaña.",
-    "precio": 530000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cumplea%C3%B1os%207",
-    "destacado": false,
-    "personalizacion": [
-      "Blanco mármol y dorado",
-      "Negro y dorado",
-      "Rosa y dorado"
-    ]
-  },
-  {
-    "id": "cum-08",
-    "nombre": "Taylor Swift / Music Lover",
-    "slug": "taylor-swift-music-lover",
-    "categoria": "cumpleanos",
-    "descripcion": "Decoración temática musical: micrófonos, notas, viniles, colores del álbum favorito.",
-    "precio": 470000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cumplea%C3%B1os%208",
-    "destacado": false,
-    "personalizacion": [
-      "Tortured Poets (blanco/negro)",
-      "Midnights (azul/plateado)",
-      "Fearless (dorado/café)"
-    ]
-  },
-  {
-    "id": "cum-09",
-    "nombre": "Sports Party",
-    "slug": "sports-party",
-    "categoria": "cumpleanos",
-    "descripcion": "Decoración deportiva con el equipo o deporte favorito, balones, trofeos y camiseta personalizada.",
-    "precio": 430000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cumplea%C3%B1os%209",
-    "destacado": false,
-    "personalizacion": [
-      "Fútbol (rojo/amarillo)",
-      "Baloncesto (naranja/negro)",
-      "Personalizado"
-    ]
-  },
-  {
-    "id": "cum-10",
-    "nombre": "Garden Party",
-    "slug": "garden-party",
-    "categoria": "cumpleanos",
-    "descripcion": "Mesas altas con flores, luces fairy, backdrop floral, servilletas y detalles botánicos.",
-    "precio": 510000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cumplea%C3%B1os%2010",
-    "destacado": false,
-    "personalizacion": [
-      "Verde y blanco",
-      "Rosa y verde",
-      "Amarillo y verde"
-    ]
-  },
-  {
-    "id": "cum-11",
-    "nombre": "Hollywood Glamour",
-    "slug": "hollywood-glamour",
-    "categoria": "cumpleanos",
-    "descripcion": "Estrella de Hollywood, cámara de fotos, letrero tipo premiere, globos negro y dorado.",
-    "precio": 540000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cumplea%C3%B1os%2011",
-    "destacado": false,
-    "personalizacion": [
-      "Negro y dorado",
-      "Rojo y dorado",
-      "Rosa y plateado"
-    ]
-  },
-  {
-    "id": "cum-12",
-    "nombre": "Casino Night",
-    "slug": "casino-night",
-    "categoria": "cumpleanos",
-    "descripcion": "Dados, fichas, naipes, ruleta decorativa, telón negro y dorado. Para adultos elegantes.",
-    "precio": 560000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cumplea%C3%B1os%2012",
-    "destacado": false,
-    "personalizacion": [
-      "Negro y dorado",
-      "Negro y rojo",
-      "Verde y dorado"
-    ]
-  },
-  {
-    "id": "cum-13",
-    "nombre": "Globos orgánicos + mesa",
-    "slug": "globos-organicos-mesa",
-    "categoria": "cumpleanos",
-    "descripcion": "Paquete base: arco orgánico + mesa de postres decorada con hasta 3 colores.",
-    "precio": 320000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cumplea%C3%B1os%2013",
-    "destacado": false,
-    "personalizacion": null
-  },
-  {
-    "id": "cum-14",
-    "nombre": "Harry Potter Wizard",
-    "slug": "harry-potter-wizard",
-    "categoria": "cumpleanos",
-    "descripcion": "Cartas voladoras, varita mágica, escudos de casas, globos dorados snitch y telón de Hogwarts.",
-    "precio": 490000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cumplea%C3%B1os%2014",
-    "destacado": false,
-    "personalizacion": [
-      "Gryffindor",
-      "Slytherin",
-      "Ravenclaw",
-      "Mix 4 casas"
-    ]
-  },
-  {
     "id": "cum-15",
-    "nombre": "Mexican Fiesta",
-    "slug": "mexican-fiesta",
+    "nombre": "Cumpleaños 50 Blanco y Dorado",
+    "slug": "cumpleanos-50-blanco-y-dorado",
     "categoria": "cumpleanos",
-    "descripcion": "Papel picado, maracas, cactus, sombrero y colores vibrantes de fiesta mexicana.",
-    "precio": 400000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cumplea%C3%B1os%2015",
+    "descripcion": "Montaje elegante con números gigantes '50' en blanco y dorado. Para celebrar las bodas de oro de la vida.",
+    "precio": 480000,
+    "imagen": "/img/catalogo/cumpleanos/cumpleanos-numeros-50-blanco-13.webp",
     "destacado": false,
     "personalizacion": [
-      "Colores vibrantes",
-      "Rosa y verde",
-      "Amarillo y azul"
+      "Blanco y dorado",
+      "Negro y dorado",
+      "Plateado y blanco"
     ]
   },
   {
-    "id": "bbs-01",
-    "nombre": "Baby Shower Clásico Celeste",
-    "slug": "baby-shower-clasico-celeste",
-    "categoria": "babyshower",
-    "descripcion": "Arco en celeste, blanco y gris. Globos grandes, guirnalda de estrellas y osito central.",
-    "precio": 380000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Baby%20Shower%201",
-    "destacado": false,
-    "personalizacion": [
-      "Celeste y blanco",
-      "Celeste y dorado",
-      "Celeste y gris"
-    ]
-  },
-  {
-    "id": "bbs-02",
-    "nombre": "Baby Shower Rosa Clásico",
-    "slug": "baby-shower-rosa-clasico",
-    "categoria": "babyshower",
-    "descripcion": "Arco en rosa, blanco y champán. Flores de tela, mariposas y carrito de bebé decorativo.",
-    "precio": 380000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Baby%20Shower%202",
-    "destacado": false,
-    "personalizacion": [
-      "Rosa bebé y blanco",
-      "Rosa fucsia y dorado",
-      "Rosa empolvado y crema"
-    ]
-  },
-  {
-    "id": "bbs-03",
-    "nombre": "Revelación de Género — Globo Gigante",
-    "slug": "revelacion-de-genero-globo-gigante",
-    "categoria": "babyshower",
-    "descripcion": "Globo gigante de 90cm relleno de confeti rosa o azul. Cortina de globos + letrero \"¿Niño o Niña?\"",
-    "precio": 320000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Revelaci%C3%B3n%203",
-    "destacado": false,
-    "personalizacion": [
-      "Relleno rosa (niña)",
-      "Relleno azul (niño)",
-      "Sorpresa (lo sabe solo Decora Events)"
-    ]
-  },
-  {
-    "id": "bbs-04",
-    "nombre": "Revelación Gender Reveal completo",
-    "slug": "revelacion-gender-reveal-completo",
-    "categoria": "babyshower",
-    "descripcion": "Arco bicolor rosa/azul + globo de revelación + mesa de postres + confeti cannon.",
-    "precio": 550000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Revelaci%C3%B3n%204",
-    "destacado": false,
-    "personalizacion": [
-      "Estándar rosa/azul",
-      "Pastel",
-      "Dorado y neutro"
-    ]
-  },
-  {
-    "id": "bbs-05",
-    "nombre": "Elefantito Boho",
-    "slug": "elefantito-boho",
-    "categoria": "babyshower",
-    "descripcion": "Elefante con flores silvestres, arco en tonos nude y verde sage, plumas pampas y guirnalda.",
-    "precio": 420000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Baby%20Shower%205",
-    "destacado": false,
-    "personalizacion": [
-      "Nude y verde sage",
-      "Gris y blanco",
-      "Rosa empolvado y verde"
-    ]
-  },
-  {
-    "id": "bbs-06",
-    "nombre": "Oh Baby! Celestial",
-    "slug": "oh-baby-celestial",
-    "categoria": "babyshower",
-    "descripcion": "Lunas, estrellas, nubes y arcoíris. Colores pastel suaves, letrero \"Oh Baby!\" y globos estrella.",
-    "precio": 400000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Baby%20Shower%206",
-    "destacado": false,
-    "personalizacion": [
-      "Pastel arcoíris",
-      "Azul y estrella",
-      "Rosa y luna"
-    ]
-  },
-  {
-    "id": "bbs-07",
-    "nombre": "Jungla Baby",
-    "slug": "jungla-baby",
-    "categoria": "babyshower",
-    "descripcion": "Jirafas, leones y hojas tropicales. Arco verde con detalles naranja y beige. Muy alegre.",
-    "precio": 390000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Baby%20Shower%207",
-    "destacado": false,
-    "personalizacion": [
-      "Verde y beige",
-      "Verde y naranja",
-      "Verde y amarillo"
-    ]
-  },
-  {
-    "id": "bbs-08",
-    "nombre": "Cactus y Desierto",
-    "slug": "cactus-y-desierto",
-    "categoria": "babyshower",
-    "descripcion": "Cactus de papel, terracota, arena y verde sage. Estilo boho-desierto muy en tendencia.",
+    "id": "cum-16",
+    "nombre": "Cumpleaños Pastel con Arco de Globos",
+    "slug": "cumpleanos-pastel-arco-de-globos",
+    "categoria": "cumpleanos",
+    "descripcion": "Arco orgánico de globos en tonos pastel con follaje y backdrop blanco. Suave y luminoso.",
     "precio": 410000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Baby%20Shower%208",
+    "imagen": "/img/catalogo/cumpleanos/cumpleanos-pastel-lejano-19.webp",
     "destacado": false,
     "personalizacion": [
-      "Terracota y sage",
-      "Rosa y terracota",
-      "Nude completo"
-    ]
-  },
-  {
-    "id": "bbs-09",
-    "nombre": "Osos Panda",
-    "slug": "osos-panda",
-    "categoria": "babyshower",
-    "descripcion": "Osos panda en blanco y negro con toques de verde bambú. Adorable y original.",
-    "precio": 370000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Baby%20Shower%209",
-    "destacado": false,
-    "personalizacion": [
-      "Blanco y negro",
-      "Blanco, negro y rosa",
-      "Blanco, negro y celeste"
-    ]
-  },
-  {
-    "id": "bbs-10",
-    "nombre": "Floral Premium Baby",
-    "slug": "floral-premium-baby",
-    "categoria": "babyshower",
-    "descripcion": "Arco floral de flores frescas (según temporada), mesa de postres con jarrones y velas.",
-    "precio": 620000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Baby%20Shower%2010",
-    "destacado": false,
-    "personalizacion": [
-      "Rosas blancas y verdes",
-      "Pasteles mixtos",
-      "Tropicales"
-    ]
-  },
-  {
-    "id": "bbs-11",
-    "nombre": "Sweet Baby Shower básico",
-    "slug": "sweet-baby-shower-basico",
-    "categoria": "babyshower",
-    "descripcion": "Paquete básico: arco de globos + mesa decorada. Ideal para celebraciones íntimas.",
-    "precio": 250000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Baby%20Shower%2011",
-    "destacado": false,
-    "personalizacion": null
-  },
-  {
-    "id": "bbs-12",
-    "nombre": "Mariposas y Flores",
-    "slug": "mariposas-y-flores",
-    "categoria": "babyshower",
-    "descripcion": "Mariposas de papel y tela en tonos lila, verde y blanco. Femenino y delicado.",
-    "precio": 395000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Baby%20Shower%2012",
-    "destacado": false,
-    "personalizacion": [
-      "Lila y blanco",
+      "Pastel mixto",
       "Rosa y verde",
-      "Amarillo y turquesa"
+      "Azul y crema"
     ]
   },
   {
-    "id": "bbs-13",
-    "nombre": "Revelación — Scratch Card",
-    "slug": "revelacion-scratch-card",
-    "categoria": "babyshower",
-    "descripcion": "Pizarra grande de raspado para que los invitados revelen el género juntos. ¡Muy interactivo!",
-    "precio": 180000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Revelaci%C3%B3n%2013",
+    "id": "cum-17",
+    "nombre": "Cumpleaños Rústico Otoñal",
+    "slug": "cumpleanos-rustico-otonal",
+    "categoria": "cumpleanos",
+    "descripcion": "Montaje rústico en tonos otoñales con flores y números gigantes. Cálido y sofisticado, ideal para los 40.",
+    "precio": 450000,
+    "imagen": "/img/catalogo/cumpleanos/cumpleanos-rustico-otonal-floral-15.webp",
     "destacado": false,
     "personalizacion": [
-      "Niño",
-      "Niña"
+      "Otoñal (mostaza y vinotinto)",
+      "Café y crema",
+      "Verde y dorado"
     ]
-  },
-  {
-    "id": "bbs-14",
-    "nombre": "Marinero / Náutico",
-    "slug": "marinero-nautico",
-    "categoria": "babyshower",
-    "descripcion": "Timones, anclas, cuerdas y rallas marineras. Azul marino, rojo y blanco. Clásico.",
-    "precio": 380000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Baby%20Shower%2014",
-    "destacado": false,
-    "personalizacion": [
-      "Azul marino y rojo",
-      "Azul claro y blanco",
-      "Coral y navy"
-    ]
-  },
-  {
-    "id": "bbs-15",
-    "nombre": "Globos orgánicos Baby",
-    "slug": "globos-organicos-baby",
-    "categoria": "babyshower",
-    "descripcion": "Arco orgánico + cartel personalizado. Perfecto como complemento o base.",
-    "precio": 280000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Baby%20Shower%2015",
-    "destacado": false,
-    "personalizacion": null
   },
   {
     "id": "qui-01",
-    "nombre": "Quinceañera Clásica Rosa",
-    "slug": "quinceanera-clasica-rosa",
+    "nombre": "Quince Azul Neón",
+    "slug": "quince-azul-neon",
     "categoria": "quince",
-    "descripcion": "Arco de globos orgánico en rosa y dorado, telón de lentejuelas, cartel con nombre y corona.",
+    "descripcion": "Backdrop con globos en azul y plata, números '15' iluminados y zona lounge. Moderno y elegante para la noche.",
     "precio": 680000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=15%20A%C3%B1os%201",
+    "imagen": "/img/catalogo/quince/quinceanos-15-azul-neon-26.webp",
     "destacado": false,
     "personalizacion": [
-      "Rosa y dorado",
-      "Rosa y plateado",
-      "Rosa y blanco"
+      "Azul y plata",
+      "Azul y dorado",
+      "Negro y azul"
     ]
   },
   {
     "id": "qui-02",
-    "nombre": "Quince Años Boho Chic",
-    "slug": "quince-anos-boho-chic",
+    "nombre": "Quince Dorado con Trono",
+    "slug": "quince-dorado-con-trono",
     "categoria": "quince",
-    "descripcion": "Arco floral en nude y champán, pampas, flores secas, telón de macramé y velas de pilar.",
-    "precio": 720000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=15%20A%C3%B1os%202",
+    "descripcion": "Montaje dorado con estampado animal print, trono y números '15'. Glamour y personalidad.",
+    "precio": 850000,
+    "imagen": "/img/catalogo/quince/quinceanos-15-dorado-leopardo-trono-15.webp",
     "destacado": false,
     "personalizacion": [
-      "Nude y champán",
-      "Blanco y verde sage",
-      "Terracota y crema"
+      "Dorado y animal print",
+      "Dorado y negro",
+      "Dorado y blanco"
     ]
   },
   {
     "id": "qui-03",
-    "nombre": "Princesa de Cuento",
-    "slug": "princesa-de-cuento",
+    "nombre": "Quince Morado y Plata con Trono",
+    "slug": "quince-morado-y-plata-con-trono",
     "categoria": "quince",
-    "descripcion": "Castillo de fondo, carruaje, globos morados y dorados, alfombra de flores y trono de princesa.",
-    "precio": 850000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=15%20A%C3%B1os%203",
+    "descripcion": "Backdrop tapizado en morado y plata con trono y números gigantes. Realeza y sofisticación.",
+    "precio": 820000,
+    "imagen": "/img/catalogo/quince/quinceanos-15-morado-plata-trono-21.webp",
     "destacado": false,
     "personalizacion": [
+      "Morado y plata",
       "Morado y dorado",
-      "Rosa y dorado",
-      "Azul y plateado"
+      "Vino y plata"
     ]
   },
   {
     "id": "qui-04",
-    "nombre": "Modern Glam",
-    "slug": "modern-glam",
+    "nombre": "Quince Rosa con Árbol de Globos",
+    "slug": "quince-rosa-con-arbol-de-globos",
     "categoria": "quince",
-    "descripcion": "Backdrop de globos cromados, números gigantes \"15\", columnas de globos y cortina de flecos.",
-    "precio": 750000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=15%20A%C3%B1os%204",
+    "descripcion": "Arco y columnas de globos en rosa y dorado con árbol decorativo y números '15'. Romántico y vistoso.",
+    "precio": 720000,
+    "imagen": "/img/catalogo/quince/quinceanos-15-rosa-arbol-13.webp",
     "destacado": false,
     "personalizacion": [
-      "Rosa y plateado",
-      "Negro y dorado",
-      "Champán y blanco"
+      "Rosa y dorado",
+      "Rosa y blanco",
+      "Rosa y plateado"
     ]
   },
   {
     "id": "qui-05",
-    "nombre": "Jardín de Rosas",
-    "slug": "jardin-de-rosas",
+    "nombre": "Quince Rosa y Dorado Lounge",
+    "slug": "quince-rosa-y-dorado-lounge",
     "categoria": "quince",
-    "descripcion": "Arco floral de rosas, jardín de flores de papel, luces vintage y mesas florales.",
+    "descripcion": "Backdrop en rosa y dorado con trono y zona lounge. Elegancia femenina para la quinceañera.",
     "precio": 780000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=15%20A%C3%B1os%205",
+    "imagen": "/img/catalogo/quince/quinceanos-15-rosa-dorado-lounge-18.webp",
     "destacado": false,
     "personalizacion": [
-      "Rosas rojas y verde",
-      "Rosas blancas",
-      "Rosas pastel mix"
+      "Rosa y dorado",
+      "Rosa empolvado y crema",
+      "Fucsia y dorado"
     ]
   },
   {
     "id": "qui-06",
-    "nombre": "Parisina / Torre Eiffel",
-    "slug": "parisina-torre-eiffel",
+    "nombre": "Quince Rosa de Globos",
+    "slug": "quince-rosa-de-globos",
     "categoria": "quince",
-    "descripcion": "Torre Eiffel de metal, globos blancos y rosa, croissants decorativos y estética francesa.",
-    "precio": 700000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=15%20A%C3%B1os%206",
+    "descripcion": "Arco orgánico de globos en rosa con números '15'. Clásico, romántico y luminoso.",
+    "precio": 650000,
+    "imagen": "/img/catalogo/quince/quinceanos-15-rosa-globos-17.webp",
     "destacado": false,
     "personalizacion": [
-      "Rosa y negro",
-      "Blanco y dorado",
-      "Lavanda y crema"
+      "Rosa y blanco",
+      "Rosa y dorado",
+      "Rosa pastel"
     ]
   },
   {
     "id": "qui-07",
-    "nombre": "Vintage Hollywood",
-    "slug": "vintage-hollywood",
+    "nombre": "Quince Verde con Vestido en Exhibición",
+    "slug": "quince-verde-con-vestido-en-exhibicion",
     "categoria": "quince",
-    "descripcion": "Cámara de fotos vintage, luces de marquesina, boa de plumas, negro y dorado ultra glamour.",
-    "precio": 820000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=15%20A%C3%B1os%207",
+    "descripcion": "Backdrop en verde con arco floral y vestido de quinceañera en exhibición. Montaje de ensueño.",
+    "precio": 760000,
+    "imagen": "/img/catalogo/quince/quinceanos-15-verde-vestido-20.webp",
     "destacado": false,
     "personalizacion": [
-      "Negro y dorado",
-      "Rojo y negro",
-      "Rosado y dorado"
+      "Verde y blanco",
+      "Verde y dorado",
+      "Verde sage y crema"
     ]
   },
   {
     "id": "qui-08",
-    "nombre": "Quince Años Tropical",
-    "slug": "quince-anos-tropical",
+    "nombre": "Quince Vinotinto y Dorado",
+    "slug": "quince-vinotinto-y-dorado",
     "categoria": "quince",
-    "descripcion": "Palmas, flores tropicales, tucanes, globos fucsia y verde. Alegre y lleno de color.",
-    "precio": 640000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=15%20A%C3%B1os%208",
+    "descripcion": "Arco de globos en vinotinto y dorado con columnas. Paleta intensa y elegante.",
+    "precio": 730000,
+    "imagen": "/img/catalogo/quince/quinceanos-15-vinotinto-dorado-10.webp",
     "destacado": false,
     "personalizacion": [
-      "Fucsia y verde",
-      "Naranja y turquesa",
-      "Rosa y verde"
+      "Vinotinto y dorado",
+      "Burdeos y crema",
+      "Vino y negro"
     ]
   },
   {
     "id": "qui-09",
-    "nombre": "Celestial / Estrellada",
-    "slug": "celestial-estrellada",
+    "nombre": "Quince Arco Blanco y Crema",
+    "slug": "quince-arco-blanco-y-crema",
     "categoria": "quince",
-    "descripcion": "Luna, estrellas, constelaciones. Azul medianoche, morado y plateado. Mysteriosa y hermosa.",
-    "precio": 710000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=15%20A%C3%B1os%209",
+    "descripcion": "Arco de globos en blanco y crema con faroles para exterior. Atemporal y sofisticado.",
+    "precio": 700000,
+    "imagen": "/img/catalogo/quince/quinceanos-arco-blanco-crema-06.webp",
     "destacado": false,
     "personalizacion": [
-      "Azul y plateado",
-      "Morado y dorado",
-      "Negro y plateado"
+      "Blanco y crema",
+      "Blanco y dorado",
+      "Nude y blanco"
     ]
   },
   {
     "id": "qui-10",
-    "nombre": "Masquerade / Carnaval",
-    "slug": "masquerade-carnaval",
+    "nombre": "Quince Arco Dorado y Blanco",
+    "slug": "quince-arco-dorado-y-blanco",
     "categoria": "quince",
-    "descripcion": "Máscaras venecianas, plumas, velas, candelabros y drapeados de tela. Elegancia máxima.",
-    "precio": 900000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=15%20A%C3%B1os%2010",
+    "descripcion": "Arco circular en dorado y blanco con columnas elegantes. Montaje premium y luminoso.",
+    "precio": 750000,
+    "imagen": "/img/catalogo/quince/quinceanos-arco-dorado-blanco-07.webp",
     "destacado": false,
     "personalizacion": [
-      "Dorado y negro",
-      "Burdeos y dorado",
-      "Azul real y dorado"
+      "Dorado y blanco",
+      "Dorado y crema",
+      "Champán y blanco"
     ]
   },
   {
     "id": "qui-11",
-    "nombre": "Mesa de dulces Premium 15",
-    "slug": "mesa-de-dulces-premium-15",
+    "nombre": "Quince Dorado con Tronos y Emblema",
+    "slug": "quince-dorado-con-tronos-y-emblema",
     "categoria": "quince",
-    "descripcion": "Mesa de postres completa de 3 metros con flores, macarons, cake pops y detalles personalizados.",
-    "precio": 580000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=15%20A%C3%B1os%2011",
+    "descripcion": "Backdrop dorado con dos tronos y emblema personalizado. Lo más premium para una entrada de realeza.",
+    "precio": 950000,
+    "imagen": "/img/catalogo/quince/quinceanos-arco-dorado-tronos-emblema-01.webp",
     "destacado": false,
     "personalizacion": [
-      "Rosa y dorado",
-      "Morado y plateado",
-      "Blanco y champán"
+      "Dorado clásico",
+      "Dorado y blanco",
+      "Dorado y vino"
     ]
   },
   {
     "id": "qui-12",
-    "nombre": "K-pop / Idol Party",
-    "slug": "k-pop-idol-party",
+    "nombre": "Quince Arco Floral junto a la Piscina",
+    "slug": "quince-arco-floral-junto-a-la-piscina",
     "categoria": "quince",
-    "descripcion": "Neones, lightsticks, estética coreana, banner del grupo favorito y photocall estilo backstage.",
-    "precio": 660000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=15%20A%C3%B1os%2012",
+    "descripcion": "Arco floral montado junto a la piscina para una celebración al aire libre inolvidable.",
+    "precio": 820000,
+    "imagen": "/img/catalogo/quince/quinceanos-arco-floral-piscina-03.webp",
     "destacado": false,
     "personalizacion": [
-      "BTS (violeta)",
-      "BLACKPINK (rosa/negro)",
-      "Personalizado por grupo"
+      "Flores blancas",
+      "Flores rosadas",
+      "Flores mixtas"
     ]
   },
   {
     "id": "qui-13",
-    "nombre": "Sirena / Oceánica",
-    "slug": "sirena-oceanica",
+    "nombre": "Quince Arco Verde y Crema",
+    "slug": "quince-arco-verde-y-crema",
     "categoria": "quince",
-    "descripcion": "Concha gigante, colores oceánicos, escamas de sirena, globos iridiscentes y perlas.",
-    "precio": 690000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=15%20A%C3%B1os%2013",
+    "descripcion": "Arco de globos en verde y crema bajo carpa para eventos al aire libre. Natural y elegante.",
+    "precio": 740000,
+    "imagen": "/img/catalogo/quince/quinceanos-arco-verde-crema-carpa-04.webp",
     "destacado": false,
     "personalizacion": [
-      "Turquesa y dorado",
-      "Rosa y morado",
-      "Azul y plateado"
+      "Verde y crema",
+      "Verde y dorado",
+      "Verde sage y blanco"
     ]
   },
   {
     "id": "qui-14",
-    "nombre": "Mariposas Encantadas",
-    "slug": "mariposas-encantadas",
+    "nombre": "Quince Backdrop de Velos y Dorado",
+    "slug": "quince-backdrop-de-velos-y-dorado",
     "categoria": "quince",
-    "descripcion": "Mariposas 3D colgantes, jardín floral, globos lila y dorado, sesión de fotos incluida.",
-    "precio": 730000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=15%20A%C3%B1os%2014",
+    "descripcion": "Backdrop de velos drapeados en blanco y dorado. Romántico, etéreo y muy fotogénico.",
+    "precio": 710000,
+    "imagen": "/img/catalogo/quince/quinceanos-backdrop-velos-dorado-05.webp",
     "destacado": false,
     "personalizacion": [
-      "Lila y dorado",
-      "Azul y dorado",
-      "Rosa y dorado"
+      "Blanco y dorado",
+      "Rosa y dorado",
+      "Champán"
     ]
   },
   {
     "id": "qui-15",
-    "nombre": "Paquete 15 Años Básico",
-    "slug": "paquete-15-anos-basico",
+    "nombre": "Quince de Mariposas",
+    "slug": "quince-de-mariposas",
     "categoria": "quince",
-    "descripcion": "Arco orgánico + mesa de postres + letrero nombre. Todo lo esencial para una quinceañera.",
-    "precio": 450000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=15%20A%C3%B1os%2015",
+    "descripcion": "Montaje nocturno con mariposas, letrero de neón '15' y nombre personalizado. Mágico y juvenil.",
+    "precio": 690000,
+    "imagen": "/img/catalogo/quince/quinceanos-dayana-15-mariposas-14.webp",
     "destacado": false,
-    "personalizacion": null
+    "personalizacion": [
+      "Lila y dorado",
+      "Azul y plateado",
+      "Rosa y dorado"
+    ]
+  },
+  {
+    "id": "qui-16",
+    "nombre": "Quince Lentejuela Dorada y Floral",
+    "slug": "quince-lentejuela-dorada-y-floral",
+    "categoria": "quince",
+    "descripcion": "Backdrop de lentejuela dorada con arreglos florales y números '15'. Brillo y glamour.",
+    "precio": 770000,
+    "imagen": "/img/catalogo/quince/quinceanos-lentejuela-dorada-floral-08.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Dorado y floral",
+      "Rosa y dorado",
+      "Plateado y blanco"
+    ]
+  },
+  {
+    "id": "bbs-01",
+    "nombre": "Baby Shower Abejita y Margaritas",
+    "slug": "baby-shower-abejita-y-margaritas",
+    "categoria": "babyshower",
+    "descripcion": "Montaje en tonos pastel con abejita, margaritas y globos. Tierno y primaveral para dar la bienvenida al bebé.",
+    "precio": 380000,
+    "imagen": "/img/catalogo/babyshower/babyshower-abeja-margarita-pastel-12.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Amarillo y blanco",
+      "Pastel mixto",
+      "Verde y amarillo"
+    ]
+  },
+  {
+    "id": "bbs-02",
+    "nombre": "Baby Shower Bloques y Osito",
+    "slug": "baby-shower-bloques-y-osito",
+    "categoria": "babyshower",
+    "descripcion": "Arco de globos con bloques de letras y osito. Clásico y adorable para celebrar la llegada del bebé.",
+    "precio": 390000,
+    "imagen": "/img/catalogo/babyshower/babyshower-baby-bloques-oso-11.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Celeste y blanco",
+      "Rosa y blanco",
+      "Neutro (beige)"
+    ]
+  },
+  {
+    "id": "bbs-03",
+    "nombre": "Baby Shower Celeste con Letras",
+    "slug": "baby-shower-celeste-con-letras",
+    "categoria": "babyshower",
+    "descripcion": "Arco de globos en celeste con letras del nombre. Ideal para el baby shower de un niño.",
+    "precio": 380000,
+    "imagen": "/img/catalogo/babyshower/babyshower-celeste-azul-letras-07.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Celeste y blanco",
+      "Celeste y gris",
+      "Celeste y dorado"
+    ]
+  },
+  {
+    "id": "bbs-04",
+    "nombre": "Baby Shower Celeste, Crema y Rosa",
+    "slug": "baby-shower-celeste-crema-y-rosa",
+    "categoria": "babyshower",
+    "descripcion": "Montaje neutro en celeste, crema y rosa con globos y detalles suaves. Tierno para cualquier bebé.",
+    "precio": 390000,
+    "imagen": "/img/catalogo/babyshower/babyshower-celeste-crema-rosa-13.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Neutro mixto",
+      "Rosa y crema",
+      "Celeste y crema"
+    ]
+  },
+  {
+    "id": "bbs-05",
+    "nombre": "Baby Shower Elefante",
+    "slug": "baby-shower-elefante",
+    "categoria": "babyshower",
+    "descripcion": "Montaje con elefante en rosa y azul con arco de globos. Dulce personaje favorito para el baby shower.",
+    "precio": 400000,
+    "imagen": "/img/catalogo/babyshower/babyshower-elefante-rosa-azul-14.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Rosa y gris",
+      "Azul y gris",
+      "Nude y verde sage"
+    ]
+  },
+  {
+    "id": "bbs-06",
+    "nombre": "Baby Shower Floral Rústico",
+    "slug": "baby-shower-floral-rustico",
+    "categoria": "babyshower",
+    "descripcion": "Arco floral rústico en rosa y verde con detalles de madera. Cálido y natural.",
+    "precio": 420000,
+    "imagen": "/img/catalogo/babyshower/babyshower-floral-rosa-verde-rustico-10.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Rosa y verde",
+      "Nude y verde sage",
+      "Blanco y verde"
+    ]
+  },
+  {
+    "id": "bbs-07",
+    "nombre": "Baby Shower Globo Aerostático",
+    "slug": "baby-shower-globo-aerostatico",
+    "categoria": "babyshower",
+    "descripcion": "Montaje con globo aerostático y nubes. 'Bienvenido a la aventura' para la llegada del bebé.",
+    "precio": 410000,
+    "imagen": "/img/catalogo/babyshower/babyshower-globo-aerostatico-baby-09.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Celeste y crema",
+      "Rosa y crema",
+      "Multicolor pastel"
+    ]
+  },
+  {
+    "id": "bbs-08",
+    "nombre": "Baby Shower Letras BABY y Osos",
+    "slug": "baby-shower-letras-baby-y-osos",
+    "categoria": "babyshower",
+    "descripcion": "Arco de globos con letras gigantes 'BABY' y ositos. Montaje completo y vistoso.",
+    "precio": 430000,
+    "imagen": "/img/catalogo/babyshower/babyshower-letras-baby-osos-06.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Celeste y blanco",
+      "Rosa y blanco",
+      "Neutro"
+    ]
+  },
+  {
+    "id": "bbs-09",
+    "nombre": "Baby Shower Nubes Pastel",
+    "slug": "baby-shower-nubes-pastel",
+    "categoria": "babyshower",
+    "descripcion": "Arco de globos con nubes en tonos pastel suaves. Etéreo y delicado.",
+    "precio": 380000,
+    "imagen": "/img/catalogo/babyshower/babyshower-nubes-globos-pastel-05.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Pastel arcoíris",
+      "Azul y blanco",
+      "Rosa y blanco"
+    ]
+  },
+  {
+    "id": "bbs-10",
+    "nombre": "Baby Shower Oh Baby!",
+    "slug": "baby-shower-oh-baby",
+    "categoria": "babyshower",
+    "descripcion": "Backdrop con letras 'BABY' y globos. Montaje moderno y alegre para la futura mamá.",
+    "precio": 400000,
+    "imagen": "/img/catalogo/babyshower/babyshower-oh-baby-letras-02.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Neutro",
+      "Rosa y dorado",
+      "Celeste y dorado"
+    ]
+  },
+  {
+    "id": "bbs-11",
+    "nombre": "Baby Shower Osos Azul",
+    "slug": "baby-shower-osos-azul",
+    "categoria": "babyshower",
+    "descripcion": "Arco de globos en azul con ositos para el baby shower de un niño. Clásico y tierno.",
+    "precio": 380000,
+    "imagen": "/img/catalogo/babyshower/babyshower-osos-azul-04.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Azul y blanco",
+      "Azul y gris",
+      "Azul y dorado"
+    ]
+  },
+  {
+    "id": "bbs-12",
+    "nombre": "Baby Shower Osos y Pampas",
+    "slug": "baby-shower-osos-y-pampas",
+    "categoria": "babyshower",
+    "descripcion": "Montaje boho con ositos y plumas de pampa en tonos neutros. Elegante y en tendencia.",
+    "precio": 420000,
+    "imagen": "/img/catalogo/babyshower/babyshower-osos-pampas-03.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Neutro y pampas",
+      "Nude y verde sage",
+      "Gris y blanco"
+    ]
+  },
+  {
+    "id": "bbs-13",
+    "nombre": "Baby Shower Pastel con Osito",
+    "slug": "baby-shower-pastel-con-osito",
+    "categoria": "babyshower",
+    "descripcion": "Arco de globos en tonos pastel con osito central. Suave y acogedor.",
+    "precio": 390000,
+    "imagen": "/img/catalogo/babyshower/babyshower-pastel-oso-08.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Pastel mixto",
+      "Rosa y crema",
+      "Celeste y crema"
+    ]
+  },
+  {
+    "id": "bbs-14",
+    "nombre": "Baby Shower Rosa Floral con Osos",
+    "slug": "baby-shower-rosa-floral-con-osos",
+    "categoria": "babyshower",
+    "descripcion": "Arco de globos en rosa con flores y ositos. Femenino y delicado para la bienvenida de la bebé.",
+    "precio": 400000,
+    "imagen": "/img/catalogo/babyshower/babyshower-rosa-osos-floral-01.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Rosa y blanco",
+      "Rosa y dorado",
+      "Rosa y verde"
+    ]
+  },
+  {
+    "id": "bau-01",
+    "nombre": "Bautizo Lounge Blanco Floral",
+    "slug": "bautizo-lounge-blanco-floral",
+    "categoria": "bautizo",
+    "descripcion": "Zona lounge en blanco con backdrop, arreglos florales y torta. Montaje elegante y luminoso para el bautizo.",
+    "precio": 520000,
+    "imagen": "/img/catalogo/bautizo/bautizo-lounge-blanco-floral-torta-01.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Blanco y dorado",
+      "Blanco y verde",
+      "Blanco y celeste"
+    ]
+  },
+  {
+    "id": "bau-02",
+    "nombre": "Bautizo Arco Dorado Personalizado",
+    "slug": "bautizo-arco-dorado-personalizado",
+    "categoria": "bautizo",
+    "descripcion": "Arco de globos dorado y blanco con backdrop de lentejuela y nombre personalizado. Elegante y festivo.",
+    "precio": 480000,
+    "imagen": "/img/catalogo/bautizo/bautizo-mateo-arco-dorado-06.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Dorado y blanco",
+      "Dorado y celeste",
+      "Dorado y rosa"
+    ]
+  },
+  {
+    "id": "bau-03",
+    "nombre": "Bautizo Rosa y Dorado con Mariposas",
+    "slug": "bautizo-rosa-y-dorado-con-mariposas",
+    "categoria": "bautizo",
+    "descripcion": "Montaje en rosa y dorado con alas de mariposa y letrero 'Mi Bautizo'. Tierno y delicado.",
+    "precio": 460000,
+    "imagen": "/img/catalogo/bautizo/bautizo-mi-bautizo-blanco-dorado-05.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Rosa y dorado",
+      "Rosa y blanco",
+      "Lila y dorado"
+    ]
+  },
+  {
+    "id": "bau-04",
+    "nombre": "Bautizo Crema Boho con Cruz",
+    "slug": "bautizo-crema-boho-con-cruz",
+    "categoria": "bautizo",
+    "descripcion": "Arco de globos en crema con pampas, cruz y letrero de neón 'Mi Bautizo'. Boho, neutro y sofisticado.",
+    "precio": 470000,
+    "imagen": "/img/catalogo/bautizo/bautizo-mi-bautizo-crema-02.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Crema y dorado",
+      "Nude y verde sage",
+      "Blanco y dorado"
+    ]
+  },
+  {
+    "id": "bau-05",
+    "nombre": "Bautizo Verde Sage y Dorado",
+    "slug": "bautizo-verde-sage-y-dorado",
+    "categoria": "bautizo",
+    "descripcion": "Arco de globos en verde sage y dorado con backdrop y letrero 'Mi Bautizo'. Natural y elegante para exterior.",
+    "precio": 460000,
+    "imagen": "/img/catalogo/bautizo/bautizo-mi-bautizo-dorado-04.webp",
+    "destacado": false,
+    "personalizacion": [
+      "Verde sage y dorado",
+      "Verde y blanco",
+      "Verde y crema"
+    ]
   },
   {
     "id": "gra-01",
-    "nombre": "Grado Clásico Azul y Dorado",
-    "slug": "grado-clasico-azul-y-dorado",
+    "nombre": "Grado Azul y Dorado",
+    "slug": "grado-azul-y-dorado",
     "categoria": "grado",
-    "descripcion": "Birrete gigante, diploma enrollado, globos azul y dorado, letrero \"Lo Lograste\" y togas.",
-    "precio": 380000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Grado%201",
+    "descripcion": "Arco de globos en azul, negro y dorado con letrero de neón 'Mi Grado' y birrete. Celebra tu logro con estilo.",
+    "precio": 400000,
+    "imagen": "/img/catalogo/grado/grados-mi-grado-azul-dorado-01.webp",
     "destacado": false,
     "personalizacion": [
       "Azul y dorado",
@@ -896,200 +784,43 @@
   },
   {
     "id": "gra-02",
-    "nombre": "Grado Profesional Premium",
-    "slug": "grado-profesional-premium",
+    "nombre": "Grado Verde y Dorado",
+    "slug": "grado-verde-y-dorado",
     "categoria": "grado",
-    "descripcion": "Backdrop de lentejuelas doradas, columnas de globos, letras de globo del título y champán deco.",
-    "precio": 520000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Grado%202",
+    "descripcion": "Arco de globos en verde y dorado con pampas y letrero 'Mi Grado'. Elegante y sobrio.",
+    "precio": 410000,
+    "imagen": "/img/catalogo/grado/grados-mi-grado-verde-dorado-02.webp",
     "destacado": false,
     "personalizacion": [
-      "Dorado y negro",
-      "Dorado y azul marino",
-      "Plateado y negro"
+      "Verde y dorado",
+      "Verde y plateado",
+      "Azul y dorado"
     ]
   },
   {
     "id": "gra-03",
-    "nombre": "Grado Femenino Floral",
-    "slug": "grado-femenino-floral",
+    "nombre": "Grado Verde con Emblema",
+    "slug": "grado-verde-con-emblema",
     "categoria": "grado",
-    "descripcion": "Arco floral, birrete con flores, globos crema y champán. Elegante y delicado para ella.",
-    "precio": 450000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Grado%203",
-    "destacado": false,
-    "personalizacion": [
-      "Crema y champán",
-      "Rosa y dorado",
-      "Blanco y verde"
-    ]
-  },
-  {
-    "id": "gra-04",
-    "nombre": "\"Future is Bright\" Neon",
-    "slug": "future-is-bright-neon",
-    "categoria": "grado",
-    "descripcion": "Letrero de neón \"The Future is Bright\", globos de colores vivos, confeti y cortina de flecos.",
-    "precio": 490000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Grado%204",
-    "destacado": false,
-    "personalizacion": [
-      "Neón multicolor",
-      "Rosa neón y negro",
-      "Verde neón y negro"
-    ]
-  },
-  {
-    "id": "gra-05",
-    "nombre": "Doctor / Médico",
-    "slug": "doctor-medico",
-    "categoria": "grado",
-    "descripcion": "Estetoscopio, corazón decorativo, colores blancos y azules, letrero \"Dr./Dra. [Nombre]\".",
-    "precio": 420000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Grado%205",
-    "destacado": false,
-    "personalizacion": [
-      "Blanco y azul",
-      "Blanco y verde",
-      "Blanco y rojo"
-    ]
-  },
-  {
-    "id": "gra-06",
-    "nombre": "Ingeniero / Exactas",
-    "slug": "ingeniero-exactas",
-    "categoria": "grado",
-    "descripcion": "Fórmulas decorativas, engranajes, colores corporativos, globos y placa de graduación.",
-    "precio": 410000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Grado%206",
-    "destacado": false,
-    "personalizacion": [
-      "Azul y naranja",
-      "Azul y gris",
-      "Verde y plateado"
-    ]
-  },
-  {
-    "id": "gra-07",
-    "nombre": "Abogado / Derecho",
-    "slug": "abogado-derecho",
-    "categoria": "grado",
-    "descripcion": "Balanza de la justicia, columnas romanas, colores negro y dorado. Muy profesional.",
+    "descripcion": "Arco de globos en verde y dorado con backdrop y emblema de la institución. Profesional y formal.",
     "precio": 430000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Grado%207",
+    "imagen": "/img/catalogo/grado/grados-mi-grado-verde-globos-03.webp",
     "destacado": false,
     "personalizacion": [
-      "Negro y dorado",
-      "Azul marino y dorado",
-      "Burdeos y dorado"
-    ]
-  },
-  {
-    "id": "gra-08",
-    "nombre": "Administrador / Economía",
-    "slug": "administrador-economia",
-    "categoria": "grado",
-    "descripcion": "Maletín, gráficas ascendentes, monedas doradas y colores ejecutivos.",
-    "precio": 400000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Grado%208",
-    "destacado": false,
-    "personalizacion": [
-      "Azul y dorado",
-      "Gris y dorado",
-      "Verde y plateado"
-    ]
-  },
-  {
-    "id": "gra-09",
-    "nombre": "Diseñador / Arte",
-    "slug": "disenador-arte",
-    "categoria": "grado",
-    "descripcion": "Paleta de colores, lapices gigantes, lienzo y arco multicolor artístico. Creativo y único.",
-    "precio": 460000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Grado%209",
-    "destacado": false,
-    "personalizacion": [
-      "Multicolor vibrante",
-      "Neutros y dorado",
-      "Negro y neón"
-    ]
-  },
-  {
-    "id": "gra-10",
-    "nombre": "Grado Bachillerato",
-    "slug": "grado-bachillerato",
-    "categoria": "grado",
-    "descripcion": "Birrete, lápices y libros decorativos. Ideal para grado de colegio. Colores del uniforme.",
-    "precio": 320000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Grado%2010",
-    "destacado": false,
-    "personalizacion": null
-  },
-  {
-    "id": "gra-11",
-    "nombre": "Mesa de postres Grado",
-    "slug": "mesa-de-postres-grado",
-    "categoria": "grado",
-    "descripcion": "Mesa completa con cake pops en forma de birrete, cupcakes con togas y pastel central.",
-    "precio": 480000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Grado%2011",
-    "destacado": false,
-    "personalizacion": [
-      "Azul y dorado",
-      "Rosa y dorado",
+      "Verde y dorado",
+      "Colores de la universidad",
       "Negro y dorado"
     ]
   },
   {
-    "id": "gra-12",
-    "nombre": "Photocall Grado",
-    "slug": "photocall-grado",
+    "id": "gra-04",
+    "nombre": "Grado / Prom Neón",
+    "slug": "grado-prom-neon",
     "categoria": "grado",
-    "descripcion": "Marco de fotos con globos, accesorios de grado (birrete, diploma, anteojos), letrero año.",
-    "precio": 290000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Grado%2012",
+    "descripcion": "Montaje nocturno tipo prom con luces, neón y números del año. Para una graduación inolvidable.",
+    "precio": 520000,
+    "imagen": "/img/catalogo/grado/grados-prom-neon-06.webp",
     "destacado": false,
     "personalizacion": null
-  },
-  {
-    "id": "gra-13",
-    "nombre": "Jardín Graduación",
-    "slug": "jardin-graduacion",
-    "categoria": "grado",
-    "descripcion": "Flores, follaje y birretes florales. Arco boho para exterior o sala. Muy fotogénico.",
-    "precio": 440000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Grado%2013",
-    "destacado": false,
-    "personalizacion": [
-      "Verde y blanco",
-      "Verde y amarillo",
-      "Colores universidad"
-    ]
-  },
-  {
-    "id": "gra-14",
-    "nombre": "Globos Números + Letras",
-    "slug": "globos-numeros-letras",
-    "categoria": "grado",
-    "descripcion": "Letras/números gigantes de globos que forman el año de grado o el nombre del graduado.",
-    "precio": 180000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Grado%2014",
-    "destacado": false,
-    "personalizacion": null
-  },
-  {
-    "id": "gra-15",
-    "nombre": "Paquete Grado Completo",
-    "slug": "paquete-grado-completo",
-    "categoria": "grado",
-    "descripcion": "Arco + mesa de postres + photocall + globos. El paquete más completo para celebrar el logro.",
-    "precio": 750000,
-    "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Grado%2015",
-    "destacado": false,
-    "personalizacion": [
-      "Azul y dorado",
-      "Negro y dorado",
-      "Rosa y dorado"
-    ]
   }
 ]

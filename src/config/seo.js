@@ -10,16 +10,11 @@ export const SEO_BASE = {
   imagen: 'https://decora-events.vercel.app/og-image.jpg',
   title: 'Decora Events — Decoración de Eventos en Colombia',
   description:
-    'Decoración profesional de eventos en Colombia: fiestas infantiles, cumpleaños, baby shower, quince años y grados. Arcos de globos, montajes temáticos y más. Cotiza por WhatsApp.',
+    'Decoración profesional de eventos en Colombia: cumpleaños, quince años, baby shower, bautizos y grados. Arcos de globos, montajes temáticos y más. Cotiza por WhatsApp.',
 }
 
 // SEO por categoría con keywords locales
 const CATEGORIA_SEO = {
-  infantiles: {
-    title: 'Decoración de Fiestas Infantiles en Colombia | Decora Events',
-    description:
-      'Montajes temáticos para fiestas infantiles en Colombia: safari, unicornio, superhéroes y más. Arcos de globos, mesas de postres y decoración personalizada. Cotiza por WhatsApp.',
-  },
   cumpleanos: {
     title: 'Decoración de Cumpleaños en Colombia | Decora Events',
     description:
@@ -39,6 +34,11 @@ const CATEGORIA_SEO = {
     title: 'Decoración de Grados en Colombia | Decora Events',
     description:
       'Decoración de grados en Colombia: celebra tu logro con montajes elegantes, globos personalizados y photocall. Cotiza tu fiesta de grado por WhatsApp.',
+  },
+  bautizo: {
+    title: 'Decoración de Bautizo en Colombia | Decora Events',
+    description:
+      'Decoración de bautizo en Colombia: arcos de globos, backdrops elegantes y montajes en tonos cálidos y neutros. Mesas de postres y detalles con cruz personalizados. Cotiza por WhatsApp.',
   },
 }
 

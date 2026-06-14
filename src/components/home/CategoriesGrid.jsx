@@ -3,10 +3,10 @@ import CATEGORIAS from '../../data/categorias.json'
 import SectionHeading from '../shared/SectionHeading'
 
 const CATEGORY_COLORS = {
-  infantiles: 'from-[#F6D2B8] to-[#D9755B]',
   cumpleanos:  'from-[#BA9972] to-[#95744E]',
-  babyshower:  'from-[#C98A7D] to-[#D9755B]',
   quince:      'from-[#95744E] to-[#7A5934]',
+  babyshower:  'from-[#C98A7D] to-[#D9755B]',
+  bautizo:     'from-[#F6D2B8] to-[#BA9972]',
   grado:       'from-[#E3D6C7] to-[#BA9972]',
 }
 
