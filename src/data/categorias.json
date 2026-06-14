@@ -5,7 +5,8 @@
     "slug": "cumpleanos",
     "emoji": "🎂",
     "descripcion": "Decoración de cumpleaños para todas las edades: arcos orgánicos de globos, montajes temáticos y mesas de postres.",
-    "imagenPortada": "/img/catalogo/cumpleanos/cumpleanos-arco-cafe-crema-globos-01.webp"
+    "imagenPortada": "/img/catalogo/cumpleanos/cumpleanos-arco-cafe-crema-globos-01.webp",
+    "imagenTarjeta": "/img/categorias/cumpleanos.webp"
   },
   {
     "id": "quince",
@@ -13,7 +14,8 @@
     "slug": "quince-anos",
     "emoji": "👑",
     "descripcion": "Montajes de ensueño para quince años: tronos, arcos florales, backdrops dorados y ambientación premium.",
-    "imagenPortada": "/img/catalogo/quince/quinceanos-arco-dorado-tronos-emblema-01.webp"
+    "imagenPortada": "/img/catalogo/quince/quinceanos-arco-dorado-tronos-emblema-01.webp",
+    "imagenTarjeta": "/img/categorias/quince.webp"
   },
   {
     "id": "babyshower",
@@ -21,7 +23,8 @@
     "slug": "baby-shower",
     "emoji": "🍼",
     "descripcion": "Decoración tierna para baby shower y revelación de género: globos, ositos, backdrops y montajes en tonos pastel.",
-    "imagenPortada": "/img/catalogo/babyshower/babyshower-rosa-osos-floral-01.webp"
+    "imagenPortada": "/img/catalogo/babyshower/babyshower-rosa-osos-floral-01.webp",
+    "imagenTarjeta": "/img/categorias/babyshower.webp"
   },
   {
     "id": "bautizo",
@@ -29,7 +32,8 @@
     "slug": "bautizo",
     "emoji": "🕊️",
     "descripcion": "Montajes elegantes para bautizo: arcos de globos, backdrops y detalles con cruz en tonos cálidos y neutros.",
-    "imagenPortada": "/img/catalogo/bautizo/bautizo-mi-bautizo-crema-02.webp"
+    "imagenPortada": "/img/catalogo/bautizo/bautizo-mi-bautizo-crema-02.webp",
+    "imagenTarjeta": "/img/categorias/bautizo.webp"
   },
   {
     "id": "grado",
@@ -37,6 +41,7 @@
     "slug": "grado",
     "emoji": "🎓",
     "descripcion": "Decoración de grados: arcos de globos, letreros de neón y montajes para celebrar tu logro.",
-    "imagenPortada": "/img/catalogo/grado/grados-mi-grado-azul-dorado-01.webp"
+    "imagenPortada": "/img/catalogo/grado/grados-mi-grado-azul-dorado-01.webp",
+    "imagenTarjeta": "/img/categorias/grado.webp"
   }
 ]
