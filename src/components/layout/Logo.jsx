@@ -1,6 +1,7 @@
-// Cambia este import por tu logodecoraevents.png real cuando lo tengas:
-// import logoUrl from '../../assets/logodecoraevents.png'
-import logoUrl from '../../assets/logo-placeholder.svg'
+// Logo real de Decora Events (vectorial, escalable). El archivo .png
+// (logo-decora-events.png) queda como respaldo para usos donde el SVG
+// no sirva (redes, og-image, email).
+import logoUrl from '../../assets/logo-decora-events.svg'
 
 export default function Logo({ className = 'h-10 w-auto', invertOnDark = false, lazy = false }) {
   return (
