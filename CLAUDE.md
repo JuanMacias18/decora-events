@@ -32,3 +32,26 @@ El build genera HTML estático por ruta (scripts/prerender.mjs):
 las rutas de categorías y productos salen de los JSON de src/data
 automáticamente, pero toda RUTA NUEVA en el router debe agregarse
 también en ese script y recibir SEO en src/config/seo.js.
+
+## Optimización de imágenes (scripts/optimizar-imagenes.mjs)
+Script reutilizable con `sharp` (devDependency) que convierte fotos a
+WebP, las redimensiona y las comprime por debajo de un peso máximo. NO
+toca los originales: lee de una carpeta de ORIGEN (normalmente fuera del
+repo) y escribe optimizadas dentro del proyecto (por convención en
+`public/img/...`, que se sirve como ruta absoluta `/img/...`).
+
+Uso:
+```
+node scripts/optimizar-imagenes.mjs --src "<carpeta_origen>" --dest "<carpeta_destino>" [opciones]
+```
+Opciones: `--width` (def. 800), `--height` (def. 600; 0 = automático),
+`--fit` (cover|inside|contain, def. cover), `--quality` (def. 82),
+`--max-kb` (def. 200; baja la calidad en escalones hasta cumplirlo),
+`--recursive` (procesa subcarpetas), `--skip-existing`.
+
+Catálogo (800x600, 4:3) — se corrió una vez por categoría, p. ej.:
+```
+node scripts/optimizar-imagenes.mjs --src "...\02-CATALOGO\Cumpleanos" --dest "public/img/catalogo/cumpleanos"
+```
+Reusos previstos con otros tamaños: portfolio, og-image (1200x630) y
+las fotos del cotizador. Respeta la orientación EXIF de fotos de celular.
