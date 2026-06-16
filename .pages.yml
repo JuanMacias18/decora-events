@@ -93,6 +93,20 @@ content:
         type: string
         list: true
 
+  # ─── Montajes — galería del home, array de objetos en un solo JSON ──
+  - name: montajes
+    label: Montajes (galería del home)
+    type: file
+    path: src/data/montajes.json
+    list: true
+    fields:
+      - name: imagen
+        label: Foto del montaje
+        type: image
+      - name: alt
+        label: Texto alternativo / descripción
+        type: string
+
   # ─── Cotizador — objeto con la lista "pasos" (cada paso con opciones) ─
   - name: cotizador
     label: Cotizador — pasos y opciones
