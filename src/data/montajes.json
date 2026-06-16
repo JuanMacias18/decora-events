@@ -1,14 +1,14 @@
 [
   {
-    "imagen": "/img/Cumpleaños.jpeg",
-    "alt": "Montaje Cumpleaños."
+    "imagen": "/img/montajes/montaje-cumpleanos.webp",
+    "alt": "Montaje de cumpleaños"
   },
   {
-    "imagen": "/img/15años.jpeg",
-    "alt": "Montaje 15 años."
+    "imagen": "/img/montajes/montaje-15-anos.webp",
+    "alt": "Montaje de quince años"
   },
   {
-    "imagen": "/img/baby.jpeg",
-    "alt": "Montaje Baby."
+    "imagen": "/img/montajes/montaje-baby.webp",
+    "alt": "Montaje de baby shower"
   }
 ]
