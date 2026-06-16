@@ -1,9 +1,14 @@
 [
   {
-    "alt": "Montaje de quince años en dorado con tronos"
+    "imagen": "/img/Cumpleaños.jpeg",
+    "alt": "Montaje Cumpleaños."
   },
   {
-    "alt": "Montaje de cumpleaños boho en café y crema"
+    "imagen": "/img/15años.jpeg",
+    "alt": "Montaje 15 años."
   },
-  {}
+  {
+    "imagen": "/img/baby.jpeg",
+    "alt": "Montaje Baby."
+  }
 ]
