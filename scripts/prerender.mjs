@@ -49,6 +49,18 @@ if (matchCss) {
 const escaparHtml = (s) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
+// Preload de la imagen del hero (LCP), SOLO en la home: arranca la
+// descarga de la variante AVIF en paralelo con el CSS, sin esperar a que
+// React monte. imagesrcset/imagesizes deben coincidir con el <picture>
+// de Hero.jsx para no descargar dos veces. Navegadores sin AVIF ignoran
+// el preload y caen al <source> WebP/JPEG del propio <picture>.
+const HERO_WIDTHS = [640, 960, 1280, 1600, 1920, 2400]
+const HERO_PRELOAD =
+  `<link rel="preload" as="image" type="image/avif" ` +
+  `href="/img/hero/hero-1280.avif" ` +
+  `imagesrcset="${HERO_WIDTHS.map((w) => `/img/hero/hero-${w}.avif ${w}w`).join(', ')}" ` +
+  `imagesizes="100vw" fetchpriority="high">`
+
 function inyectarSeo(html, seo) {
   return html
     .replace(/<title>[^<]*<\/title>/, `<title>${escaparHtml(seo.title)}</title>`)
@@ -68,10 +80,12 @@ let generadas = 0
 for (const ruta of rutas) {
   const appHtml = render(ruta)
   const seo = seoPorRuta(ruta)
-  const html = inyectarSeo(plantilla, seo).replace(
+  let html = inyectarSeo(plantilla, seo).replace(
     '<div id="root"></div>',
     `<div id="root">${appHtml}</div>`
   )
+  // El preload del hero solo aplica a la home (única ruta con <Hero>).
+  if (ruta === '/') html = html.replace('</head>', `${HERO_PRELOAD}</head>`)
 
   const destino =
     ruta === '/'

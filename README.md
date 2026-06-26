@@ -97,16 +97,23 @@ donde el SVG no sirva (redes, og-image, email).
 
 ### Foto del hero
 
-En `src/components/home/Hero.jsx`, cambia `HERO_IMAGE_URL` al inicio del archivo:
+El fondo del hero es el **LCP** de la home y se sirve local con variantes
+responsive (AVIF/WebP/JPEG, 640→2400 px) desde `public/img/hero/`, generadas
+por `scripts/optimizar-hero.mjs`. El `<picture>` está en
+`src/components/home/Hero.jsx` y el `<link rel="preload">` de la variante AVIF
+se inyecta solo en la home desde `scripts/prerender.mjs`. La imagen lleva un
+efecto **Ken Burns** en CSS (clase `.hero-kenburns` en `src/index.css`).
 
-```js
-// URL provisional de Unsplash:
-const HERO_IMAGE_URL = 'https://images.unsplash.com/...'
+Para cambiar la foto, pon el original (máxima resolución, fuera del repo) y
+regenera las variantes:
 
-// Para usar foto local:
-import heroImg from '../../assets/hero.jpg'
-// Luego úsala en el src del <img>: src={heroImg}
 ```
+node scripts/optimizar-hero.mjs --src "C:/Users/juanc/Downloads/hero-decora.jpg"
+```
+
+El script imprime los `srcset` y el `width/height` (aspect-ratio) por si cambia
+el encuadre. Si cambian los anchos, actualiza `HERO_WIDTHS` en `Hero.jsx` y en
+`scripts/prerender.mjs`.
 
 ---
 

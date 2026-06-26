@@ -2,10 +2,13 @@ import { ChevronDown } from 'lucide-react'
 import { SITE_CONFIG } from '../../config/site'
 import WhatsAppButton from '../shared/WhatsAppButton'
 
-// Reemplaza HERO_IMAGE_URL con la URL de tu foto real o ponla en src/assets/hero.jpg
-// y cambia el import: import heroImg from '../../assets/hero.jpg'
-const HERO_IMAGE_URL =
-  'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1600&q=80&auto=format&fit=crop'
+// Fondo del hero (LCP). Variantes responsive generadas por
+// scripts/optimizar-hero.mjs en /public/img/hero (AVIF/WebP/JPEG, 640→2400).
+// El <link rel="preload"> de la variante AVIF se inyecta solo en la home
+// desde scripts/prerender.mjs. Aspect-ratio del original: 2400x1950.
+const HERO_WIDTHS = [640, 960, 1280, 1600, 1920, 2400]
+const heroSrcSet = (ext) =>
+  HERO_WIDTHS.map((w) => `/img/hero/hero-${w}.${ext} ${w}w`).join(', ')
 
 const STATS = [
   { value: '500+', label: 'Celebraciones realizadas' },
@@ -16,22 +19,28 @@ const STATS = [
 export default function Hero() {
   return (
     <section className="relative h-screen min-h-[640px] flex flex-col items-center justify-center overflow-hidden">
-      {/* Background photo */}
-      <div className="absolute inset-0" aria-hidden="true">
-        <img
-          src={HERO_IMAGE_URL}
-          srcSet={[480, 800, 1200, 1600]
-            .map((w) => `${HERO_IMAGE_URL.replace('w=1600', `w=${w}`)} ${w}w`)
-            .join(', ')}
-          sizes="100vw"
-          alt="Decoración de eventos Decora Events"
-          className="w-full h-full object-cover"
-          loading="eager"
-          fetchPriority="high"
-        />
-        {/* Multi-layer overlay for legibility */}
-        <div className="absolute inset-0 bg-gradient-to-t from-bronce/85 via-bronce/40 to-bronce/20" />
-        <div className="absolute inset-0 bg-gradient-to-r from-bronce/30 via-transparent to-bronce/20" />
+      {/* Background photo (LCP) con efecto Ken Burns en CSS */}
+      <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
+        <picture>
+          <source type="image/avif" srcSet={heroSrcSet('avif')} sizes="100vw" />
+          <source type="image/webp" srcSet={heroSrcSet('webp')} sizes="100vw" />
+          <img
+            src="/img/hero/hero-1280.jpg"
+            srcSet={heroSrcSet('jpg')}
+            sizes="100vw"
+            width={2400}
+            height={1950}
+            alt=""
+            className="hero-kenburns absolute inset-0 w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+          />
+        </picture>
+        {/* Multi-layer overlay para legibilidad del titular (foto clara) */}
+        <div className="absolute inset-0 bg-gradient-to-t from-bronce/90 via-bronce/50 to-bronce/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-bronce/40 via-transparent to-bronce/30" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(58,42,24,0.45)_0%,transparent_60%)]" />
       </div>
 
       {/* Content */}
