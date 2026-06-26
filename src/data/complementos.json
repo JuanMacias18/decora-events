@@ -1,0 +1,45 @@
+{
+  "_nota": "PRECIOS PLACEHOLDER (igual que paquetes.json): reemplazar 'precio_desde' con los valores reales que confirme Juan David. IMÁGENES PLACEHOLDER: todas apuntan a /img/complementos/placeholder.webp. ANTES DE PRODUCCIÓN, reemplazar por la foto real optimizada de cada ítem en /img/complementos/<id>.webp usando scripts/optimizar-imagenes.mjs (800x600, 4:3) y actualizar el campo 'imagen'. NO usar URLs externas (placehold.co) para no degradar LCP/PageSpeed mobile. El cotizador NUNCA muestra el precio por ítem: 'precio_desde' solo alimenta por dentro el RANGO total estimado (ver estimarPaquete.js).",
+  "complementos": [
+    {
+      "id": "cabina-fotos",
+      "tipo": "experiencia",
+      "nombre": "Cabina de fotos",
+      "precio_desde": 300000,
+      "imagen": "/img/complementos/placeholder.webp",
+      "descripcion": "Photobooth con props e impresiones para que tus invitados se lleven el recuerdo."
+    },
+    {
+      "id": "letrero-neon",
+      "tipo": "decoracion",
+      "nombre": "Letrero neón personalizado",
+      "precio_desde": 180000,
+      "imagen": "/img/complementos/placeholder.webp",
+      "descripcion": "Tu nombre o frase en luz neón LED, ideal como punto focal del photocall."
+    },
+    {
+      "id": "carrito-snacks",
+      "tipo": "gastronomia",
+      "nombre": "Carrito de snacks",
+      "precio_desde": 220000,
+      "imagen": "/img/complementos/placeholder.webp",
+      "descripcion": "Estación en vivo de crispetas y algodón de azúcar durante el evento."
+    },
+    {
+      "id": "hora-loca",
+      "tipo": "experiencia",
+      "nombre": "Hora loca / show",
+      "precio_desde": 350000,
+      "imagen": "/img/complementos/placeholder.webp",
+      "descripcion": "Animación, props y energía para encender la celebración."
+    },
+    {
+      "id": "foto-video",
+      "tipo": "servicio",
+      "nombre": "Fotografía y video",
+      "precio_desde": 400000,
+      "imagen": "/img/complementos/placeholder.webp",
+      "descripcion": "Cobertura profesional para conservar los mejores momentos de tu evento."
+    }
+  ]
+}

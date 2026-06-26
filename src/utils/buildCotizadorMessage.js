@@ -8,6 +8,7 @@ export function buildCotizadorWhatsAppUrl(estado, estimado) {
   const fecha = formatFechaLarga(estado.fecha)
   const mobiliario = nombresOpciones('mobiliario', estado.mobiliario)
   const pasteleria = nombresOpciones('pasteleria', estado.pasteleria)
+  const complementos = nombresOpciones('complementos', estado.complementos)
 
   let m = `🎨 *Cotización — Diseña Tu Evento*\n\n`
   m += `*Tipo:* ${nombreOpcion('tipo', estado.tipo)}${fecha ? ` — ${fecha}` : ''}\n`
@@ -15,6 +16,7 @@ export function buildCotizadorWhatsAppUrl(estado, estimado) {
   m += `*Globos:* ${nombreOpcion('globos', estado.globos)}\n`
   m += `*Mobiliario:* ${mobiliario.length ? mobiliario.join(', ') : 'Ninguno'}\n`
   m += `*Pastelería:* ${pasteleria.length ? pasteleria.join(', ') : 'Ninguno'}\n`
+  m += `*Complementos:* ${complementos.length ? complementos.join(', ') : 'Ninguno'}\n`
 
   if (estimado) {
     m += `\n*Rango estimado:* ${formatPrice(estimado.min)} — ${formatPrice(estimado.max)}\n`
