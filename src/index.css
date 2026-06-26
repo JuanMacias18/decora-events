@@ -91,4 +91,35 @@
       transform: scale(1.05);
     }
   }
+
+  /* ── Tiles de filtro de categoría (#catalogo): micro-animaciones ──
+     El ícono se anima al hover/focus del tile (.group) y, muy sutil y
+     lento, en el tile ACTIVO ([data-active="true"]) como único loop idle.
+     Solo transform (GPU). prefers-reduced-motion las desactiva. */
+  @keyframes tile-float  { from { transform: translateY(0); }      to  { transform: translateY(-3px); } }
+  @keyframes tile-bob    { 0%, 100% { transform: translateY(0); }  50% { transform: translateY(-3px); } }
+  @keyframes tile-wiggle { 0%, 100% { transform: rotate(-7deg); }  50% { transform: rotate(7deg); } }
+  @keyframes tile-tilt   { 0%, 100% { transform: rotate(-5deg); }  50% { transform: rotate(5deg); } }
+  @keyframes tile-ripple { 0% { transform: scale(1); }  50% { transform: scale(1.13); }  100% { transform: scale(1); } }
+
+  .tile-ico { transition: transform 0.25s ease; }
+  .tile-ico--wiggle, .tile-ico--tilt { transform-origin: center bottom; }
+
+  /* Hover/focus del tile → anima su ícono (se detiene al salir) */
+  .group:hover .tile-ico--float,  .group:focus-visible .tile-ico--float  { animation: tile-float  0.9s ease-in-out infinite alternate; }
+  .group:hover .tile-ico--bob,    .group:focus-visible .tile-ico--bob    { animation: tile-bob    0.9s ease-in-out infinite; }
+  .group:hover .tile-ico--wiggle, .group:focus-visible .tile-ico--wiggle { animation: tile-wiggle 1s   ease-in-out infinite; }
+  .group:hover .tile-ico--tilt,   .group:focus-visible .tile-ico--tilt   { animation: tile-tilt   1s   ease-in-out infinite; }
+  .group:hover .tile-ico--ripple, .group:focus-visible .tile-ico--ripple { animation: tile-ripple 1s   ease-in-out infinite; }
+
+  /* Idle MUY sutil y lento, SOLO en el tile activo (único loop permitido) */
+  [data-active="true"] .tile-ico--float  { animation: tile-float  2.6s ease-in-out infinite alternate; }
+  [data-active="true"] .tile-ico--bob    { animation: tile-bob    2.6s ease-in-out infinite; }
+  [data-active="true"] .tile-ico--wiggle { animation: tile-wiggle 3.4s ease-in-out infinite; }
+  [data-active="true"] .tile-ico--tilt   { animation: tile-tilt   3.4s ease-in-out infinite; }
+  [data-active="true"] .tile-ico--ripple { animation: tile-ripple 3.4s ease-in-out infinite; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tile-ico { animation: none !important; }
+  }
 }
