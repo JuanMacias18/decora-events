@@ -4,6 +4,7 @@ import CATEGORIAS from '../../data/categorias.json'
 import DECORACIONES from '../../data/productos.json'
 import ProductCard from './ProductCard'
 import SectionHeading from '../shared/SectionHeading'
+import { CATEGORY_VISUALS } from './CategoryIcons'
 
 const PAGE_SIZE = 12
 
@@ -71,27 +72,42 @@ export default function CatalogSection({ initialCategory }) {
           className="mb-12"
         />
 
-        {/* Category Tabs */}
+        {/* Category Tabs — tiles verticales estilo Rappi (ícono + label corto) */}
         <div
           ref={tabsRef}
-          className="flex gap-2 overflow-x-auto scrollbar-hide pb-2 mb-8 justify-start md:justify-center"
+          className="flex gap-3 overflow-x-auto scrollbar-hide pb-2 mb-8 justify-start md:justify-center"
         >
-          {CATEGORIAS.map((cat) => (
-            <button
-              key={cat.id}
-              data-tab={cat.id}
-              onClick={() => handleTabClick(cat.id)}
-              className={`shrink-0 flex items-center gap-2 font-inter text-xs tracking-widest uppercase px-5 py-2.5 rounded-full border transition-all duration-200 ${
-                activeTab === cat.id
-                  ? 'bg-coral border-coral text-white shadow-sm'
-                  : 'bg-white border-arena text-bronce hover:border-dorado hover:text-dorado'
-              }`}
-            >
-              <span>{cat.emoji}</span>
-              <span className="hidden sm:inline">{cat.nombre}</span>
-              <span className="sm:hidden">{cat.nombre.split(' ')[0]}</span>
-            </button>
-          ))}
+          {CATEGORIAS.map((cat) => {
+            const visual = CATEGORY_VISUALS[cat.id] ?? { label: cat.nombre, Icon: () => null }
+            const { label, Icon } = visual
+            const active = activeTab === cat.id
+            return (
+              <button
+                key={cat.id}
+                data-tab={cat.id}
+                data-active={active}
+                onClick={() => handleTabClick(cat.id)}
+                aria-pressed={active}
+                aria-label={cat.nombre}
+                className={`group shrink-0 w-[84px] sm:w-24 flex flex-col items-center gap-2 rounded-2xl border px-2 py-3 transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-coral motion-safe:hover:-translate-y-1 ${
+                  active
+                    ? 'bg-coral border-coral text-white shadow-md'
+                    : 'bg-white border-arena text-bronce hover:border-dorado hover:shadow-sm'
+                }`}
+              >
+                <span
+                  className={`flex items-center justify-center w-12 h-12 rounded-full transition-colors duration-200 ${
+                    active ? 'bg-white/20' : 'bg-durazno/40 group-hover:bg-durazno/70'
+                  }`}
+                >
+                  <Icon />
+                </span>
+                <span className="font-inter text-[11px] sm:text-xs font-medium tracking-wide text-center leading-tight">
+                  {label}
+                </span>
+              </button>
+            )
+          })}
         </div>
 
         {/* Search */}
