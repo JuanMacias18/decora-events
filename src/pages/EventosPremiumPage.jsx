@@ -56,7 +56,7 @@ const CALENDLY_CONFIGURADO =
   Boolean(SITE_CONFIG.calendly) && !SITE_CONFIG.calendly.includes('PLACEHOLDER')
 
 const MENSAJE_WA =
-  'Hola Decora Events, quiero agendar una asesoría para un evento premium.'
+  'Hola DecoVents, quiero agendar una asesoría para un evento premium.'
 
 export default function EventosPremiumPage() {
   usePageMeta(seoEventosPremium())
@@ -161,7 +161,7 @@ export default function EventosPremiumPage() {
           {CALENDLY_CONFIGURADO ? (
             <iframe
               src={SITE_CONFIG.calendly}
-              title="Agenda tu asesoría con Decora Events"
+              title="Agenda tu asesoría con DecoVents"
               loading="lazy"
               className="w-full h-[680px] rounded-2xl border border-arena bg-white"
             />

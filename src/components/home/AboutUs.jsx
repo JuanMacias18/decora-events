@@ -37,7 +37,7 @@ export default function AboutUs() {
 
             <p className="font-inter text-sm text-crema/75 leading-relaxed mb-10">
               Fundada en 2026 por <strong className="text-champan">{SITE_CONFIG.dueno}</strong>,
-              Decora Events nació del amor por los detalles y la convicción de que cada
+              DecoVents nació del amor por los detalles y la convicción de que cada
               celebración merece brillar. Trabajamos en toda Colombia.
             </p>
 

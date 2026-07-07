@@ -2,7 +2,7 @@
 // Edita este archivo para cambiar datos de contacto y redes sociales.
 
 export const SITE_CONFIG = {
-  nombre: 'Decora Events',
+  nombre: 'DecoVents',
   dueno: 'Juan David Villalobos',
   // Número con indicativo, sin espacios ni signos (Colombia: 57 + celular)
   whatsapp: '573103112856',

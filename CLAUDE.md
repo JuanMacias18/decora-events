@@ -1,7 +1,7 @@
-# Decora Events — Reglas del proyecto
+# DecoVents — Reglas del proyecto
 
 ## Contexto
-Sitio web de Decora Events, negocio colombiano de decoración de
+Sitio web de DecoVents, negocio colombiano de decoración de
 eventos (cumpleaños, quince años, baby shower, bautizos, grados).
 
 ## Stack

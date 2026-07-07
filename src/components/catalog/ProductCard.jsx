@@ -37,7 +37,7 @@ export default function ProductCard({ item, priority = false }) {
       <div className="relative overflow-hidden aspect-[4/3]">
         <img
           src={item.imagen}
-          alt={`${item.nombre} — ${item.categoriaLabel} por Decora Events`}
+          alt={`${item.nombre} — ${item.categoriaLabel} por DecoVents`}
           loading={priority ? 'eager' : 'lazy'}
           fetchPriority={priority ? 'high' : undefined}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

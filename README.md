@@ -1,6 +1,6 @@
-# Decora Events — Sitio web de catálogo y cotización
+# DecoVents — Sitio web de catálogo y cotización
 
-Sitio web estático para **Decora Events**, empresa colombiana de decoración para eventos y celebraciones. Los clientes exploran el catálogo, arman su selección y la envían directamente al WhatsApp del negocio con un solo toque.
+Sitio web estático para **DecoVents**, empresa colombiana de decoración para eventos y celebraciones. Los clientes exploran el catálogo, arman su selección y la envían directamente al WhatsApp del negocio con un solo toque.
 
 ## Tecnologías
 
@@ -173,8 +173,8 @@ Vercel detecta Vite automáticamente sin configuración extra.
 
 | Campo       | Valor                                                         |
 |-------------|---------------------------------------------------------------|
-| Negocio     | Decora Events                                                 |
+| Negocio     | DecoVents                                                     |
 | Dueño       | Juan David Villalobos                                         |
 | WhatsApp    | +57 310 311 2856                                              |
 | Instagram   | [@finomontaje](https://instagram.com/finomontaje)             |
-| Facebook    | [Decora Events FB](https://www.facebook.com/share/1B7eTf2eMu/) |
+| Facebook    | [DecoVents FB](https://www.facebook.com/share/1B7eTf2eMu/)     |

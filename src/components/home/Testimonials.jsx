@@ -7,7 +7,7 @@ const TESTIMONIALS = [
     nombre: 'Valentina Gómez',
     ciudad: 'Bogotá',
     texto:
-      'Decora Events transformó la fiesta de mi hija en algo de cuento. El montaje de Unicornio quedó perfecto, igual o mejor que las fotos del catálogo. ¡Todos los invitados preguntaron por el contacto!',
+      'DecoVents transformó la fiesta de mi hija en algo de cuento. El montaje de Unicornio quedó perfecto, igual o mejor que las fotos del catálogo. ¡Todos los invitados preguntaron por el contacto!',
     stars: 5,
     evento: 'Cumpleaños Infantil',
   },
@@ -25,7 +25,7 @@ const TESTIMONIALS = [
     nombre: 'Paola Rodríguez',
     ciudad: 'Cali',
     texto:
-      'Mi quinceañera fue un sueño gracias a Decora Events. El montaje Princesa de Cuento estuvo increíble. Muchas gracias por hacer de mi día algo tan especial e inolvidable.',
+      'Mi quinceañera fue un sueño gracias a DecoVents. El montaje Princesa de Cuento estuvo increíble. Muchas gracias por hacer de mi día algo tan especial e inolvidable.',
     stars: 5,
     evento: '15 Años',
   },
