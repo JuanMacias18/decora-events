@@ -10,8 +10,8 @@ export const SITE_CONFIG = {
   // Reemplazar PLACEHOLDER por la URL real; mientras tanto la página
   // muestra un aviso y el CTA de WhatsApp en lugar del calendario.
   calendly: 'https://calendly.com/PLACEHOLDER',
-  instagram: 'https://www.instagram.com/finomontaje',
-  instagramHandle: '@finomontaje',
+  instagram: 'https://www.instagram.com/decoraeventsoficial',
+  instagramHandle: '@decoraeventsoficial',
   facebook: 'https://www.facebook.com/share/1B7eTf2eMu/',
   email: '',
   slogan: 'Hacemos de tu celebración un momento inolvidable',
