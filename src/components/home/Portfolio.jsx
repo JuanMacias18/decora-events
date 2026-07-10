@@ -1,6 +1,7 @@
 import SectionHeading from '../shared/SectionHeading'
 import Reveal from '../shared/Reveal'
 import MONTAJES from '../../data/montajes.json'
+import { SITE_CONFIG } from '../../config/site'
 
 export default function Portfolio() {
   return (
@@ -40,7 +41,7 @@ export default function Portfolio() {
 
         <div className="text-center mt-10">
           <a
-            href="https://www.instagram.com/finomontaje"
+            href={SITE_CONFIG.instagram}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border border-dorado text-dorado hover:bg-dorado hover:text-crema font-inter text-sm tracking-widest uppercase px-8 py-3 rounded-full transition-all duration-300"
