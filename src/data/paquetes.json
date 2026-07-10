@@ -4,11 +4,8 @@
   "incrementoMaxPorExtra": 110000,
   "factorMaxComplemento": 1.6,
   "mapaGlobos": {
-    "minimalista": "clasico",
-    "organico": "clasico",
-    "clasico": "premium",
-    "premium": "premium",
-    "lujo": "lujo"
+    "estandar": "clasico",
+    "premium": "premium"
   },
   "paquetes": [
     {
