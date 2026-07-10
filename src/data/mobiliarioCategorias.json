@@ -1,0 +1,70 @@
+{
+  "_nota": "Generado por scripts/importar-mobiliario.mjs a partir de las subcarpetas del origen. Volver a correr el script regenera este archivo completo.",
+  "categorias": [
+    {
+      "id": "base-tortas-pasabocas",
+      "nombre": "Bases de Torta y Pasabocas",
+      "orden": 0
+    },
+    {
+      "id": "estructura-de-hierro",
+      "nombre": "Estructuras de Hierro",
+      "orden": 1
+    },
+    {
+      "id": "letras-y-numeros",
+      "nombre": "Letras y Números",
+      "orden": 2
+    },
+    {
+      "id": "mesas-de-acrilico",
+      "nombre": "Mesas de Acrílico",
+      "orden": 3
+    },
+    {
+      "id": "mesas-de-hierro",
+      "nombre": "Mesas de Hierro",
+      "orden": 4
+    },
+    {
+      "id": "mesas-de-madera",
+      "nombre": "Mesas de Madera",
+      "orden": 5
+    },
+    {
+      "id": "mesas-y-sillas-ninos",
+      "nombre": "Mesas y Sillas para Niños",
+      "orden": 6
+    },
+    {
+      "id": "centro-de-mesa",
+      "nombre": "Centros de Mesa",
+      "orden": 7
+    },
+    {
+      "id": "paneles",
+      "nombre": "Paneles",
+      "orden": 8
+    },
+    {
+      "id": "paneles-3d",
+      "nombre": "Paneles 3D",
+      "orden": 9
+    },
+    {
+      "id": "recibidores",
+      "nombre": "Recibidores",
+      "orden": 10
+    },
+    {
+      "id": "tarimas",
+      "nombre": "Tarimas",
+      "orden": 11
+    },
+    {
+      "id": "tronos",
+      "nombre": "Tronos y Sillones",
+      "orden": 12
+    }
+  ]
+}

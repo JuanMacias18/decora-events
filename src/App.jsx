@@ -14,6 +14,7 @@ import ProductPage from './pages/ProductPage'
 import CartPage from './pages/CartPage'
 import DisenaEventoPage from './pages/DisenaEventoPage'
 import EventosPremiumPage from './pages/EventosPremiumPage'
+import AdminMobiliarioPage from './pages/AdminMobiliarioPage'
 
 // Layout común: header, footer, carrito y botones flotantes en todas las rutas
 function Layout() {
@@ -55,8 +56,12 @@ export function AppShell() {
           <Route path="/carrito" element={<CartPage />} />
           <Route path="/disena-tu-evento" element={<DisenaEventoPage />} />
           <Route path="/eventos-premium" element={<EventosPremiumPage />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
+        {/* Herramienta interna (no prerenderizada, sin SEO, sin enlace en el
+            menú — ver AdminMobiliarioPage.jsx). Fuera del Layout: no necesita
+            header/footer/carrito de cliente. */}
+        <Route path="/admin/mobiliario" element={<AdminMobiliarioPage />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </CartProvider>
   )

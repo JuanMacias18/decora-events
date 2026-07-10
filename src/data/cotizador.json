@@ -166,65 +166,11 @@
       "numero": 4,
       "eyebrow": "Los detalles",
       "titulo": "Mobiliario y detalles",
-      "subtitulo": "Suma todo lo que quieras para tu montaje",
+      "subtitulo": "Arma tu decoración a tu gusto, categoría por categoría",
       "seleccion": "multiple",
       "requerido": false,
-      "opciones": [
-        {
-          "id": "mesas",
-          "nombre": "Mesas",
-          "descripcion": "Mesas principales y auxiliares para tu evento.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Mesas"
-        },
-        {
-          "id": "sillas",
-          "nombre": "Sillas",
-          "descripcion": "Sillas a juego con el estilo de la decoración.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Sillas"
-        },
-        {
-          "id": "trono",
-          "nombre": "Trono",
-          "descripcion": "Silla protagonista para el o la festejada.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Trono"
-        },
-        {
-          "id": "lounge",
-          "nombre": "Muebles lounge",
-          "descripcion": "Sala lounge para una zona cómoda y elegante.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Lounge"
-        },
-        {
-          "id": "tapetes",
-          "nombre": "Tapetes",
-          "descripcion": "Tapetes que delimitan y embellecen el espacio.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Tapetes"
-        },
-        {
-          "id": "pedestales",
-          "nombre": "Pedestales",
-          "descripcion": "Bases decorativas para resaltar piezas clave.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Pedestales"
-        },
-        {
-          "id": "letras-gigantes",
-          "nombre": "Letras gigantes",
-          "descripcion": "Nombre, edad o iniciales en gran formato.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Letras+gigantes"
-        },
-        {
-          "id": "iluminacion-led",
-          "nombre": "Iluminación LED",
-          "descripcion": "Luces y efectos para ambientar el espacio.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Iluminaci%C3%B3n+LED"
-        },
-        {
-          "id": "centros-de-mesa",
-          "nombre": "Centros de mesa",
-          "descripcion": "Arreglos que completan cada mesa del evento.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Centros+de+mesa"
-        }
-      ]
+      "tipoContenido": "catalogo",
+      "opciones": []
     },
     {
       "id": "pasteleria",

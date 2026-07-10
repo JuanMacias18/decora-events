@@ -6,6 +6,7 @@ import { useCotizador } from '../hooks/useCotizador'
 import COTIZADOR from '../data/cotizador.json'
 import StepProgress from '../components/cotizador/StepProgress'
 import OptionCard from '../components/cotizador/OptionCard'
+import MobiliarioStep from '../components/cotizador/MobiliarioStep'
 import ResumenCotizacion from '../components/cotizador/ResumenCotizacion'
 
 const PASOS = COTIZADOR.pasos
@@ -174,17 +175,25 @@ export default function DisenaEventoPage() {
                 </div>
               )}
 
-              {/* Tarjetas de opciones */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                {paso.opciones.map((opcion) => (
-                  <OptionCard
-                    key={opcion.id}
-                    opcion={opcion}
-                    seleccionada={seleccionada(opcion.id)}
-                    onClick={() => elegir(opcion.id)}
-                  />
-                ))}
-              </div>
+              {/* Catálogo real de mobiliario/decoración (paso "mobiliario"),
+                  o la grilla genérica de tarjetas para el resto de pasos. */}
+              {paso.tipoContenido === 'catalogo' ? (
+                <MobiliarioStep
+                  seleccionados={estado.mobiliario}
+                  onToggle={(id) => alternarMultiple('mobiliario', id)}
+                />
+              ) : (
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                  {paso.opciones.map((opcion) => (
+                    <OptionCard
+                      key={opcion.id}
+                      opcion={opcion}
+                      seleccionada={seleccionada(opcion.id)}
+                      onClick={() => elegir(opcion.id)}
+                    />
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Navegación */}

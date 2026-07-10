@@ -1,7 +1,12 @@
 import { Pencil, MessageCircle } from 'lucide-react'
 import SectionHeading from '../shared/SectionHeading'
 import CompletaEvento from './CompletaEvento'
-import { nombreOpcion, nombresOpciones, formatFechaLarga } from '../../utils/cotizadorLabels'
+import {
+  nombreOpcion,
+  nombresOpciones,
+  itemsMobiliarioSeleccionados,
+  formatFechaLarga,
+} from '../../utils/cotizadorLabels'
 import { estimarPaquete } from '../../utils/estimarPaquete'
 import { formatPrice } from '../../utils/formatPrice'
 import { buildCotizadorWhatsAppUrl } from '../../utils/buildCotizadorMessage'
@@ -38,6 +43,8 @@ function Fila({ etiqueta, valor, chips }) {
 export default function ResumenCotizacion({ estado, onModificar, onToggleComplemento }) {
   const estimado = estimarPaquete(estado)
   const whatsappUrl = buildCotizadorWhatsAppUrl(estado, estimado)
+  const mobiliarioElegido = itemsMobiliarioSeleccionados(estado.mobiliario)
+  const subtotalMobiliario = mobiliarioElegido.reduce((sum, i) => sum + i.precio, 0)
 
   return (
     <div className="animate-paso">
@@ -58,10 +65,6 @@ export default function ResumenCotizacion({ estado, onModificar, onToggleComplem
         <Fila etiqueta="Fondo y estructura" valor={nombreOpcion('fondo', estado.fondo)} />
         <Fila etiqueta="Estilo de globos" valor={nombreOpcion('globos', estado.globos)} />
         <Fila
-          etiqueta="Mobiliario y detalles"
-          chips={nombresOpciones('mobiliario', estado.mobiliario)}
-        />
-        <Fila
           etiqueta="Pastelería y regalos"
           chips={nombresOpciones('pasteleria', estado.pasteleria)}
         />
@@ -71,15 +74,47 @@ export default function ResumenCotizacion({ estado, onModificar, onToggleComplem
         />
       </div>
 
+      {/* Mi evento: mobiliario y decoración elegidos, con precio real
+          por ítem (a diferencia de complementos/pastelería, aquí sí se
+          muestra el precio exacto porque no es un "desde" estimado). */}
+      {mobiliarioElegido.length > 0 && (
+        <div className="mt-6 bg-white rounded-2xl border border-arena shadow-sm p-6 md:p-8">
+          <p className="font-inter text-xs tracking-[0.15em] uppercase text-dorado/70 mb-4">
+            Mi evento — Mobiliario y decoración
+          </p>
+          <div className="flex flex-col">
+            {mobiliarioElegido.map((item) => (
+              <div
+                key={item.id}
+                className="flex items-baseline justify-between gap-3 py-2 border-b border-arena/60 last:border-0"
+              >
+                <span className="font-inter text-sm text-bronce/85">{item.nombre}</span>
+                <span className="font-cinzel text-sm text-bronce whitespace-nowrap">
+                  {item.precio > 0 ? formatPrice(item.precio) : 'Por confirmar'}
+                </span>
+              </div>
+            ))}
+          </div>
+          <div className="flex items-center justify-between gap-3 mt-4 pt-4 border-t border-arena">
+            <span className="font-inter text-xs tracking-[0.15em] uppercase text-dorado">
+              Subtotal mobiliario
+            </span>
+            <span className="font-cinzel text-base text-bronce">
+              {formatPrice(subtotalMobiliario)}
+            </span>
+          </div>
+        </div>
+      )}
+
       {/* Completa tu evento: sugerencias curadas opcionales. Seleccionar
           un complemento recalcula el rango estimado de abajo en vivo. */}
       <CompletaEvento seleccionados={estado.complementos} onToggle={onToggleComplemento} />
 
-      {/* Rango estimado */}
+      {/* Rango estimado (ya incluye el subtotal exacto de mobiliario) */}
       {estimado && (
         <div className="mt-6 bg-gradient-to-br from-durazno/50 to-arena/40 rounded-2xl border border-arena p-6 md:p-8 text-center">
           <p className="font-inter text-xs tracking-[0.2em] uppercase text-dorado mb-2">
-            Tu evento estimado
+            Tu evento estimado — Total
           </p>
           <p className="font-cinzel text-2xl md:text-3xl text-bronce tracking-wide">
             entre {formatPrice(estimado.min)} y {formatPrice(estimado.max)}
