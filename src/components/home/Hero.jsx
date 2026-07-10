@@ -1,6 +1,7 @@
 import { ChevronDown } from 'lucide-react'
 import { SITE_CONFIG } from '../../config/site'
 import WhatsAppButton from '../shared/WhatsAppButton'
+import IntroReveal from './IntroReveal'
 
 // Fondo del hero (LCP). Variantes responsive generadas por
 // scripts/optimizar-hero.mjs en /public/img/hero (AVIF/WebP/JPEG, 640→2400).
@@ -10,6 +11,8 @@ const HERO_WIDTHS = [640, 960, 1280, 1600, 1920, 2400]
 const heroSrcSet = (ext) =>
   HERO_WIDTHS.map((w) => `/img/hero/hero-${w}.${ext} ${w}w`).join(', ')
 
+// TODO(contenido): verificar cifras reales con el cliente; si no hay respaldo,
+// sustituir por prueba social real (reseñas Google). No animar como contadores.
 const STATS = [
   { value: '500+', label: 'Celebraciones realizadas' },
   { value: '5★',   label: 'Calificación promedio' },
@@ -19,6 +22,10 @@ const STATS = [
 export default function Hero() {
   return (
     <section className="relative h-screen min-h-[640px] flex flex-col items-center justify-center overflow-hidden">
+      {/* Intro cinemático (solo 1ª visita por sesión; se monta solo en cliente
+          y NO toca el LCP — ver IntroReveal.jsx). */}
+      <IntroReveal />
+
       {/* Background photo (LCP) con efecto Ken Burns en CSS */}
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
         <picture>
