@@ -1,6 +1,7 @@
 import { useReducer, useEffect, useRef, useMemo } from 'react'
 import COTIZADOR from '../data/cotizador.json'
 import COMPLEMENTOS from '../data/complementos.json'
+import MOBILIARIO from '../data/mobiliario.json'
 
 // ─── Estado del cotizador "Diseña Tu Evento" ──────────────────
 // Maneja las respuestas de los 5 pasos y su persistencia en
@@ -15,9 +16,17 @@ const STORAGE_KEY = 'decora-events-cotizador'
 const PASOS = COTIZADOR.pasos
 
 // IDs vigentes por paso: descarta del localStorage opciones corruptas
-// o de versiones anteriores del catálogo de opciones.
+// o de versiones anteriores del catálogo de opciones. El paso
+// "mobiliario" ya no tiene `opciones` propias (es el catálogo real de
+// MobiliarioStep, generado por scripts/importar-mobiliario.mjs), así
+// que sus ids vigentes salen de mobiliario.json en vez de cotizador.json.
 const IDS_POR_PASO = Object.fromEntries(
-  PASOS.map((p) => [p.id, new Set(p.opciones.map((o) => o.id))])
+  PASOS.map((p) => [
+    p.id,
+    p.id === 'mobiliario'
+      ? new Set(MOBILIARIO.items.map((i) => i.id))
+      : new Set(p.opciones.map((o) => o.id)),
+  ])
 )
 
 // IDs vigentes de complementos ("Completa tu evento"). Viven en su propio
