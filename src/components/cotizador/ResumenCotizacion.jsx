@@ -45,6 +45,7 @@ export default function ResumenCotizacion({ estado, onModificar, onToggleComplem
         eyebrow="Tu diseño"
         title="Resumen de tu evento"
         subtitle="Revisa tus selecciones antes de cotizar"
+        animate={false}
       />
 
       <div className="bg-white rounded-2xl border border-arena shadow-sm p-6 md:p-8">
