@@ -15,55 +15,55 @@
           "id": "cumpleanos",
           "nombre": "Cumpleaños",
           "descripcion": "Una fiesta a la medida de quien cumple, a cualquier edad.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cumplea%C3%B1os"
+          "imagen": "/img/catalogo/cumpleanos/cumpleanos-arco-cafe-crema-globos-01.webp"
         },
         {
           "id": "quince",
           "nombre": "Quince años",
           "descripcion": "El montaje de ensueño para una noche inolvidable.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Quince+a%C3%B1os"
+          "imagen": "/img/catalogo/quince/quinceanos-arco-dorado-blanco-07.webp"
         },
         {
           "id": "baby-shower",
           "nombre": "Baby Shower",
           "descripcion": "Detalles tiernos para dar la bienvenida al bebé.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Baby+Shower"
+          "imagen": "/img/catalogo/babyshower/babyshower-nubes-globos-pastel-05.webp"
         },
         {
           "id": "bautizo",
           "nombre": "Bautizo",
           "descripcion": "Decoración delicada para un día lleno de fe y familia.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Bautizo"
+          "imagen": "/img/catalogo/bautizo/bautizo-lounge-blanco-floral-torta-01.webp"
         },
         {
           "id": "matrimonio",
           "nombre": "Matrimonio",
           "descripcion": "Ambientación elegante para el gran día de los novios.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Matrimonio"
+          "imagen": "/img/catalogo/quince/quinceanos-arco-blanco-crema-06.webp"
         },
         {
           "id": "aniversario",
           "nombre": "Aniversario",
           "descripcion": "Celebra el amor y los años compartidos con estilo.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Aniversario"
+          "imagen": "/img/catalogo/cumpleanos/cumpleanos-numeros-50-blanco-13.webp"
         },
         {
           "id": "graduacion",
           "nombre": "Graduación",
           "descripcion": "Honra el logro con un montaje sobrio y festivo.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Graduaci%C3%B3n"
+          "imagen": "/img/catalogo/grado/grados-mi-grado-verde-dorado-02.webp"
         },
         {
           "id": "empresarial",
           "nombre": "Evento empresarial",
           "descripcion": "Branding, lanzamientos y celebraciones corporativas.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Empresarial"
+          "imagen": "/img/mobiliario/paneles/paneles-01.webp"
         },
         {
           "id": "otro",
           "nombre": "Otro",
           "descripcion": "¿Algo diferente? Lo diseñamos contigo desde cero.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Otro"
+          "imagen": "/img/catalogo/cumpleanos/cumpleanos-rustico-otonal-floral-15.webp"
         }
       ]
     },
@@ -80,43 +80,43 @@
           "id": "arco",
           "nombre": "Arco",
           "descripcion": "Arco de globos clásico, versátil para cualquier temática.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Arco"
+          "imagen": "/img/cotizador/fondo/arco.webp"
         },
         {
           "id": "marco-circular",
           "nombre": "Marco circular",
           "descripcion": "Aro decorativo de impacto, ideal para photocall.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Marco+circular"
+          "imagen": "/img/cotizador/fondo/circular.webp"
         },
         {
           "id": "paneles",
           "nombre": "Paneles",
           "descripcion": "Paneles modulares para un fondo limpio y moderno.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Paneles"
+          "imagen": "/img/cotizador/fondo/paneles.webp"
         },
         {
           "id": "shimmer",
           "nombre": "Fondo shimmer",
           "descripcion": "Cortina de lentejuelas con brillo elegante.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Fondo+shimmer"
+          "imagen": "/img/cotizador/fondo/shimer.webp"
         },
         {
           "id": "cortinas",
           "nombre": "Cortinas",
           "descripcion": "Telas fluidas que aportan altura y suavidad.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cortinas"
+          "imagen": "/img/cotizador/fondo/cortinas.webp"
         },
         {
           "id": "telon-personalizado",
           "nombre": "Telón personalizado",
           "descripcion": "Impresión a la medida con nombre, foto o marca.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Tel%C3%B3n"
+          "imagen": "/img/cotizador/fondo/telon-personalizado.webp"
         },
         {
           "id": "escenario-tematico",
           "nombre": "Escenario temático",
           "descripcion": "Ambientación completa según el tema que elijas.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Escenario"
+          "imagen": "/img/cotizador/fondo/escenario.webp"
         }
       ]
     },
