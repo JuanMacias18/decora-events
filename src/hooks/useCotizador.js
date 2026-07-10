@@ -1,5 +1,6 @@
 import { useReducer, useEffect, useRef, useMemo } from 'react'
 import COTIZADOR from '../data/cotizador.json'
+import COMPLEMENTOS from '../data/complementos.json'
 
 // ─── Estado del cotizador "Diseña Tu Evento" ──────────────────
 // Maneja las respuestas de los 5 pasos y su persistencia en
@@ -19,6 +20,11 @@ const IDS_POR_PASO = Object.fromEntries(
   PASOS.map((p) => [p.id, new Set(p.opciones.map((o) => o.id))])
 )
 
+// IDs vigentes de complementos ("Completa tu evento"). Viven en su propio
+// archivo (no son un paso del cotizador), pero se sanean igual que un paso
+// de selección múltiple.
+const IDS_COMPLEMENTOS = new Set(COMPLEMENTOS.complementos.map((c) => c.id))
+
 const ESTADO_VACIO = {
   pasoActual: 0,
   completado: false,
@@ -28,6 +34,7 @@ const ESTADO_VACIO = {
   globos: null,
   mobiliario: [],
   pasteleria: [],
+  complementos: [],
 }
 
 function reducer(state, action) {
@@ -79,12 +86,21 @@ function sanear(parsed) {
     pasteleria: Array.isArray(parsed.pasteleria)
       ? parsed.pasteleria.filter((id) => IDS_POR_PASO.pasteleria.has(id))
       : [],
+    complementos: Array.isArray(parsed.complementos)
+      ? parsed.complementos.filter((id) => IDS_COMPLEMENTOS.has(id))
+      : [],
   }
 }
 
 function hayProgreso(s) {
   return Boolean(
-    s.tipo || s.fondo || s.globos || s.mobiliario.length || s.pasteleria.length || s.completado
+    s.tipo ||
+      s.fondo ||
+      s.globos ||
+      s.mobiliario.length ||
+      s.pasteleria.length ||
+      s.complementos.length ||
+      s.completado
   )
 }
 

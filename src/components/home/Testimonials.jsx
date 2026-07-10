@@ -1,5 +1,6 @@
 import { Star } from 'lucide-react'
 import SectionHeading from '../shared/SectionHeading'
+import Reveal from '../shared/Reveal'
 
 const TESTIMONIALS = [
   {
@@ -7,7 +8,7 @@ const TESTIMONIALS = [
     nombre: 'Valentina Gómez',
     ciudad: 'Bogotá',
     texto:
-      'Decora Events transformó la fiesta de mi hija en algo de cuento. El montaje de Unicornio quedó perfecto, igual o mejor que las fotos del catálogo. ¡Todos los invitados preguntaron por el contacto!',
+      'DecoVents transformó la fiesta de mi hija en algo de cuento. El montaje de Unicornio quedó perfecto, igual o mejor que las fotos del catálogo. ¡Todos los invitados preguntaron por el contacto!',
     stars: 5,
     evento: 'Cumpleaños Infantil',
   },
@@ -25,7 +26,7 @@ const TESTIMONIALS = [
     nombre: 'Paola Rodríguez',
     ciudad: 'Cali',
     texto:
-      'Mi quinceañera fue un sueño gracias a Decora Events. El montaje Princesa de Cuento estuvo increíble. Muchas gracias por hacer de mi día algo tan especial e inolvidable.',
+      'Mi quinceañera fue un sueño gracias a DecoVents. El montaje Princesa de Cuento estuvo increíble. Muchas gracias por hacer de mi día algo tan especial e inolvidable.',
     stars: 5,
     evento: '15 Años',
   },
@@ -50,7 +51,7 @@ export default function Testimonials() {
           subtitle="Momentos reales de familias felices"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <Reveal stagger={0.08} className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {TESTIMONIALS.map((t) => (
             <div
               key={t.id}
@@ -86,7 +87,7 @@ export default function Testimonials() {
               </div>
             </div>
           ))}
-        </div>
+        </Reveal>
       </div>
     </section>
   )

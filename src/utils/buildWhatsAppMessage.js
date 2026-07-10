@@ -16,7 +16,7 @@ export function buildWhatsAppUrl({ items, clientName, eventDate, note }) {
 
   const total = items.reduce((sum, i) => sum + i.precio * i.cantidad, 0)
 
-  let message = `🎉 *Nueva solicitud — Decora Events*\n\n`
+  let message = `🎉 *Nueva solicitud — DecoVents*\n\n`
   message += `*Productos:*\n`
   message += lines.join('\n')
   message += `\n\n*Total estimado:* ${formatPrice(total)}\n\n`

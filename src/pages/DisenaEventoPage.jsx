@@ -112,7 +112,11 @@ export default function DisenaEventoPage() {
             </div>
           </div>
         ) : estado.completado ? (
-          <ResumenCotizacion estado={estado} onModificar={modificar} />
+          <ResumenCotizacion
+            estado={estado}
+            onModificar={modificar}
+            onToggleComplemento={(id) => alternarMultiple('complementos', id)}
+          />
         ) : (
           <>
             {/* Intro */}

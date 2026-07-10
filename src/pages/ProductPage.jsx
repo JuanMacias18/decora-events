@@ -61,7 +61,7 @@ export default function ProductPage() {
           <div className="rounded-2xl overflow-hidden border border-arena shadow-sm aspect-[4/3]">
             <img
               src={producto.imagen}
-              alt={`${producto.nombre} — ${categoria?.nombre ?? 'decoración de eventos'} por Decora Events`}
+              alt={`${producto.nombre} — ${categoria?.nombre ?? 'decoración de eventos'} por DecoVents`}
               className="w-full h-full object-cover"
             />
           </div>

@@ -1,5 +1,6 @@
 import { Pencil, MessageCircle } from 'lucide-react'
 import SectionHeading from '../shared/SectionHeading'
+import CompletaEvento from './CompletaEvento'
 import { nombreOpcion, nombresOpciones, formatFechaLarga } from '../../utils/cotizadorLabels'
 import { estimarPaquete } from '../../utils/estimarPaquete'
 import { formatPrice } from '../../utils/formatPrice'
@@ -34,7 +35,7 @@ function Fila({ etiqueta, valor, chips }) {
   )
 }
 
-export default function ResumenCotizacion({ estado, onModificar }) {
+export default function ResumenCotizacion({ estado, onModificar, onToggleComplemento }) {
   const estimado = estimarPaquete(estado)
   const whatsappUrl = buildCotizadorWhatsAppUrl(estado, estimado)
 
@@ -44,6 +45,7 @@ export default function ResumenCotizacion({ estado, onModificar }) {
         eyebrow="Tu diseño"
         title="Resumen de tu evento"
         subtitle="Revisa tus selecciones antes de cotizar"
+        animate={false}
       />
 
       <div className="bg-white rounded-2xl border border-arena shadow-sm p-6 md:p-8">
@@ -63,7 +65,15 @@ export default function ResumenCotizacion({ estado, onModificar }) {
           etiqueta="Pastelería y regalos"
           chips={nombresOpciones('pasteleria', estado.pasteleria)}
         />
+        <Fila
+          etiqueta="Completa tu evento"
+          chips={nombresOpciones('complementos', estado.complementos)}
+        />
       </div>
+
+      {/* Completa tu evento: sugerencias curadas opcionales. Seleccionar
+          un complemento recalcula el rango estimado de abajo en vivo. */}
+      <CompletaEvento seleccionados={estado.complementos} onToggle={onToggleComplemento} />
 
       {/* Rango estimado */}
       {estimado && (

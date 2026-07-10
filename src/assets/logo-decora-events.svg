@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1180" font-family="'Cinzel','Playfair Display','Trajan Pro',Georgia,'Times New Roman',serif">
-<title>Decora Events</title>
+<title>DecoVents</title>
 <circle cx="700" cy="560" r="300" fill="none" stroke="#B59660" stroke-opacity="0.45" stroke-width="3"/>
 <path d="M -0.5,0 Q 0,-0.5 0.5,0 Q 0,0.5 -0.5,0 Z" fill="#B59660" transform="translate(762.4,266.6) rotate(-168.0) scale(60.0,20.0)"/>
 <path d="M -0.5,0 Q 0,-0.5 0.5,0 Q 0,0.5 -0.5,0 Z" fill="#CDB278" transform="translate(762.4,266.6) rotate(-140.0) scale(36.0,16.0)"/>
@@ -86,6 +86,6 @@
 <path d="M -0.5,0 Q 0,-0.5 0.5,0 Q 0,0.5 -0.5,0 Z" fill="#CDB278" transform="translate(637.6,853.4) rotate(-320.0) scale(36.0,16.0)"/>
 <path d="M -0.5,0 Q 0,-0.5 0.5,0 Q 0,0.5 -0.5,0 Z" fill="#967844" transform="translate(637.6,853.4) rotate(-374.0) scale(30.0,12.0)"/>
 <text x="700" y="560" fill="#6E655A" font-size="360" font-weight="700" text-anchor="middle" dominant-baseline="central">D</text>
-<text x="700" y="1010" fill="#827C6C" font-size="132" letter-spacing="12" text-anchor="middle">DECORA EVENTS</text>
+<text x="700" y="1010" fill="#827C6C" font-size="150" letter-spacing="14" text-anchor="middle">DECOVENTS</text>
 <text x="700" y="1125" fill="#B59660" font-size="60" letter-spacing="30" text-anchor="middle">DESDE 2026</text>
 </svg>

@@ -1,13 +1,18 @@
 import COTIZADOR from '../data/cotizador.json'
+import COMPLEMENTOS from '../data/complementos.json'
 
 // ─── Etiquetas legibles del cotizador ─────────────────────────
 // Traduce los ids guardados (p. ej. "arco", "letras-gigantes") a sus
 // nombres visibles. Lo usan la pantalla de resumen y el mensaje de
 // WhatsApp para no depender de ids en el texto que ve el usuario.
 
-const MAPA_NOMBRES = Object.fromEntries(
-  COTIZADOR.pasos.map((p) => [p.id, Object.fromEntries(p.opciones.map((o) => [o.id, o.nombre]))])
-)
+const MAPA_NOMBRES = {
+  ...Object.fromEntries(
+    COTIZADOR.pasos.map((p) => [p.id, Object.fromEntries(p.opciones.map((o) => [o.id, o.nombre]))])
+  ),
+  // Los complementos no son un paso del cotizador, pero se nombran igual.
+  complementos: Object.fromEntries(COMPLEMENTOS.complementos.map((c) => [c.id, c.nombre])),
+}
 
 export function nombreOpcion(pasoId, id) {
   return MAPA_NOMBRES[pasoId]?.[id] ?? id

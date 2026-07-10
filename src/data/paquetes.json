@@ -1,7 +1,8 @@
 {
-  "_nota": "PRECIOS PLACEHOLDER. Reemplazar 'desde' y 'hasta' de cada paquete, y los incrementos por extra, con los valores que confirme Juan David. El cotizador NUNCA muestra precios por item individual: solo un RANGO total estimado por evento.",
+  "_nota": "PRECIOS PLACEHOLDER. Reemplazar 'desde' y 'hasta' de cada paquete, los incrementos por extra y 'factorMaxComplemento' con los valores que confirme Juan David. El cotizador NUNCA muestra precios por item individual: solo un RANGO total estimado por evento.",
   "incrementoMinPorExtra": 60000,
   "incrementoMaxPorExtra": 110000,
+  "factorMaxComplemento": 1.6,
   "mapaGlobos": {
     "minimalista": "clasico",
     "organico": "clasico",

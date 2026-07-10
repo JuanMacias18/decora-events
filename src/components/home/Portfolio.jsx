@@ -1,4 +1,5 @@
 import SectionHeading from '../shared/SectionHeading'
+import Reveal from '../shared/Reveal'
 import MONTAJES from '../../data/montajes.json'
 
 export default function Portfolio() {
@@ -19,12 +20,15 @@ export default function Portfolio() {
               key={item.imagen}
               className="break-inside-avoid group relative overflow-hidden rounded-xl cursor-pointer"
             >
-              <img
-                src={item.imagen}
-                alt={item.alt}
-                loading="lazy"
-                className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
+              {/* Firma 2: la imagen escala desde una máscara al entrar en viewport */}
+              <Reveal variant="image">
+                <img
+                  src={item.imagen}
+                  alt={item.alt}
+                  loading="lazy"
+                  className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </Reveal>
               <div className="absolute inset-0 bg-bronce/0 group-hover:bg-bronce/40 transition-colors duration-300 flex items-end">
                 <p className="font-cinzel text-xs text-crema tracking-wider p-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                   {item.alt}
