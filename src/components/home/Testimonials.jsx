@@ -1,5 +1,6 @@
 import { Star } from 'lucide-react'
 import SectionHeading from '../shared/SectionHeading'
+import Reveal from '../shared/Reveal'
 
 const TESTIMONIALS = [
   {
@@ -50,7 +51,7 @@ export default function Testimonials() {
           subtitle="Momentos reales de familias felices"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <Reveal stagger={0.08} className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {TESTIMONIALS.map((t) => (
             <div
               key={t.id}
@@ -86,7 +87,7 @@ export default function Testimonials() {
               </div>
             </div>
           ))}
-        </div>
+        </Reveal>
       </div>
     </section>
   )

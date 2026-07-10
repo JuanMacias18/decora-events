@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react'
 import CATEGORIAS from '../../data/categorias.json'
 import SectionHeading from '../shared/SectionHeading'
+import Reveal from '../shared/Reveal'
 
 // Color de respaldo por categoría: se ve detrás de la foto mientras carga
 // (lazy) o si la imagen falla. Conserva el degradado de marca.
@@ -27,8 +28,9 @@ export default function CategoriesGrid({ onCategorySelect }) {
           subtitle="Cada celebración merece su propio mundo"
         />
 
-        {/* Grid — 5 cards. aspect-[3/4] fija la altura (mismas alturas y sin CLS). */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+        {/* Grid — 5 cards. aspect-[3/4] fija la altura (mismas alturas y sin CLS).
+            Reveal stagger: los tiles nativos suben escalonados al entrar. */}
+        <Reveal stagger={0.07} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
           {CATEGORIAS.map((cat) => (
             <button
               key={cat.id}
@@ -66,7 +68,7 @@ export default function CategoriesGrid({ onCategorySelect }) {
               </div>
             </button>
           ))}
-        </div>
+        </Reveal>
       </div>
     </section>
   )

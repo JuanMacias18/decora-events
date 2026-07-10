@@ -4,6 +4,7 @@ import CATEGORIAS from '../../data/categorias.json'
 import DECORACIONES from '../../data/productos.json'
 import ProductCard from './ProductCard'
 import SectionHeading from '../shared/SectionHeading'
+import Reveal from '../shared/Reveal'
 import { CATEGORY_VISUALS } from './CategoryIcons'
 
 const PAGE_SIZE = 12
@@ -154,11 +155,13 @@ export default function CatalogSection({ initialCategory }) {
           </div>
         ) : (
           <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <Reveal stagger={0.06} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {paginated.map((item) => (
-                <ProductCard key={item.id + (item.personalizacion?.[0] ?? '')} item={item} />
+                <div key={item.id + (item.personalizacion?.[0] ?? '')} className="h-full">
+                  <ProductCard item={item} />
+                </div>
               ))}
-            </div>
+            </Reveal>
 
             {hasMore && (
               <div className="text-center mt-12">

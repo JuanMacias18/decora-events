@@ -32,7 +32,7 @@ export default function ProductCard({ item, priority = false }) {
   }
 
   return (
-    <article className="group bg-white rounded-2xl overflow-hidden border border-arena shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col">
+    <article className="group bg-white rounded-2xl overflow-hidden border border-arena shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
       {/* Image */}
       <div className="relative overflow-hidden aspect-[4/3]">
         <img
