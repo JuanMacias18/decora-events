@@ -1,0 +1,1149 @@
+{
+  "_nota": "PRECIOS PLACEHOLDER (precio:0) y NOMBRES AUTOGENERADOS. Reemplazar 'precio' y 'nombre'/'descripcion' de cada ítem con los valores reales que confirme Juan David antes de producción. Generado por scripts/importar-mobiliario.mjs.",
+  "items": [
+    {
+      "id": "base-tortas-pasabocas-01",
+      "nombre": "Bases de Torta y Pasabocas 01",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-01.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-02",
+      "nombre": "Bases de Torta y Pasabocas 02",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-02.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-03",
+      "nombre": "Bases de Torta y Pasabocas 03",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-03.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-04",
+      "nombre": "Bases de Torta y Pasabocas 04",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-04.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-05",
+      "nombre": "Bases de Torta y Pasabocas 05",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-05.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-06",
+      "nombre": "Bases de Torta y Pasabocas 06",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-06.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-07",
+      "nombre": "Bases de Torta y Pasabocas 07",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-07.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-08",
+      "nombre": "Bases de Torta y Pasabocas 08",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-08.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-09",
+      "nombre": "Bases de Torta y Pasabocas 09",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-09.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-10",
+      "nombre": "Bases de Torta y Pasabocas 10",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-10.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-11",
+      "nombre": "Bases de Torta y Pasabocas 11",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-11.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-12",
+      "nombre": "Bases de Torta y Pasabocas 12",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-12.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-13",
+      "nombre": "Bases de Torta y Pasabocas 13",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-13.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-14",
+      "nombre": "Bases de Torta y Pasabocas 14",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-14.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-15",
+      "nombre": "Bases de Torta y Pasabocas 15",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-15.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-16",
+      "nombre": "Bases de Torta y Pasabocas 16",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-16.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-17",
+      "nombre": "Bases de Torta y Pasabocas 17",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-17.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-18",
+      "nombre": "Bases de Torta y Pasabocas 18",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-18.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-19",
+      "nombre": "Bases de Torta y Pasabocas 19",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-19.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "base-tortas-pasabocas-20",
+      "nombre": "Bases de Torta y Pasabocas 20",
+      "categoria": "base-tortas-pasabocas",
+      "imagen": "/img/mobiliario/base-tortas-pasabocas/base-tortas-pasabocas-20.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "estructura-de-hierro-01",
+      "nombre": "Estructuras de Hierro 01",
+      "categoria": "estructura-de-hierro",
+      "imagen": "/img/mobiliario/estructura-de-hierro/estructura-de-hierro-01.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "estructura-de-hierro-02",
+      "nombre": "Estructuras de Hierro 02",
+      "categoria": "estructura-de-hierro",
+      "imagen": "/img/mobiliario/estructura-de-hierro/estructura-de-hierro-02.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "estructura-de-hierro-03",
+      "nombre": "Estructuras de Hierro 03",
+      "categoria": "estructura-de-hierro",
+      "imagen": "/img/mobiliario/estructura-de-hierro/estructura-de-hierro-03.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "estructura-de-hierro-04",
+      "nombre": "Estructuras de Hierro 04",
+      "categoria": "estructura-de-hierro",
+      "imagen": "/img/mobiliario/estructura-de-hierro/estructura-de-hierro-04.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "estructura-de-hierro-05",
+      "nombre": "Estructuras de Hierro 05",
+      "categoria": "estructura-de-hierro",
+      "imagen": "/img/mobiliario/estructura-de-hierro/estructura-de-hierro-05.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "estructura-de-hierro-06",
+      "nombre": "Estructuras de Hierro 06",
+      "categoria": "estructura-de-hierro",
+      "imagen": "/img/mobiliario/estructura-de-hierro/estructura-de-hierro-06.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "letras-y-numeros-01",
+      "nombre": "Letras y Números 01",
+      "categoria": "letras-y-numeros",
+      "imagen": "/img/mobiliario/letras-y-numeros/letras-y-numeros-01.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-acrilico-01",
+      "nombre": "Mesas de Acrílico 01",
+      "categoria": "mesas-de-acrilico",
+      "imagen": "/img/mobiliario/mesas-de-acrilico/mesas-de-acrilico-01.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-acrilico-02",
+      "nombre": "Mesas de Acrílico 02",
+      "categoria": "mesas-de-acrilico",
+      "imagen": "/img/mobiliario/mesas-de-acrilico/mesas-de-acrilico-02.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-hierro-01",
+      "nombre": "Mesas de Hierro 01",
+      "categoria": "mesas-de-hierro",
+      "imagen": "/img/mobiliario/mesas-de-hierro/mesas-de-hierro-01.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-hierro-02",
+      "nombre": "Mesas de Hierro 02",
+      "categoria": "mesas-de-hierro",
+      "imagen": "/img/mobiliario/mesas-de-hierro/mesas-de-hierro-02.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-hierro-03",
+      "nombre": "Mesas de Hierro 03",
+      "categoria": "mesas-de-hierro",
+      "imagen": "/img/mobiliario/mesas-de-hierro/mesas-de-hierro-03.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-hierro-04",
+      "nombre": "Mesas de Hierro 04",
+      "categoria": "mesas-de-hierro",
+      "imagen": "/img/mobiliario/mesas-de-hierro/mesas-de-hierro-04.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-01",
+      "nombre": "Mesas de Madera 01",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-01.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-02",
+      "nombre": "Mesas de Madera 02",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-02.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-03",
+      "nombre": "Mesas de Madera 03",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-03.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-04",
+      "nombre": "Mesas de Madera 04",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-04.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-05",
+      "nombre": "Mesas de Madera 05",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-05.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-06",
+      "nombre": "Mesas de Madera 06",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-06.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-07",
+      "nombre": "Mesas de Madera 07",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-07.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-08",
+      "nombre": "Mesas de Madera 08",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-08.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-09",
+      "nombre": "Mesas de Madera 09",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-09.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-10",
+      "nombre": "Mesas de Madera 10",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-10.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-11",
+      "nombre": "Mesas de Madera 11",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-11.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-12",
+      "nombre": "Mesas de Madera 12",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-12.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-13",
+      "nombre": "Mesas de Madera 13",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-13.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-14",
+      "nombre": "Mesas de Madera 14",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-14.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-15",
+      "nombre": "Mesas de Madera 15",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-15.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-16",
+      "nombre": "Mesas de Madera 16",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-16.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-17",
+      "nombre": "Mesas de Madera 17",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-17.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-18",
+      "nombre": "Mesas de Madera 18",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-18.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-19",
+      "nombre": "Mesas de Madera 19",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-19.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-20",
+      "nombre": "Mesas de Madera 20",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-20.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-21",
+      "nombre": "Mesas de Madera 21",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-21.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-22",
+      "nombre": "Mesas de Madera 22",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-22.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-23",
+      "nombre": "Mesas de Madera 23",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-23.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-24",
+      "nombre": "Mesas de Madera 24",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-24.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-25",
+      "nombre": "Mesas de Madera 25",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-25.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-26",
+      "nombre": "Mesas de Madera 26",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-26.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-27",
+      "nombre": "Mesas de Madera 27",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-27.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-28",
+      "nombre": "Mesas de Madera 28",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-28.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-29",
+      "nombre": "Mesas de Madera 29",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-29.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-30",
+      "nombre": "Mesas de Madera 30",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-30.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-31",
+      "nombre": "Mesas de Madera 31",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-31.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-32",
+      "nombre": "Mesas de Madera 32",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-32.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-33",
+      "nombre": "Mesas de Madera 33",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-33.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-34",
+      "nombre": "Mesas de Madera 34",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-34.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-35",
+      "nombre": "Mesas de Madera 35",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-35.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-36",
+      "nombre": "Mesas de Madera 36",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-36.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-37",
+      "nombre": "Mesas de Madera 37",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-37.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-38",
+      "nombre": "Mesas de Madera 38",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-38.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-39",
+      "nombre": "Mesas de Madera 39",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-39.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-de-madera-40",
+      "nombre": "Mesas de Madera 40",
+      "categoria": "mesas-de-madera",
+      "imagen": "/img/mobiliario/mesas-de-madera/mesas-de-madera-40.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-y-sillas-ninos-01",
+      "nombre": "Mesas y Sillas para Niños 01",
+      "categoria": "mesas-y-sillas-ninos",
+      "imagen": "/img/mobiliario/mesas-y-sillas-ninos/mesas-y-sillas-ninos-01.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-y-sillas-ninos-02",
+      "nombre": "Mesas y Sillas para Niños 02",
+      "categoria": "mesas-y-sillas-ninos",
+      "imagen": "/img/mobiliario/mesas-y-sillas-ninos/mesas-y-sillas-ninos-02.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-y-sillas-ninos-03",
+      "nombre": "Mesas y Sillas para Niños 03",
+      "categoria": "mesas-y-sillas-ninos",
+      "imagen": "/img/mobiliario/mesas-y-sillas-ninos/mesas-y-sillas-ninos-03.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-y-sillas-ninos-04",
+      "nombre": "Mesas y Sillas para Niños 04",
+      "categoria": "mesas-y-sillas-ninos",
+      "imagen": "/img/mobiliario/mesas-y-sillas-ninos/mesas-y-sillas-ninos-04.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "mesas-y-sillas-ninos-05",
+      "nombre": "Mesas y Sillas para Niños 05",
+      "categoria": "mesas-y-sillas-ninos",
+      "imagen": "/img/mobiliario/mesas-y-sillas-ninos/mesas-y-sillas-ninos-05.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "centro-de-mesa-01",
+      "nombre": "Centros de Mesa 01",
+      "categoria": "centro-de-mesa",
+      "imagen": "/img/mobiliario/centro-de-mesa/centro-de-mesa-01.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "centro-de-mesa-02",
+      "nombre": "Centros de Mesa 02",
+      "categoria": "centro-de-mesa",
+      "imagen": "/img/mobiliario/centro-de-mesa/centro-de-mesa-02.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "centro-de-mesa-03",
+      "nombre": "Centros de Mesa 03",
+      "categoria": "centro-de-mesa",
+      "imagen": "/img/mobiliario/centro-de-mesa/centro-de-mesa-03.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "centro-de-mesa-04",
+      "nombre": "Centros de Mesa 04",
+      "categoria": "centro-de-mesa",
+      "imagen": "/img/mobiliario/centro-de-mesa/centro-de-mesa-04.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-01",
+      "nombre": "Paneles 01",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-01.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-02",
+      "nombre": "Paneles 02",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-02.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-03",
+      "nombre": "Paneles 03",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-03.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-04",
+      "nombre": "Paneles 04",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-04.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-05",
+      "nombre": "Paneles 05",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-05.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-06",
+      "nombre": "Paneles 06",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-06.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-07",
+      "nombre": "Paneles 07",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-07.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-08",
+      "nombre": "Paneles 08",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-08.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-09",
+      "nombre": "Paneles 09",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-09.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-10",
+      "nombre": "Paneles 10",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-10.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-11",
+      "nombre": "Paneles 11",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-11.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-12",
+      "nombre": "Paneles 12",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-12.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-13",
+      "nombre": "Paneles 13",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-13.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-14",
+      "nombre": "Paneles 14",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-14.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-15",
+      "nombre": "Paneles 15",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-15.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-16",
+      "nombre": "Paneles 16",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-16.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-17",
+      "nombre": "Paneles 17",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-17.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-18",
+      "nombre": "Paneles 18",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-18.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-19",
+      "nombre": "Paneles 19",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-19.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-20",
+      "nombre": "Paneles 20",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-20.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-21",
+      "nombre": "Paneles 21",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-21.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-22",
+      "nombre": "Paneles 22",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-22.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-23",
+      "nombre": "Paneles 23",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-23.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-24",
+      "nombre": "Paneles 24",
+      "categoria": "paneles",
+      "imagen": "/img/mobiliario/paneles/paneles-24.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-01",
+      "nombre": "Paneles 3D 01",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-01.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-02",
+      "nombre": "Paneles 3D 02",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-02.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-03",
+      "nombre": "Paneles 3D 03",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-03.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-04",
+      "nombre": "Paneles 3D 04",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-04.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-05",
+      "nombre": "Paneles 3D 05",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-05.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-06",
+      "nombre": "Paneles 3D 06",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-06.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-07",
+      "nombre": "Paneles 3D 07",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-07.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-08",
+      "nombre": "Paneles 3D 08",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-08.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-09",
+      "nombre": "Paneles 3D 09",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-09.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-10",
+      "nombre": "Paneles 3D 10",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-10.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-11",
+      "nombre": "Paneles 3D 11",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-11.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-12",
+      "nombre": "Paneles 3D 12",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-12.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-13",
+      "nombre": "Paneles 3D 13",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-13.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-14",
+      "nombre": "Paneles 3D 14",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-14.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-15",
+      "nombre": "Paneles 3D 15",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-15.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-16",
+      "nombre": "Paneles 3D 16",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-16.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-17",
+      "nombre": "Paneles 3D 17",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-17.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-18",
+      "nombre": "Paneles 3D 18",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-18.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-19",
+      "nombre": "Paneles 3D 19",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-19.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-20",
+      "nombre": "Paneles 3D 20",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-20.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-21",
+      "nombre": "Paneles 3D 21",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-21.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-22",
+      "nombre": "Paneles 3D 22",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-22.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "paneles-3d-23",
+      "nombre": "Paneles 3D 23",
+      "categoria": "paneles-3d",
+      "imagen": "/img/mobiliario/paneles-3d/paneles-3d-23.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "recibidores-01",
+      "nombre": "Recibidores 01",
+      "categoria": "recibidores",
+      "imagen": "/img/mobiliario/recibidores/recibidores-01.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "recibidores-02",
+      "nombre": "Recibidores 02",
+      "categoria": "recibidores",
+      "imagen": "/img/mobiliario/recibidores/recibidores-02.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "recibidores-03",
+      "nombre": "Recibidores 03",
+      "categoria": "recibidores",
+      "imagen": "/img/mobiliario/recibidores/recibidores-03.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "tarimas-01",
+      "nombre": "Tarimas 01",
+      "categoria": "tarimas",
+      "imagen": "/img/mobiliario/tarimas/tarimas-01.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "tarimas-02",
+      "nombre": "Tarimas 02",
+      "categoria": "tarimas",
+      "imagen": "/img/mobiliario/tarimas/tarimas-02.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "tarimas-03",
+      "nombre": "Tarimas 03",
+      "categoria": "tarimas",
+      "imagen": "/img/mobiliario/tarimas/tarimas-03.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "tarimas-04",
+      "nombre": "Tarimas 04",
+      "categoria": "tarimas",
+      "imagen": "/img/mobiliario/tarimas/tarimas-04.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "tarimas-05",
+      "nombre": "Tarimas 05",
+      "categoria": "tarimas",
+      "imagen": "/img/mobiliario/tarimas/tarimas-05.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "tarimas-06",
+      "nombre": "Tarimas 06",
+      "categoria": "tarimas",
+      "imagen": "/img/mobiliario/tarimas/tarimas-06.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "tarimas-07",
+      "nombre": "Tarimas 07",
+      "categoria": "tarimas",
+      "imagen": "/img/mobiliario/tarimas/tarimas-07.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "tarimas-08",
+      "nombre": "Tarimas 08",
+      "categoria": "tarimas",
+      "imagen": "/img/mobiliario/tarimas/tarimas-08.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "tronos-01",
+      "nombre": "Tronos y Sillones 01",
+      "categoria": "tronos",
+      "imagen": "/img/mobiliario/tronos/tronos-01.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "tronos-02",
+      "nombre": "Tronos y Sillones 02",
+      "categoria": "tronos",
+      "imagen": "/img/mobiliario/tronos/tronos-02.webp",
+      "precio": 0,
+      "descripcion": ""
+    },
+    {
+      "id": "tronos-03",
+      "nombre": "Tronos y Sillones 03",
+      "categoria": "tronos",
+      "imagen": "/img/mobiliario/tronos/tronos-03.webp",
+      "precio": 0,
+      "descripcion": ""
+    }
+  ]
+}
