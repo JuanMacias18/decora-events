@@ -16,6 +16,7 @@ import { seoEventosPremium } from '../config/seo'
 import { SITE_CONFIG } from '../config/site'
 import SectionHeading from '../components/shared/SectionHeading'
 import WhatsAppButton from '../components/shared/WhatsAppButton'
+import Reveal from '../components/shared/Reveal'
 
 const VALOR = [
   {
@@ -65,7 +66,7 @@ export default function EventosPremiumPage() {
     <div className="bg-crema min-h-screen">
       {/* Hero */}
       <section className="pt-28 md:pt-36 pb-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <Reveal className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-flex items-center gap-2 font-inter text-xs tracking-[0.3em] uppercase text-coral mb-4">
             <Sparkles size={14} /> Eventos Premium
           </span>
@@ -97,13 +98,13 @@ export default function EventosPremiumPage() {
               Escríbenos por WhatsApp
             </WhatsAppButton>
           </div>
-        </div>
+        </Reveal>
       </section>
 
       {/* Propuesta de valor */}
       <section className="py-12 bg-crema">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Reveal stagger={0.07} className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {VALOR.map(({ icon: Icon, titulo, texto }) => (
               <div
                 key={titulo}
@@ -116,7 +117,7 @@ export default function EventosPremiumPage() {
                 <p className="font-inter text-sm text-dorado/80 leading-relaxed">{texto}</p>
               </div>
             ))}
-          </div>
+          </Reveal>
         </div>
       </section>
 
@@ -128,7 +129,7 @@ export default function EventosPremiumPage() {
             title="Nuestros servicios"
             subtitle="Cada ocasión, con la atención que merece"
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <Reveal stagger={0.07} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {SERVICIOS.map(({ icon: Icon, nombre, texto }) => (
               <div
                 key={nombre}
@@ -145,7 +146,7 @@ export default function EventosPremiumPage() {
                 </div>
               </div>
             ))}
-          </div>
+          </Reveal>
         </div>
       </section>
 
