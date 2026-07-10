@@ -39,7 +39,17 @@ export default function Reveal({
   stagger = 0, // segundos entre hijos directos (modo lista)
   delay = 0, // segundos de retraso inicial
   once = true,
-  threshold = 0.15,
+  // threshold=0 dispara con cualquier solapamiento (borde superior entra al
+  // área observada). Un threshold basado en % de ÁREA TOTAL (p. ej. 0.15)
+  // se rompe en contenedores altos/dinámicos: en modo stagger el <Reveal>
+  // observa el contenedor completo, no cada hijo — una grilla larga en
+  // móvil (una sola columna, catálogo paginado) puede superar varias veces
+  // la altura del viewport, así que ese % nunca se alcanza y el contenido
+  // queda en opacity:0 para siempre (bug real: catálogo invisible en
+  // Android — la grilla móvil llegaba a medir >5900px, muy por encima del
+  // ~15% de viewport que un threshold de 0.15 exige). rootMargin sigue
+  // aportando el margen de -8% para no disparar con 1px asomando al fondo.
+  threshold = 0,
   className = '',
   children,
   ...rest
