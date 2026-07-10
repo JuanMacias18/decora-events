@@ -130,34 +130,16 @@
       "requerido": true,
       "opciones": [
         {
-          "id": "minimalista",
-          "nombre": "Minimalista",
-          "descripcion": "Pocos elementos, mucho estilo. Limpio y moderno.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Minimalista"
-        },
-        {
-          "id": "organico",
-          "nombre": "Orgánico",
-          "descripcion": "Globos de tamaños variados en composición libre.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Org%C3%A1nico"
-        },
-        {
-          "id": "clasico",
-          "nombre": "Clásico",
-          "descripcion": "Guirnaldas y columnas tradicionales, siempre vigentes.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Cl%C3%A1sico"
+          "id": "estandar",
+          "nombre": "Estándar",
+          "descripcion": "Guirnalda de globos con volumen y estilo, ideal para cualquier celebración.",
+          "imagen": "/img/cotizador/globos/estandar.webp"
         },
         {
           "id": "premium",
           "nombre": "Premium",
-          "descripcion": "Mezcla de texturas, follaje y detalles cuidados.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Premium"
-        },
-        {
-          "id": "lujo",
-          "nombre": "Lujo",
-          "descripcion": "Gran formato, materiales finos y acabados de alta gama.",
-          "imagen": "https://placehold.co/800x600/E3D6C7/95744E/webp?text=Lujo"
+          "descripcion": "Fondo metálico brillante con globos cromados, para un montaje de alto impacto.",
+          "imagen": "/img/cotizador/globos/premium.webp"
         }
       ]
     },
