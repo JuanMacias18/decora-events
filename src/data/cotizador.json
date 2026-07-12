@@ -165,6 +165,60 @@
       "opcional": true,
       "opciones": [
         {
+          "id": "torta-gamer",
+          "nombre": "Torta temática gamer",
+          "descripcion": "Tres leches personalizada con los personajes favoritos. 20 a 25 porciones.",
+          "imagen": "/img/cotizador/pasteleria/torta-gamer.webp"
+        },
+        {
+          "id": "torta-infantil",
+          "nombre": "Torta temática infantil",
+          "descripcion": "Tres leches con rosetas y toppers del personaje que elijas. 20 a 25 porciones.",
+          "imagen": "/img/cotizador/pasteleria/torta-infantil.webp"
+        },
+        {
+          "id": "torta-quince",
+          "nombre": "Torta para quince años",
+          "descripcion": "Tres leches con drip, corazones y toppers personalizados. 20 a 25 porciones.",
+          "imagen": "/img/cotizador/pasteleria/torta-quince.webp"
+        },
+        {
+          "id": "torta-personajes",
+          "nombre": "Torta de personajes",
+          "descripcion": "Tres leches decorada con los héroes favoritos del festejado. 20 a 25 porciones.",
+          "imagen": "/img/cotizador/pasteleria/torta-personajes.webp"
+        },
+        {
+          "id": "torta-mediana",
+          "nombre": "Torta mediana personalizada",
+          "descripcion": "Ideal para celebraciones íntimas. 15 porciones.",
+          "imagen": "/img/cotizador/pasteleria/torta-mediana.webp"
+        },
+        {
+          "id": "torta-grande",
+          "nombre": "Torta grande personalizada",
+          "descripcion": "Con toppers a todo color para fiestas numerosas. 30 a 35 porciones.",
+          "imagen": "/img/cotizador/pasteleria/torta-grande.webp"
+        },
+        {
+          "id": "torta-dos-pisos",
+          "nombre": "Torta de dos pisos",
+          "descripcion": "Dos niveles decorados según tu temática. 35 a 40 porciones.",
+          "imagen": "/img/cotizador/pasteleria/torta-dos-pisos.webp"
+        },
+        {
+          "id": "sabores-tres-leches",
+          "nombre": "Tres leches por sabores",
+          "descripcion": "Rellenos de fresa, mora, frutos rojos, guanábana, durazno, arequipe o maracuyá.",
+          "imagen": "/img/cotizador/pasteleria/sabores-tres-leches.webp"
+        },
+        {
+          "id": "ponques-y-tortas",
+          "nombre": "Ponqués y tortas",
+          "descripcion": "Vainilla con frutos secos, veteado de chocolate, amapola, chips de chocolate o milkyway con arequipe.",
+          "imagen": "/img/cotizador/pasteleria/ponques-y-tortas.webp"
+        },
+        {
           "id": "torta",
           "nombre": "Torta",
           "descripcion": "Torta temática a la medida de tu celebración.",
