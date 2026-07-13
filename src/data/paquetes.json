@@ -1,7 +1,5 @@
 {
-  "_nota": "PRECIOS PLACEHOLDER. Reemplazar 'desde' y 'hasta' de cada paquete, los incrementos por extra y 'factorMaxComplemento' con los valores que confirme Juan David. El cotizador NUNCA muestra precios por item individual: solo un RANGO total estimado por evento.",
-  "incrementoMinPorExtra": 60000,
-  "incrementoMaxPorExtra": 110000,
+  "_nota": "PRECIOS PLACEHOLDER para 'desde'/'hasta' de cada paquete y 'factorMaxComplemento': reemplazar con los valores que confirme Juan David. Mobiliario y pastelería SÍ tienen precio real por ítem (se ven en su propia tarjeta y se suman exacto); el paquete base y los complementos solo se muestran como un RANGO total estimado por evento.",
   "factorMaxComplemento": 1.6,
   "mapaGlobos": {
     "estandar": "clasico",

@@ -22,6 +22,10 @@ const MAPA_NOMBRES = {
 
 const MOBILIARIO_POR_ID = Object.fromEntries(MOBILIARIO.items.map((i) => [i.id, i]))
 
+const PASTELERIA_POR_ID = Object.fromEntries(
+  COTIZADOR.pasos.find((p) => p.id === 'pasteleria').opciones.map((o) => [o.id, o])
+)
+
 export function nombreOpcion(pasoId, id) {
   return MAPA_NOMBRES[pasoId]?.[id] ?? id
 }
@@ -35,6 +39,13 @@ export function nombresOpciones(pasoId, ids = []) {
 // no existan en el catálogo (defensivo, igual que el resto del saneo).
 export function itemsMobiliarioSeleccionados(ids = []) {
   return ids.map((id) => MOBILIARIO_POR_ID[id]).filter(Boolean)
+}
+
+// Ítems de pastelería elegidos, con su nombre y precio real. Mismo
+// patrón que mobiliario: los productos de Fruit Cakes ya tienen precio
+// confirmado por ítem, no un "desde" estimado.
+export function itemsPasteleriaSeleccionados(ids = []) {
+  return ids.map((id) => PASTELERIA_POR_ID[id]).filter(Boolean)
 }
 
 // Formatea "2026-07-01" → "1 de julio de 2026" (hora local, sin desfase de zona)
