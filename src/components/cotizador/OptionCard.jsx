@@ -1,9 +1,15 @@
 import { Check } from 'lucide-react'
+import { formatPrice } from '../../utils/formatPrice'
 
 // Tarjeta visual seleccionable (imagen + nombre + descripción).
 // Sirve tanto para selección única como múltiple; el estado visual
-// "seleccionada" lo controla quien la usa.
+// "seleccionada" lo controla quien la usa. El precio es opcional: solo
+// las opciones que lo traen (pastelería) lo muestran, igual que
+// MobiliarioCard ("Precio próximamente" mientras no esté confirmado).
 export default function OptionCard({ opcion, seleccionada, onClick }) {
+  const conPrecio = opcion.precio !== undefined
+  const tienePrecio = opcion.precio > 0
+
   return (
     <button
       type="button"
@@ -38,6 +44,17 @@ export default function OptionCard({ opcion, seleccionada, onClick }) {
         <p className="font-inter text-xs text-dorado/80 leading-relaxed mt-1">
           {opcion.descripcion}
         </p>
+        {conPrecio && (
+          <p
+            className={`mt-2 ${
+              tienePrecio
+                ? 'font-cinzel text-sm text-bronce'
+                : 'font-inter text-xs text-dorado/50 italic'
+            }`}
+          >
+            {tienePrecio ? formatPrice(opcion.precio) : 'Precio próximamente'}
+          </p>
+        )}
       </div>
     </button>
   )

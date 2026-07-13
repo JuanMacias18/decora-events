@@ -5,6 +5,7 @@ import {
   nombreOpcion,
   nombresOpciones,
   itemsMobiliarioSeleccionados,
+  itemsPasteleriaSeleccionados,
   formatFechaLarga,
 } from '../../utils/cotizadorLabels'
 import { estimarPaquete } from '../../utils/estimarPaquete'
@@ -45,6 +46,8 @@ export default function ResumenCotizacion({ estado, onModificar, onToggleComplem
   const whatsappUrl = buildCotizadorWhatsAppUrl(estado, estimado)
   const mobiliarioElegido = itemsMobiliarioSeleccionados(estado.mobiliario)
   const subtotalMobiliario = mobiliarioElegido.reduce((sum, i) => sum + i.precio, 0)
+  const pasteleriaElegida = itemsPasteleriaSeleccionados(estado.pasteleria)
+  const subtotalPasteleria = pasteleriaElegida.reduce((sum, i) => sum + i.precio, 0)
 
   return (
     <div className="animate-paso">
@@ -64,10 +67,6 @@ export default function ResumenCotizacion({ estado, onModificar, onToggleComplem
         />
         <Fila etiqueta="Fondo y estructura" valor={nombreOpcion('fondo', estado.fondo)} />
         <Fila etiqueta="Estilo de globos" valor={nombreOpcion('globos', estado.globos)} />
-        <Fila
-          etiqueta="Pastelería y regalos"
-          chips={nombresOpciones('pasteleria', estado.pasteleria)}
-        />
         <Fila
           etiqueta="Completa tu evento"
           chips={nombresOpciones('complementos', estado.complementos)}
@@ -101,6 +100,37 @@ export default function ResumenCotizacion({ estado, onModificar, onToggleComplem
             </span>
             <span className="font-cinzel text-base text-bronce">
               {formatPrice(subtotalMobiliario)}
+            </span>
+          </div>
+        </div>
+      )}
+
+      {/* Mi evento: pastelería y regalos elegidos, con precio real por
+          ítem (mismo tratamiento que mobiliario: no es un "desde"). */}
+      {pasteleriaElegida.length > 0 && (
+        <div className="mt-6 bg-white rounded-2xl border border-arena shadow-sm p-6 md:p-8">
+          <p className="font-inter text-xs tracking-[0.15em] uppercase text-dorado/70 mb-4">
+            Mi evento — Pastelería y regalos
+          </p>
+          <div className="flex flex-col">
+            {pasteleriaElegida.map((item) => (
+              <div
+                key={item.id}
+                className="flex items-baseline justify-between gap-3 py-2 border-b border-arena/60 last:border-0"
+              >
+                <span className="font-inter text-sm text-bronce/85">{item.nombre}</span>
+                <span className="font-cinzel text-sm text-bronce whitespace-nowrap">
+                  {item.precio > 0 ? formatPrice(item.precio) : 'Por confirmar'}
+                </span>
+              </div>
+            ))}
+          </div>
+          <div className="flex items-center justify-between gap-3 mt-4 pt-4 border-t border-arena">
+            <span className="font-inter text-xs tracking-[0.15em] uppercase text-dorado">
+              Subtotal pastelería
+            </span>
+            <span className="font-cinzel text-base text-bronce">
+              {formatPrice(subtotalPasteleria)}
             </span>
           </div>
         </div>
