@@ -1,9 +1,9 @@
-import { SITE_CONFIG } from '../config/site'
+import { WHATSAPP_NUMBER } from '../config/site'
 import { formatPrice } from './formatPrice'
 
 // Enlace base a WhatsApp; con `message` abre el chat con texto prellenado
 export function buildWhatsAppHref(message) {
-  const base = `https://wa.me/${SITE_CONFIG.whatsapp}`
+  const base = `https://wa.me/${WHATSAPP_NUMBER}`
   return message ? `${base}?text=${encodeURIComponent(message)}` : base
 }
 

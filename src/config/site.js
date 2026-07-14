@@ -1,11 +1,16 @@
 // ─── Configuración del negocio ────────────────────────────────
 // Edita este archivo para cambiar datos de contacto y redes sociales.
 
+// Único lugar donde vive el número de WhatsApp del negocio (con
+// indicativo, sin espacios ni signos: Colombia 57 + celular). Todo el
+// resto de la app lo consume desde aquí (vía SITE_CONFIG.whatsapp o
+// este export) — nunca hardcodear el número en otro archivo.
+export const WHATSAPP_NUMBER = '573123802307'
+
 export const SITE_CONFIG = {
   nombre: 'DecoVents',
   dueno: 'Juan David Villalobos',
-  // Número con indicativo, sin espacios ni signos (Colombia: 57 + celular)
-  whatsapp: '573123802307',
+  whatsapp: WHATSAPP_NUMBER,
   // URL de Calendly para agendar asesorías (sección Eventos Premium).
   // Reemplazar PLACEHOLDER por la URL real; mientras tanto la página
   // muestra un aviso y el CTA de WhatsApp en lugar del calendario.
