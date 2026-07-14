@@ -5,7 +5,7 @@ export const SITE_CONFIG = {
   nombre: 'DecoVents',
   dueno: 'Juan David Villalobos',
   // Número con indicativo, sin espacios ni signos (Colombia: 57 + celular)
-  whatsapp: '573103112856',
+  whatsapp: '573123802307',
   // URL de Calendly para agendar asesorías (sección Eventos Premium).
   // Reemplazar PLACEHOLDER por la URL real; mientras tanto la página
   // muestra un aviso y el CTA de WhatsApp en lugar del calendario.
